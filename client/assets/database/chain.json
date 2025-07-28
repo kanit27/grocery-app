@@ -1,0 +1,17 @@
+[
+  {
+    "id": "chain_001",
+    "name": "Dmart",
+    "logo": "assets/images/dmart.png"
+  },
+  {
+    "id": "chain_002",
+    "name": "Reliance Smart",
+    "logo": "assets/images/reliance.png"
+  },
+  {
+    "id": "chain_003",
+    "name": "Big Bazaar",
+    "logo": "assets/images/big-bazaar.png"
+  }
+]

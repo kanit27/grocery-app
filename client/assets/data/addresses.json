@@ -1,0 +1,28 @@
+[
+  {
+    "id": "addr_001",
+    "userId": "user_001",
+    "label": "Home",
+    "line1": "101, Shree Complex",
+    "line2": "Sector 21",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "pincode": "382021",
+    "lat": 23.2156,
+    "lng": 72.6369,
+    "isDefault": true
+  },
+  {
+    "id": "addr_002",
+    "userId": "user_001",
+    "label": "Office",
+    "line1": "512, Infocity Tower",
+    "line2": "Infocity",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "pincode": "382007",
+    "lat": 23.2234,
+    "lng": 72.6512,
+    "isDefault": false
+  }
+]

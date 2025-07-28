@@ -1,0 +1,72 @@
+[
+  {
+    "id": "inv_001",
+    "store_id": "store_001",
+    "product_id": "prod_001",
+    "price": 62,
+    "stock_qty": 120
+  },
+  {
+    "id": "inv_002",
+    "store_id": "store_001",
+    "product_id": "prod_002",
+    "price": 20,
+    "stock_qty": 300
+  },
+  {
+    "id": "inv_003",
+    "store_id": "store_003",
+    "product_id": "prod_001",
+    "price": 63,
+    "stock_qty": 150
+  },
+  {
+    "id": "inv_004",
+    "store_id": "store_003",
+    "product_id": "prod_003",
+    "price": 28,
+    "stock_qty": 200
+  },
+  {
+    "id": "inv_005",
+    "store_id": "store_005",
+    "product_id": "prod_001",
+    "price": 61,
+    "stock_qty": 90
+  },
+  {
+    "id": "inv_006",
+    "store_id": "store_005",
+    "product_id": "prod_002",
+    "price": 19,
+    "stock_qty": 100
+  },
+  {
+    "id": "inv_007",
+    "store_id": "store_002",
+    "product_id": "prod_004",
+    "price": 15,
+    "stock_qty": 250
+  },
+  {
+    "id": "inv_008",
+    "store_id": "store_004",
+    "product_id": "prod_005",
+    "price": 35,
+    "stock_qty": 180
+  },
+  {
+    "id": "inv_009",
+    "store_id": "store_004",
+    "product_id": "prod_006",
+    "price": 25,
+    "stock_qty": 220
+  },
+  {
+    "id": "inv_010",
+    "store_id": "store_002",
+    "product_id": "prod_007",
+    "price": 12,
+    "stock_qty": 300
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Amul Milk 1L",
+    "brand": "Amul",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_002",
+    "name": "Parle-G Biscuits 200g",
+    "brand": "Parle",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_003",
+    "name": "Tata Salt 1kg",
+    "brand": "Tata",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_004",
+    "name": "Sunfeast Yippee Noodles 70g",
+    "brand": "Sunfeast",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_005",
+    "name": "Britannia Milk Bread 400g",
+    "brand": "Britannia",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_006",
+    "name": "Pepsi 500ml",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_007",
+    "name": "Maggi Masala Noodles 70g",
+    "brand": "Maggi",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_008",
+    "name": "Haldiram's Aloo Bhujia 200g",
+    "brand": "Haldiram's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_009",
+    "name": "Nescafe Classic Coffee 100g",
+    "brand": "Nescafe",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_010",
+    "name": "Dabur Honey 250g",
+    "brand": "Dabur",
+    "category": "Sweeteners"
+  }
+]

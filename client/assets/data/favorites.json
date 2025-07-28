@@ -1,0 +1,15 @@
+[
+  {
+    "userId": "user_001",
+    "favorites": {
+      "stores": [
+        "store_003",
+        "store_006"
+      ],
+      "products": [
+        "prod_005",
+        "prod_010"
+      ]
+    }
+  }
+]

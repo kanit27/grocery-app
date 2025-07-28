@@ -1,0 +1,62 @@
+[
+  {
+    "id": "store_001",
+    "chain_id": "chain_001",
+    "name": "Dmart Virar West 1",
+    "logo": "assets/images/dmart.png",
+    "address": "Shop No. 5, Western Plaza, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4571,
+    "longitude": 72.8012
+  },
+  {
+    "id": "store_002",
+    "chain_id": "chain_001",
+    "name": "Dmart Virar West 2",
+    "logo": "assets/images/dmart.png",
+    "address": "Shanti Tower Road, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4592,
+    "longitude": 72.8033
+  },
+  {
+    "id": "store_003",
+    "chain_id": "chain_002",
+    "name": "Reliance Smart Virar",
+    "logo": "assets/images/reliance.png",
+    "address": "Orbit Mall, Opposite Railway Station, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4585,
+    "longitude": 72.8009
+  },
+  {
+    "id": "store_004",
+    "chain_id": "chain_003",
+    "name": "Big Bazaar Virar",
+    "logo": "assets/images/big-bazaar.png",
+    "address": "Global City Road, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4567,
+    "longitude": 72.8021
+  },
+  {
+    "id": "store_005",
+    "chain_id": "chain_003",
+    "name": "Big Mini Market",
+    "logo": "assets/images/big-bazaar.png",
+    "address": "Skyline Residency Lane, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4601,
+    "longitude": 72.8044
+  }
+]

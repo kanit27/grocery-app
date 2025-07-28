@@ -1,0 +1,5148 @@
+[
+  {
+    "id": "store-1",
+    "name": "D-Mart",
+    "type": "franchise",
+    "logo": "assets/images/dmart.png",
+    "address": "Top-3 Rd, Adhewada, Bhavnagar, Gujarat 364002",
+    "lat": 28.6598115,
+    "lng": 12.144645,
+    "city": "Bhavnagar",
+    "state": "Gujarat",
+    "pincode": "364002",
+    "contactNumber": "267-198-0854",
+    "email": "dmart@bhavnagar.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.2,
+    "reviewsCount": 298,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 3,
+    "deliveryTimeEstimate": "30-48 min",
+    "deliveryFee": 25,
+    "categories": [
+      "Bakery",
+      "Dairy",
+      "Fresh Fruit"
+    ],
+    "tags": [
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 15,
+    "createdAt": "2015-09-29T10:30:03",
+    "updatedAt": "2012-02-24T23:46:19",
+    "products": [
+      {
+        "id": "prod-store-1-1",
+        "storeId": "store-1",
+        "name": "Would",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Frozen",
+        "price": 24.02,
+        "originalPrice": 45.2,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "New"
+        ],
+        "popularityCount": 582
+      },
+      {
+        "id": "prod-store-1-2",
+        "storeId": "store-1",
+        "name": "Purpose",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Beverages",
+        "price": 11.21,
+        "originalPrice": 34.0,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 453
+      },
+      {
+        "id": "prod-store-1-3",
+        "storeId": "store-1",
+        "name": "Rock",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Bakery",
+        "price": 11.82,
+        "originalPrice": 34.88,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 830
+      },
+      {
+        "id": "prod-store-1-4",
+        "storeId": "store-1",
+        "name": "Old",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Organic",
+        "price": 22.84,
+        "originalPrice": 47.05,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 526
+      },
+      {
+        "id": "prod-store-1-5",
+        "storeId": "store-1",
+        "name": "Week",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Snacks",
+        "price": 14.14,
+        "originalPrice": 42.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 944
+      },
+      {
+        "id": "prod-store-1-6",
+        "storeId": "store-1",
+        "name": "Continue",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Dairy",
+        "price": 8.97,
+        "originalPrice": 42.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 208
+      },
+      {
+        "id": "prod-store-1-7",
+        "storeId": "store-1",
+        "name": "Certainly",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Bakery",
+        "price": 29.05,
+        "originalPrice": 36.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 462
+      },
+      {
+        "id": "prod-store-1-8",
+        "storeId": "store-1",
+        "name": "Foreign",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Beverages",
+        "price": 12.38,
+        "originalPrice": 36.17,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 761
+      },
+      {
+        "id": "prod-store-1-9",
+        "storeId": "store-1",
+        "name": "Positive",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Frozen",
+        "price": 8.29,
+        "originalPrice": 47.98,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 619
+      },
+      {
+        "id": "prod-store-1-10",
+        "storeId": "store-1",
+        "name": "Visit",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Organic",
+        "price": 15.44,
+        "originalPrice": 35.81,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 599
+      },
+      {
+        "id": "prod-store-1-11",
+        "storeId": "store-1",
+        "name": "Buy",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Bakery",
+        "price": 7.42,
+        "originalPrice": 41.6,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 230
+      },
+      {
+        "id": "prod-store-1-12",
+        "storeId": "store-1",
+        "name": "Bring",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Frozen",
+        "price": 5.08,
+        "originalPrice": 47.95,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 680
+      },
+      {
+        "id": "prod-store-1-13",
+        "storeId": "store-1",
+        "name": "Country",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Dairy",
+        "price": 6.37,
+        "originalPrice": 39.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 737
+      },
+      {
+        "id": "prod-store-1-14",
+        "storeId": "store-1",
+        "name": "Final",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Dairy",
+        "price": 21.73,
+        "originalPrice": 45.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 115
+      },
+      {
+        "id": "prod-store-1-15",
+        "storeId": "store-1",
+        "name": "She",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Dairy",
+        "price": 21.93,
+        "originalPrice": 36.87,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 298
+      },
+      {
+        "id": "prod-store-1-16",
+        "storeId": "store-1",
+        "name": "Turn",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Fresh Fruit",
+        "price": 14.95,
+        "originalPrice": 42.47,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 833
+      },
+      {
+        "id": "prod-store-1-17",
+        "storeId": "store-1",
+        "name": "Concern",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Organic",
+        "price": 27.7,
+        "originalPrice": 45.25,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 415
+      },
+      {
+        "id": "prod-store-1-18",
+        "storeId": "store-1",
+        "name": "Day",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Frozen",
+        "price": 10.24,
+        "originalPrice": 35.32,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 770
+      },
+      {
+        "id": "prod-store-1-19",
+        "storeId": "store-1",
+        "name": "Technology",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Bakery",
+        "price": 21.96,
+        "originalPrice": 39.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 789
+      },
+      {
+        "id": "prod-store-1-20",
+        "storeId": "store-1",
+        "name": "Else",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Fresh Fruit",
+        "price": 23.49,
+        "originalPrice": 31.01,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 586
+      },
+      {
+        "id": "prod-store-1-21",
+        "storeId": "store-1",
+        "name": "Because",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Vegetables",
+        "price": 22.23,
+        "originalPrice": 39.44,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 277
+      },
+      {
+        "id": "prod-store-1-22",
+        "storeId": "store-1",
+        "name": "Ten",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Dairy",
+        "price": 5.19,
+        "originalPrice": 32.32,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 546
+      },
+      {
+        "id": "prod-store-1-23",
+        "storeId": "store-1",
+        "name": "Admit",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Beverages",
+        "price": 13.93,
+        "originalPrice": 33.52,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 233
+      },
+      {
+        "id": "prod-store-1-24",
+        "storeId": "store-1",
+        "name": "Trouble",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Frozen",
+        "price": 27.77,
+        "originalPrice": 35.68,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 649
+      },
+      {
+        "id": "prod-store-1-25",
+        "storeId": "store-1",
+        "name": "Style",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Bakery",
+        "price": 28.19,
+        "originalPrice": 40.41,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 210
+      },
+      {
+        "id": "prod-store-1-26",
+        "storeId": "store-1",
+        "name": "Current",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Beverages",
+        "price": 26.05,
+        "originalPrice": 31.16,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 143
+      },
+      {
+        "id": "prod-store-1-27",
+        "storeId": "store-1",
+        "name": "Business",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Frozen",
+        "price": 17.5,
+        "originalPrice": 43.6,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 143
+      },
+      {
+        "id": "prod-store-1-28",
+        "storeId": "store-1",
+        "name": "Probably",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Snacks",
+        "price": 26.94,
+        "originalPrice": 37.56,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 694
+      },
+      {
+        "id": "prod-store-1-29",
+        "storeId": "store-1",
+        "name": "Image",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Snacks",
+        "price": 24.58,
+        "originalPrice": 47.64,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 249
+      },
+      {
+        "id": "prod-store-1-30",
+        "storeId": "store-1",
+        "name": "Sense",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Bakery",
+        "price": 5.43,
+        "originalPrice": 41.04,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 410
+      }
+    ]
+  },
+  {
+    "id": "store-2",
+    "name": "Reliance Smart", 
+    "type": "franchise",
+    "logo": "assets/images/reliance.png",
+    "address": "Ground Flr & 1st Flr, Shiva Blessing, CS No 208/415, opposite BMC, Nawa Para, Bhavnagar, Gujarat 364001",
+    "lat": -51.0298085,
+    "lng": 160.703252,
+    "city": "Bhavnagar",
+    "state": "Gujarat",
+    "pincode": "364001",
+    "contactNumber": "+1-286-524-4228",
+    "email": "karen16@bates-maldonado.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.1,
+    "reviewsCount": 204,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 3,
+    "deliveryTimeEstimate": "33-45 min",
+    "deliveryFee": 20,
+    "categories": [
+      "Bakery",
+      "Dairy",
+      "Fresh Fruit"
+    ],
+    "tags": [
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 10,
+    "createdAt": "2010-02-20T03:34:47",
+    "updatedAt": "2005-05-24T11:09:00",
+    "products": [
+      {
+        "id": "prod-store-2-1",
+        "storeId": "store-2",
+        "name": "Word",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Fresh Fruit",
+        "price": 19.76,
+        "originalPrice": 45.79,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 740
+      },
+      {
+        "id": "prod-store-2-2",
+        "storeId": "store-2",
+        "name": "Consider",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Snacks",
+        "price": 28.19,
+        "originalPrice": 36.37,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 199
+      },
+      {
+        "id": "prod-store-2-3",
+        "storeId": "store-2",
+        "name": "Part",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Bakery",
+        "price": 23.67,
+        "originalPrice": 33.65,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 784
+      },
+      {
+        "id": "prod-store-2-4",
+        "storeId": "store-2",
+        "name": "Experience",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Fresh Fruit",
+        "price": 19.3,
+        "originalPrice": 46.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 124
+      },
+      {
+        "id": "prod-store-2-5",
+        "storeId": "store-2",
+        "name": "Seek",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Beverages",
+        "price": 6.9,
+        "originalPrice": 44.99,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 148
+      },
+      {
+        "id": "prod-store-2-6",
+        "storeId": "store-2",
+        "name": "Painting",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Snacks",
+        "price": 21.37,
+        "originalPrice": 40.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 964
+      },
+      {
+        "id": "prod-store-2-7",
+        "storeId": "store-2",
+        "name": "Picture",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Frozen",
+        "price": 17.81,
+        "originalPrice": 32.68,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 128
+      },
+      {
+        "id": "prod-store-2-8",
+        "storeId": "store-2",
+        "name": "See",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Dairy",
+        "price": 22.37,
+        "originalPrice": 39.07,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 751
+      },
+      {
+        "id": "prod-store-2-9",
+        "storeId": "store-2",
+        "name": "Far",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Beverages",
+        "price": 27.71,
+        "originalPrice": 34.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 614
+      },
+      {
+        "id": "prod-store-2-10",
+        "storeId": "store-2",
+        "name": "Green",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Snacks",
+        "price": 27.7,
+        "originalPrice": 47.08,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 711
+      },
+      {
+        "id": "prod-store-2-11",
+        "storeId": "store-2",
+        "name": "Point",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Beverages",
+        "price": 11.43,
+        "originalPrice": 31.45,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 486
+      },
+      {
+        "id": "prod-store-2-12",
+        "storeId": "store-2",
+        "name": "She",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Fresh Fruit",
+        "price": 5.27,
+        "originalPrice": 40.76,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 724
+      },
+      {
+        "id": "prod-store-2-13",
+        "storeId": "store-2",
+        "name": "Computer",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Snacks",
+        "price": 23.4,
+        "originalPrice": 41.25,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 361
+      },
+      {
+        "id": "prod-store-2-14",
+        "storeId": "store-2",
+        "name": "Bring",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Fresh Fruit",
+        "price": 5.76,
+        "originalPrice": 44.33,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 142
+      },
+      {
+        "id": "prod-store-2-15",
+        "storeId": "store-2",
+        "name": "Listen",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Bakery",
+        "price": 16.69,
+        "originalPrice": 31.13,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 606
+      },
+      {
+        "id": "prod-store-2-16",
+        "storeId": "store-2",
+        "name": "Remain",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Beverages",
+        "price": 24.39,
+        "originalPrice": 41.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 202
+      },
+      {
+        "id": "prod-store-2-17",
+        "storeId": "store-2",
+        "name": "Dream",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Snacks",
+        "price": 7.55,
+        "originalPrice": 35.96,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 342
+      },
+      {
+        "id": "prod-store-2-18",
+        "storeId": "store-2",
+        "name": "Stay",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Vegetables",
+        "price": 10.8,
+        "originalPrice": 39.01,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 836
+      },
+      {
+        "id": "prod-store-2-19",
+        "storeId": "store-2",
+        "name": "Century",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Bakery",
+        "price": 29.38,
+        "originalPrice": 35.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 638
+      },
+      {
+        "id": "prod-store-2-20",
+        "storeId": "store-2",
+        "name": "Look",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Organic",
+        "price": 23.04,
+        "originalPrice": 47.61,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 776
+      },
+      {
+        "id": "prod-store-2-21",
+        "storeId": "store-2",
+        "name": "Play",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Bakery",
+        "price": 24.11,
+        "originalPrice": 45.97,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 895
+      },
+      {
+        "id": "prod-store-2-22",
+        "storeId": "store-2",
+        "name": "Direction",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Frozen",
+        "price": 29.74,
+        "originalPrice": 42.13,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 198
+      },
+      {
+        "id": "prod-store-2-23",
+        "storeId": "store-2",
+        "name": "Agree",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Beverages",
+        "price": 27.04,
+        "originalPrice": 48.95,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 847
+      },
+      {
+        "id": "prod-store-2-24",
+        "storeId": "store-2",
+        "name": "Certainly",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Frozen",
+        "price": 19.18,
+        "originalPrice": 47.07,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 340
+      },
+      {
+        "id": "prod-store-2-25",
+        "storeId": "store-2",
+        "name": "Exist",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Fresh Fruit",
+        "price": 5.06,
+        "originalPrice": 36.6,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 685
+      },
+      {
+        "id": "prod-store-2-26",
+        "storeId": "store-2",
+        "name": "Sound",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Snacks",
+        "price": 8.4,
+        "originalPrice": 31.54,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "New"
+        ],
+        "popularityCount": 741
+      },
+      {
+        "id": "prod-store-2-27",
+        "storeId": "store-2",
+        "name": "Opportunity",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Vegetables",
+        "price": 26.95,
+        "originalPrice": 42.44,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 160
+      },
+      {
+        "id": "prod-store-2-28",
+        "storeId": "store-2",
+        "name": "Thus",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Bakery",
+        "price": 16.44,
+        "originalPrice": 41.76,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 101
+      },
+      {
+        "id": "prod-store-2-29",
+        "storeId": "store-2",
+        "name": "Picture",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Frozen",
+        "price": 14.91,
+        "originalPrice": 42.89,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 182
+      },
+      {
+        "id": "prod-store-2-30",
+        "storeId": "store-2",
+        "name": "Task",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Frozen",
+        "price": 19.49,
+        "originalPrice": 46.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 391
+      }
+    ]
+  },
+  {
+    "id": "store-3",
+    "name": "7-Eleven",
+    "type": "franchise",
+    "logo": "assets/images/7-eleven.png",
+    "address": "8236 Johnson Ville Suite 656, South Stevenfort, WV 61456",
+    "lat": -50.6325455,
+    "lng": 171.72812,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "03057",
+    "contactNumber": "212.891.5589",
+    "email": "ericapearson@hotmail.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.1,
+    "reviewsCount": 107,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 7,
+    "deliveryTimeEstimate": "35\u201347 min",
+    "deliveryFee": 15,
+    "categories": [
+      "Beverages",
+      "Organic",
+      "Frozen"
+    ],
+    "tags": [
+      "New Arrival",
+      "Express Delivery"
+    ],
+    "activePromos": [],
+    "discountPercent": 10,
+    "createdAt": "2017-08-19T01:07:24",
+    "updatedAt": "1985-08-31T23:27:00",
+    "products": [
+      {
+        "id": "prod-store-3-1",
+        "storeId": "store-3",
+        "name": "Conference",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Fresh Fruit",
+        "price": 12.43,
+        "originalPrice": 33.82,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 412
+      },
+      {
+        "id": "prod-store-3-2",
+        "storeId": "store-3",
+        "name": "Structure",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Snacks",
+        "price": 15.63,
+        "originalPrice": 34.56,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 229
+      },
+      {
+        "id": "prod-store-3-3",
+        "storeId": "store-3",
+        "name": "Ever",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Dairy",
+        "price": 9.42,
+        "originalPrice": 34.98,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 504
+      },
+      {
+        "id": "prod-store-3-4",
+        "storeId": "store-3",
+        "name": "Final",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Fresh Fruit",
+        "price": 9.36,
+        "originalPrice": 48.0,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 898
+      },
+      {
+        "id": "prod-store-3-5",
+        "storeId": "store-3",
+        "name": "Smile",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Beverages",
+        "price": 26.39,
+        "originalPrice": 39.5,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 905
+      },
+      {
+        "id": "prod-store-3-6",
+        "storeId": "store-3",
+        "name": "Chair",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Vegetables",
+        "price": 21.55,
+        "originalPrice": 43.54,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 127
+      },
+      {
+        "id": "prod-store-3-7",
+        "storeId": "store-3",
+        "name": "Son",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Vegetables",
+        "price": 7.08,
+        "originalPrice": 46.26,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 397
+      },
+      {
+        "id": "prod-store-3-8",
+        "storeId": "store-3",
+        "name": "Station",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Frozen",
+        "price": 28.72,
+        "originalPrice": 42.66,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "New"
+        ],
+        "popularityCount": 490
+      },
+      {
+        "id": "prod-store-3-9",
+        "storeId": "store-3",
+        "name": "Author",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Dairy",
+        "price": 20.96,
+        "originalPrice": 35.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 995
+      },
+      {
+        "id": "prod-store-3-10",
+        "storeId": "store-3",
+        "name": "Whole",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Bakery",
+        "price": 9.21,
+        "originalPrice": 41.11,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 341
+      },
+      {
+        "id": "prod-store-3-11",
+        "storeId": "store-3",
+        "name": "Ten",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Dairy",
+        "price": 28.06,
+        "originalPrice": 41.48,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 910
+      },
+      {
+        "id": "prod-store-3-12",
+        "storeId": "store-3",
+        "name": "System",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Snacks",
+        "price": 16.71,
+        "originalPrice": 33.64,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 936
+      },
+      {
+        "id": "prod-store-3-13",
+        "storeId": "store-3",
+        "name": "Artist",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Frozen",
+        "price": 21.61,
+        "originalPrice": 34.77,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 587
+      },
+      {
+        "id": "prod-store-3-14",
+        "storeId": "store-3",
+        "name": "Probably",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Bakery",
+        "price": 9.42,
+        "originalPrice": 35.49,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 547
+      },
+      {
+        "id": "prod-store-3-15",
+        "storeId": "store-3",
+        "name": "Medical",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Snacks",
+        "price": 9.88,
+        "originalPrice": 46.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 686
+      },
+      {
+        "id": "prod-store-3-16",
+        "storeId": "store-3",
+        "name": "Stay",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Organic",
+        "price": 17.98,
+        "originalPrice": 33.44,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 844
+      },
+      {
+        "id": "prod-store-3-17",
+        "storeId": "store-3",
+        "name": "Huge",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Beverages",
+        "price": 22.61,
+        "originalPrice": 33.66,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 619
+      },
+      {
+        "id": "prod-store-3-18",
+        "storeId": "store-3",
+        "name": "Man",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Beverages",
+        "price": 16.91,
+        "originalPrice": 33.08,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 449
+      },
+      {
+        "id": "prod-store-3-19",
+        "storeId": "store-3",
+        "name": "Field",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Fresh Fruit",
+        "price": 5.45,
+        "originalPrice": 43.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 740
+      },
+      {
+        "id": "prod-store-3-20",
+        "storeId": "store-3",
+        "name": "Serve",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Organic",
+        "price": 22.75,
+        "originalPrice": 45.65,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 660
+      },
+      {
+        "id": "prod-store-3-21",
+        "storeId": "store-3",
+        "name": "It",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Frozen",
+        "price": 15.12,
+        "originalPrice": 38.21,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 243
+      },
+      {
+        "id": "prod-store-3-22",
+        "storeId": "store-3",
+        "name": "Image",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Organic",
+        "price": 26.55,
+        "originalPrice": 43.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 429
+      },
+      {
+        "id": "prod-store-3-23",
+        "storeId": "store-3",
+        "name": "Wrong",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Bakery",
+        "price": 27.97,
+        "originalPrice": 32.38,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 538
+      },
+      {
+        "id": "prod-store-3-24",
+        "storeId": "store-3",
+        "name": "Support",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Frozen",
+        "price": 28.29,
+        "originalPrice": 36.84,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 494
+      },
+      {
+        "id": "prod-store-3-25",
+        "storeId": "store-3",
+        "name": "Mission",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Snacks",
+        "price": 18.77,
+        "originalPrice": 37.93,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 183
+      },
+      {
+        "id": "prod-store-3-26",
+        "storeId": "store-3",
+        "name": "True",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Frozen",
+        "price": 8.46,
+        "originalPrice": 33.86,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 830
+      },
+      {
+        "id": "prod-store-3-27",
+        "storeId": "store-3",
+        "name": "We",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Frozen",
+        "price": 22.85,
+        "originalPrice": 31.55,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 355
+      },
+      {
+        "id": "prod-store-3-28",
+        "storeId": "store-3",
+        "name": "Task",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Organic",
+        "price": 9.73,
+        "originalPrice": 39.21,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 943
+      },
+      {
+        "id": "prod-store-3-29",
+        "storeId": "store-3",
+        "name": "Shoulder",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Fresh Fruit",
+        "price": 17.92,
+        "originalPrice": 42.7,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 532
+      },
+      {
+        "id": "prod-store-3-30",
+        "storeId": "store-3",
+        "name": "Listen",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Dairy",
+        "price": 24.91,
+        "originalPrice": 43.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 615
+      }
+    ]
+  },
+  {
+    "id": "store-4",
+    "name": "Big Bazaar",
+    "type": "franchise",
+    "logo": "assets/images/big-bazaar.png",
+    "address": "0768 Tina Crossroad, Estradabury, TX 26456",
+    "lat": -68.89803,
+    "lng": 117.410689,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "36675",
+    "contactNumber": "+1-072-470-6438",
+    "email": "mperkins@gmail.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 3.6,
+    "reviewsCount": 247,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 5,
+    "deliveryTimeEstimate": "37\u201348 min",
+    "deliveryFee": 15,
+    "categories": [
+      "Fresh Fruit",
+      "Beverages",
+      "Bakery"
+    ],
+    "tags": [
+      "Express Delivery",
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 10,
+    "createdAt": "1988-06-06T15:19:11",
+    "updatedAt": "1982-01-20T11:52:37",
+    "products": [
+      {
+        "id": "prod-store-4-1",
+        "storeId": "store-4",
+        "name": "Tend",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Fresh Fruit",
+        "price": 28.08,
+        "originalPrice": 46.11,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 543
+      },
+      {
+        "id": "prod-store-4-2",
+        "storeId": "store-4",
+        "name": "Accept",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Dairy",
+        "price": 17.95,
+        "originalPrice": 43.47,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 219
+      },
+      {
+        "id": "prod-store-4-3",
+        "storeId": "store-4",
+        "name": "Until",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Fresh Fruit",
+        "price": 6.44,
+        "originalPrice": 35.42,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 863
+      },
+      {
+        "id": "prod-store-4-4",
+        "storeId": "store-4",
+        "name": "Go",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Dairy",
+        "price": 8.33,
+        "originalPrice": 45.63,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 760
+      },
+      {
+        "id": "prod-store-4-5",
+        "storeId": "store-4",
+        "name": "Prevent",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Vegetables",
+        "price": 23.85,
+        "originalPrice": 41.53,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 740
+      },
+      {
+        "id": "prod-store-4-6",
+        "storeId": "store-4",
+        "name": "Show",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Dairy",
+        "price": 12.61,
+        "originalPrice": 48.71,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 583
+      },
+      {
+        "id": "prod-store-4-7",
+        "storeId": "store-4",
+        "name": "Up",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Bakery",
+        "price": 25.18,
+        "originalPrice": 49.87,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 330
+      },
+      {
+        "id": "prod-store-4-8",
+        "storeId": "store-4",
+        "name": "Hope",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Snacks",
+        "price": 5.5,
+        "originalPrice": 39.28,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 869
+      },
+      {
+        "id": "prod-store-4-9",
+        "storeId": "store-4",
+        "name": "Garden",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Vegetables",
+        "price": 11.21,
+        "originalPrice": 41.06,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 931
+      },
+      {
+        "id": "prod-store-4-10",
+        "storeId": "store-4",
+        "name": "Traditional",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Frozen",
+        "price": 28.93,
+        "originalPrice": 49.78,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 265
+      },
+      {
+        "id": "prod-store-4-11",
+        "storeId": "store-4",
+        "name": "Value",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Organic",
+        "price": 5.81,
+        "originalPrice": 36.35,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 626
+      },
+      {
+        "id": "prod-store-4-12",
+        "storeId": "store-4",
+        "name": "Half",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Bakery",
+        "price": 25.5,
+        "originalPrice": 46.77,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 402
+      },
+      {
+        "id": "prod-store-4-13",
+        "storeId": "store-4",
+        "name": "Statement",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Bakery",
+        "price": 27.3,
+        "originalPrice": 49.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 640
+      },
+      {
+        "id": "prod-store-4-14",
+        "storeId": "store-4",
+        "name": "Suffer",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Dairy",
+        "price": 26.24,
+        "originalPrice": 45.26,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 774
+      },
+      {
+        "id": "prod-store-4-15",
+        "storeId": "store-4",
+        "name": "Just",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Vegetables",
+        "price": 21.79,
+        "originalPrice": 44.28,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 602
+      },
+      {
+        "id": "prod-store-4-16",
+        "storeId": "store-4",
+        "name": "Least",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Frozen",
+        "price": 20.83,
+        "originalPrice": 39.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 649
+      },
+      {
+        "id": "prod-store-4-17",
+        "storeId": "store-4",
+        "name": "Talk",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Beverages",
+        "price": 25.4,
+        "originalPrice": 47.25,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 519
+      },
+      {
+        "id": "prod-store-4-18",
+        "storeId": "store-4",
+        "name": "Offer",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Organic",
+        "price": 6.5,
+        "originalPrice": 37.27,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 393
+      },
+      {
+        "id": "prod-store-4-19",
+        "storeId": "store-4",
+        "name": "Resource",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Vegetables",
+        "price": 23.51,
+        "originalPrice": 39.87,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 544
+      },
+      {
+        "id": "prod-store-4-20",
+        "storeId": "store-4",
+        "name": "Exactly",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Organic",
+        "price": 18.6,
+        "originalPrice": 41.51,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 122
+      },
+      {
+        "id": "prod-store-4-21",
+        "storeId": "store-4",
+        "name": "Conference",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Beverages",
+        "price": 17.98,
+        "originalPrice": 34.5,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 702
+      },
+      {
+        "id": "prod-store-4-22",
+        "storeId": "store-4",
+        "name": "Herself",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Dairy",
+        "price": 7.44,
+        "originalPrice": 46.31,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 528
+      },
+      {
+        "id": "prod-store-4-23",
+        "storeId": "store-4",
+        "name": "Develop",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Organic",
+        "price": 9.43,
+        "originalPrice": 39.22,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 931
+      },
+      {
+        "id": "prod-store-4-24",
+        "storeId": "store-4",
+        "name": "Animal",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Vegetables",
+        "price": 26.45,
+        "originalPrice": 46.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 737
+      },
+      {
+        "id": "prod-store-4-25",
+        "storeId": "store-4",
+        "name": "Eat",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Fresh Fruit",
+        "price": 23.14,
+        "originalPrice": 45.31,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 822
+      },
+      {
+        "id": "prod-store-4-26",
+        "storeId": "store-4",
+        "name": "Item",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Frozen",
+        "price": 17.21,
+        "originalPrice": 36.87,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 398
+      },
+      {
+        "id": "prod-store-4-27",
+        "storeId": "store-4",
+        "name": "Game",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Bakery",
+        "price": 28.38,
+        "originalPrice": 46.01,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 571
+      },
+      {
+        "id": "prod-store-4-28",
+        "storeId": "store-4",
+        "name": "Machine",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Bakery",
+        "price": 15.54,
+        "originalPrice": 36.4,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 243
+      },
+      {
+        "id": "prod-store-4-29",
+        "storeId": "store-4",
+        "name": "Join",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Dairy",
+        "price": 7.08,
+        "originalPrice": 45.7,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 970
+      },
+      {
+        "id": "prod-store-4-30",
+        "storeId": "store-4",
+        "name": "Each",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Bakery",
+        "price": 12.06,
+        "originalPrice": 47.97,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 182
+      }
+    ]
+  },
+  {
+    "id": "store-5",
+    "name": "Spencers",
+    "type": "franchise",
+    "logo": "assets/images/spencers.png",
+    "address": "27139 Shelby Ferry, North Amanda, IL 68727",
+    "lat": -22.6984485,
+    "lng": -92.025385,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "63725",
+    "contactNumber": "001-073-956-6617x4902",
+    "email": "chad69@harris-palmer.org",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.6,
+    "reviewsCount": 62,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 4,
+    "deliveryTimeEstimate": "39\u201346 min",
+    "deliveryFee": 15,
+    "categories": [
+      "Dairy",
+      "Snacks",
+      "Bakery"
+    ],
+    "tags": [
+      "Express Delivery",
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 20,
+    "createdAt": "1999-04-23T09:24:15",
+    "updatedAt": "1982-09-08T23:52:00",
+    "products": [
+      {
+        "id": "prod-store-5-1",
+        "storeId": "store-5",
+        "name": "Chair",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Fresh Fruit",
+        "price": 28.6,
+        "originalPrice": 34.83,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 712
+      },
+      {
+        "id": "prod-store-5-2",
+        "storeId": "store-5",
+        "name": "Floor",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Dairy",
+        "price": 27.5,
+        "originalPrice": 32.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 244
+      },
+      {
+        "id": "prod-store-5-3",
+        "storeId": "store-5",
+        "name": "Long",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Frozen",
+        "price": 21.35,
+        "originalPrice": 36.28,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 480
+      },
+      {
+        "id": "prod-store-5-4",
+        "storeId": "store-5",
+        "name": "System",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Vegetables",
+        "price": 5.45,
+        "originalPrice": 47.46,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 489
+      },
+      {
+        "id": "prod-store-5-5",
+        "storeId": "store-5",
+        "name": "Listen",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Organic",
+        "price": 6.83,
+        "originalPrice": 44.2,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 267
+      },
+      {
+        "id": "prod-store-5-6",
+        "storeId": "store-5",
+        "name": "Open",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Dairy",
+        "price": 16.38,
+        "originalPrice": 38.01,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 553
+      },
+      {
+        "id": "prod-store-5-7",
+        "storeId": "store-5",
+        "name": "Main",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Dairy",
+        "price": 19.63,
+        "originalPrice": 38.15,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 887
+      },
+      {
+        "id": "prod-store-5-8",
+        "storeId": "store-5",
+        "name": "Fight",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Snacks",
+        "price": 10.98,
+        "originalPrice": 39.76,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 449
+      },
+      {
+        "id": "prod-store-5-9",
+        "storeId": "store-5",
+        "name": "Strategy",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Dairy",
+        "price": 15.36,
+        "originalPrice": 31.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 759
+      },
+      {
+        "id": "prod-store-5-10",
+        "storeId": "store-5",
+        "name": "Power",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Organic",
+        "price": 13.23,
+        "originalPrice": 48.24,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 278
+      },
+      {
+        "id": "prod-store-5-11",
+        "storeId": "store-5",
+        "name": "Third",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Organic",
+        "price": 8.62,
+        "originalPrice": 31.28,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 977
+      },
+      {
+        "id": "prod-store-5-12",
+        "storeId": "store-5",
+        "name": "Positive",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Beverages",
+        "price": 14.31,
+        "originalPrice": 35.0,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 868
+      },
+      {
+        "id": "prod-store-5-13",
+        "storeId": "store-5",
+        "name": "Sport",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Dairy",
+        "price": 23.66,
+        "originalPrice": 40.28,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 680
+      },
+      {
+        "id": "prod-store-5-14",
+        "storeId": "store-5",
+        "name": "Congress",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Frozen",
+        "price": 24.49,
+        "originalPrice": 46.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 106
+      },
+      {
+        "id": "prod-store-5-15",
+        "storeId": "store-5",
+        "name": "Police",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Beverages",
+        "price": 9.85,
+        "originalPrice": 47.23,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 495
+      },
+      {
+        "id": "prod-store-5-16",
+        "storeId": "store-5",
+        "name": "Upon",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Beverages",
+        "price": 23.12,
+        "originalPrice": 46.29,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 494
+      },
+      {
+        "id": "prod-store-5-17",
+        "storeId": "store-5",
+        "name": "Add",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Snacks",
+        "price": 16.5,
+        "originalPrice": 43.67,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 567
+      },
+      {
+        "id": "prod-store-5-18",
+        "storeId": "store-5",
+        "name": "Born",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Bakery",
+        "price": 19.21,
+        "originalPrice": 32.99,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 794
+      },
+      {
+        "id": "prod-store-5-19",
+        "storeId": "store-5",
+        "name": "Several",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Organic",
+        "price": 22.48,
+        "originalPrice": 48.04,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 303
+      },
+      {
+        "id": "prod-store-5-20",
+        "storeId": "store-5",
+        "name": "Worry",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Fresh Fruit",
+        "price": 27.06,
+        "originalPrice": 49.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "New"
+        ],
+        "popularityCount": 460
+      },
+      {
+        "id": "prod-store-5-21",
+        "storeId": "store-5",
+        "name": "Machine",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Fresh Fruit",
+        "price": 11.19,
+        "originalPrice": 44.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 335
+      },
+      {
+        "id": "prod-store-5-22",
+        "storeId": "store-5",
+        "name": "Rule",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Bakery",
+        "price": 8.82,
+        "originalPrice": 31.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 574
+      },
+      {
+        "id": "prod-store-5-23",
+        "storeId": "store-5",
+        "name": "Want",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Snacks",
+        "price": 18.04,
+        "originalPrice": 31.63,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 151
+      },
+      {
+        "id": "prod-store-5-24",
+        "storeId": "store-5",
+        "name": "Outside",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Fresh Fruit",
+        "price": 13.48,
+        "originalPrice": 40.43,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 740
+      },
+      {
+        "id": "prod-store-5-25",
+        "storeId": "store-5",
+        "name": "Share",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Organic",
+        "price": 23.78,
+        "originalPrice": 34.63,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 568
+      },
+      {
+        "id": "prod-store-5-26",
+        "storeId": "store-5",
+        "name": "President",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Frozen",
+        "price": 20.21,
+        "originalPrice": 44.04,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 647
+      },
+      {
+        "id": "prod-store-5-27",
+        "storeId": "store-5",
+        "name": "Pull",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Frozen",
+        "price": 23.99,
+        "originalPrice": 33.89,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 438
+      },
+      {
+        "id": "prod-store-5-28",
+        "storeId": "store-5",
+        "name": "At",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Bakery",
+        "price": 28.66,
+        "originalPrice": 37.22,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 668
+      },
+      {
+        "id": "prod-store-5-29",
+        "storeId": "store-5",
+        "name": "Human",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Bakery",
+        "price": 25.23,
+        "originalPrice": 34.1,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 302
+      },
+      {
+        "id": "prod-store-5-30",
+        "storeId": "store-5",
+        "name": "Face",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Bakery",
+        "price": 25.75,
+        "originalPrice": 39.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 922
+      }
+    ]
+  },
+  {
+    "id": "store-6",
+    "name": "Walmart",
+    "type": "franchise",
+    "logo": "assets/images/walmart.png",
+    "address": "PSC 5186, Box 8488, APO AA 96825",
+    "lat": 58.7766485,
+    "lng": 71.528529,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "41761",
+    "contactNumber": "2435678759",
+    "email": "christinaschmidt@garcia.info",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 3.7,
+    "reviewsCount": 223,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 6,
+    "deliveryTimeEstimate": "40\u201342 min",
+    "deliveryFee": 15,
+    "categories": [
+      "Frozen",
+      "Beverages",
+      "Organic"
+    ],
+    "tags": [
+      "Express Delivery"
+    ],
+    "activePromos": [],
+    "discountPercent": 20,
+    "createdAt": "2018-10-06T13:49:26",
+    "updatedAt": "1994-05-09T09:27:04",
+    "products": [
+      {
+        "id": "prod-store-6-1",
+        "storeId": "store-6",
+        "name": "Ask",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Beverages",
+        "price": 14.18,
+        "originalPrice": 49.72,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 779
+      },
+      {
+        "id": "prod-store-6-2",
+        "storeId": "store-6",
+        "name": "Visit",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Vegetables",
+        "price": 21.26,
+        "originalPrice": 42.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 261
+      },
+      {
+        "id": "prod-store-6-3",
+        "storeId": "store-6",
+        "name": "Send",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Vegetables",
+        "price": 20.62,
+        "originalPrice": 47.01,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 388
+      },
+      {
+        "id": "prod-store-6-4",
+        "storeId": "store-6",
+        "name": "Campaign",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Bakery",
+        "price": 22.93,
+        "originalPrice": 35.71,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 389
+      },
+      {
+        "id": "prod-store-6-5",
+        "storeId": "store-6",
+        "name": "Impact",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Organic",
+        "price": 26.6,
+        "originalPrice": 41.9,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 490
+      },
+      {
+        "id": "prod-store-6-6",
+        "storeId": "store-6",
+        "name": "Reflect",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Frozen",
+        "price": 7.45,
+        "originalPrice": 48.81,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 450
+      },
+      {
+        "id": "prod-store-6-7",
+        "storeId": "store-6",
+        "name": "Something",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Snacks",
+        "price": 12.71,
+        "originalPrice": 31.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 413
+      },
+      {
+        "id": "prod-store-6-8",
+        "storeId": "store-6",
+        "name": "Another",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Dairy",
+        "price": 19.76,
+        "originalPrice": 36.49,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 227
+      },
+      {
+        "id": "prod-store-6-9",
+        "storeId": "store-6",
+        "name": "Keep",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Organic",
+        "price": 11.8,
+        "originalPrice": 36.13,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 682
+      },
+      {
+        "id": "prod-store-6-10",
+        "storeId": "store-6",
+        "name": "Me",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Frozen",
+        "price": 17.13,
+        "originalPrice": 40.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 482
+      },
+      {
+        "id": "prod-store-6-11",
+        "storeId": "store-6",
+        "name": "Type",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Dairy",
+        "price": 23.37,
+        "originalPrice": 40.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 249
+      },
+      {
+        "id": "prod-store-6-12",
+        "storeId": "store-6",
+        "name": "Another",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Organic",
+        "price": 26.93,
+        "originalPrice": 42.55,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 356
+      },
+      {
+        "id": "prod-store-6-13",
+        "storeId": "store-6",
+        "name": "Gun",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Beverages",
+        "price": 22.6,
+        "originalPrice": 40.76,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 901
+      },
+      {
+        "id": "prod-store-6-14",
+        "storeId": "store-6",
+        "name": "Away",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Frozen",
+        "price": 23.73,
+        "originalPrice": 31.4,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 537
+      },
+      {
+        "id": "prod-store-6-15",
+        "storeId": "store-6",
+        "name": "Language",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Organic",
+        "price": 22.66,
+        "originalPrice": 40.33,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 644
+      },
+      {
+        "id": "prod-store-6-16",
+        "storeId": "store-6",
+        "name": "Author",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Dairy",
+        "price": 19.21,
+        "originalPrice": 44.97,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 831
+      },
+      {
+        "id": "prod-store-6-17",
+        "storeId": "store-6",
+        "name": "Yard",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Vegetables",
+        "price": 9.85,
+        "originalPrice": 33.15,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 381
+      },
+      {
+        "id": "prod-store-6-18",
+        "storeId": "store-6",
+        "name": "Amount",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Snacks",
+        "price": 19.75,
+        "originalPrice": 40.65,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 840
+      },
+      {
+        "id": "prod-store-6-19",
+        "storeId": "store-6",
+        "name": "Window",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Beverages",
+        "price": 21.08,
+        "originalPrice": 45.56,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 432
+      },
+      {
+        "id": "prod-store-6-20",
+        "storeId": "store-6",
+        "name": "Product",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Snacks",
+        "price": 26.46,
+        "originalPrice": 32.93,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 203
+      },
+      {
+        "id": "prod-store-6-21",
+        "storeId": "store-6",
+        "name": "Daughter",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Dairy",
+        "price": 5.24,
+        "originalPrice": 33.72,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 572
+      },
+      {
+        "id": "prod-store-6-22",
+        "storeId": "store-6",
+        "name": "Image",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Frozen",
+        "price": 12.21,
+        "originalPrice": 44.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 921
+      },
+      {
+        "id": "prod-store-6-23",
+        "storeId": "store-6",
+        "name": "Power",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Vegetables",
+        "price": 23.75,
+        "originalPrice": 31.33,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 511
+      },
+      {
+        "id": "prod-store-6-24",
+        "storeId": "store-6",
+        "name": "List",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Fresh Fruit",
+        "price": 13.4,
+        "originalPrice": 33.89,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 464
+      },
+      {
+        "id": "prod-store-6-25",
+        "storeId": "store-6",
+        "name": "Seat",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Bakery",
+        "price": 9.65,
+        "originalPrice": 39.03,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 451
+      },
+      {
+        "id": "prod-store-6-26",
+        "storeId": "store-6",
+        "name": "Vote",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Beverages",
+        "price": 15.07,
+        "originalPrice": 33.82,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 947
+      },
+      {
+        "id": "prod-store-6-27",
+        "storeId": "store-6",
+        "name": "Garden",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Snacks",
+        "price": 26.05,
+        "originalPrice": 46.47,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 521
+      },
+      {
+        "id": "prod-store-6-28",
+        "storeId": "store-6",
+        "name": "Enjoy",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Beverages",
+        "price": 16.41,
+        "originalPrice": 42.11,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 234
+      },
+      {
+        "id": "prod-store-6-29",
+        "storeId": "store-6",
+        "name": "Expert",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Dairy",
+        "price": 15.58,
+        "originalPrice": 37.69,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 108
+      },
+      {
+        "id": "prod-store-6-30",
+        "storeId": "store-6",
+        "name": "Continue",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Dairy",
+        "price": 25.57,
+        "originalPrice": 43.65,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 148
+      }
+    ]
+  },
+  {
+    "id": "store-7",
+    "name": "Grant PLC Mart",
+    "type": "franchise",
+    "logo": "assets/images/super-encorto.png",
+    "address": "89127 Charles Mountains Suite 794, Stevenfort, KY 78438",
+    "lat": -21.9624025,
+    "lng": -170.94794,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "37126",
+    "contactNumber": "+1-747-389-7220x36505",
+    "email": "christopherharris@hotmail.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.0,
+    "reviewsCount": 99,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 4,
+    "deliveryTimeEstimate": "35\u201345 min",
+    "deliveryFee": 15,
+    "categories": [
+      "Snacks",
+      "Dairy",
+      "Fresh Fruit"
+    ],
+    "tags": [
+      "Express Delivery",
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 15,
+    "createdAt": "2009-06-23T04:40:23",
+    "updatedAt": "1998-01-17T05:48:02",
+    "products": [
+      {
+        "id": "prod-store-7-1",
+        "storeId": "store-7",
+        "name": "Discuss",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Dairy",
+        "price": 18.77,
+        "originalPrice": 48.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 199
+      },
+      {
+        "id": "prod-store-7-2",
+        "storeId": "store-7",
+        "name": "New",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Snacks",
+        "price": 12.49,
+        "originalPrice": 45.23,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 297
+      },
+      {
+        "id": "prod-store-7-3",
+        "storeId": "store-7",
+        "name": "Recognize",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Fresh Fruit",
+        "price": 18.83,
+        "originalPrice": 31.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 330
+      },
+      {
+        "id": "prod-store-7-4",
+        "storeId": "store-7",
+        "name": "Past",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Fresh Fruit",
+        "price": 12.67,
+        "originalPrice": 43.61,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 659
+      },
+      {
+        "id": "prod-store-7-5",
+        "storeId": "store-7",
+        "name": "Six",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Vegetables",
+        "price": 20.31,
+        "originalPrice": 36.67,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 996
+      },
+      {
+        "id": "prod-store-7-6",
+        "storeId": "store-7",
+        "name": "Energy",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Dairy",
+        "price": 27.17,
+        "originalPrice": 38.14,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 639
+      },
+      {
+        "id": "prod-store-7-7",
+        "storeId": "store-7",
+        "name": "Show",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Vegetables",
+        "price": 16.58,
+        "originalPrice": 46.17,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 231
+      },
+      {
+        "id": "prod-store-7-8",
+        "storeId": "store-7",
+        "name": "Decade",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Frozen",
+        "price": 16.88,
+        "originalPrice": 32.16,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 527
+      },
+      {
+        "id": "prod-store-7-9",
+        "storeId": "store-7",
+        "name": "Fly",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Frozen",
+        "price": 13.03,
+        "originalPrice": 42.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 893
+      },
+      {
+        "id": "prod-store-7-10",
+        "storeId": "store-7",
+        "name": "Foot",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Frozen",
+        "price": 13.65,
+        "originalPrice": 46.27,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 449
+      },
+      {
+        "id": "prod-store-7-11",
+        "storeId": "store-7",
+        "name": "Natural",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Bakery",
+        "price": 8.77,
+        "originalPrice": 42.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 541
+      },
+      {
+        "id": "prod-store-7-12",
+        "storeId": "store-7",
+        "name": "Almost",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Frozen",
+        "price": 19.04,
+        "originalPrice": 36.06,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 504
+      },
+      {
+        "id": "prod-store-7-13",
+        "storeId": "store-7",
+        "name": "Parent",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Beverages",
+        "price": 12.84,
+        "originalPrice": 37.4,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "New"
+        ],
+        "popularityCount": 829
+      },
+      {
+        "id": "prod-store-7-14",
+        "storeId": "store-7",
+        "name": "Save",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Snacks",
+        "price": 7.47,
+        "originalPrice": 33.6,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 445
+      },
+      {
+        "id": "prod-store-7-15",
+        "storeId": "store-7",
+        "name": "By",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Fresh Fruit",
+        "price": 20.74,
+        "originalPrice": 35.26,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 230
+      },
+      {
+        "id": "prod-store-7-16",
+        "storeId": "store-7",
+        "name": "War",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Frozen",
+        "price": 22.79,
+        "originalPrice": 42.42,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "Best Seller"
+        ],
+        "popularityCount": 713
+      },
+      {
+        "id": "prod-store-7-17",
+        "storeId": "store-7",
+        "name": "Those",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Dairy",
+        "price": 17.36,
+        "originalPrice": 42.53,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 889
+      },
+      {
+        "id": "prod-store-7-18",
+        "storeId": "store-7",
+        "name": "Before",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Fresh Fruit",
+        "price": 22.89,
+        "originalPrice": 43.04,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 178
+      },
+      {
+        "id": "prod-store-7-19",
+        "storeId": "store-7",
+        "name": "Wall",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Frozen",
+        "price": 17.23,
+        "originalPrice": 37.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 957
+      },
+      {
+        "id": "prod-store-7-20",
+        "storeId": "store-7",
+        "name": "Discover",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Vegetables",
+        "price": 23.09,
+        "originalPrice": 44.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 160
+      },
+      {
+        "id": "prod-store-7-21",
+        "storeId": "store-7",
+        "name": "Contain",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Frozen",
+        "price": 7.17,
+        "originalPrice": 32.33,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 515
+      },
+      {
+        "id": "prod-store-7-22",
+        "storeId": "store-7",
+        "name": "Positive",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Bakery",
+        "price": 19.84,
+        "originalPrice": 43.57,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 260
+      },
+      {
+        "id": "prod-store-7-23",
+        "storeId": "store-7",
+        "name": "Majority",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Vegetables",
+        "price": 17.32,
+        "originalPrice": 37.74,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 602
+      },
+      {
+        "id": "prod-store-7-24",
+        "storeId": "store-7",
+        "name": "Hard",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Bakery",
+        "price": 28.28,
+        "originalPrice": 44.99,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 803
+      },
+      {
+        "id": "prod-store-7-25",
+        "storeId": "store-7",
+        "name": "Activity",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Bakery",
+        "price": 25.25,
+        "originalPrice": 44.14,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 925
+      },
+      {
+        "id": "prod-store-7-26",
+        "storeId": "store-7",
+        "name": "Probably",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Organic",
+        "price": 13.91,
+        "originalPrice": 49.69,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 481
+      },
+      {
+        "id": "prod-store-7-27",
+        "storeId": "store-7",
+        "name": "Stay",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Vegetables",
+        "price": 5.74,
+        "originalPrice": 34.72,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 151
+      },
+      {
+        "id": "prod-store-7-28",
+        "storeId": "store-7",
+        "name": "Accept",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Snacks",
+        "price": 13.03,
+        "originalPrice": 49.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 653
+      },
+      {
+        "id": "prod-store-7-29",
+        "storeId": "store-7",
+        "name": "Girl",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Fresh Fruit",
+        "price": 20.36,
+        "originalPrice": 49.86,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 820
+      },
+      {
+        "id": "prod-store-7-30",
+        "storeId": "store-7",
+        "name": "Imagine",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Dairy",
+        "price": 10.11,
+        "originalPrice": 34.4,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 735
+      }
+    ]
+  },
+  {
+    "id": "store-8",
+    "name": "Ellis LLC Mart",
+    "type": "franchise",
+    "logo": "assets/images/jiffy.png",
+    "address": "7427 Moore Stravenue, Watsonshire, MN 91345",
+    "lat": -10.0874235,
+    "lng": 127.269695,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "12068",
+    "contactNumber": "844-840-8901x265",
+    "email": "watsonautumn@yahoo.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.2,
+    "reviewsCount": 224,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 5,
+    "deliveryTimeEstimate": "32\u201343 min",
+    "deliveryFee": 25,
+    "categories": [
+      "Vegetables",
+      "Bakery",
+      "Dairy"
+    ],
+    "tags": [
+      "Express Delivery",
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 10,
+    "createdAt": "1971-07-14T20:25:32",
+    "updatedAt": "1998-02-15T08:58:51",
+    "products": [
+      {
+        "id": "prod-store-8-1",
+        "storeId": "store-8",
+        "name": "Low",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Bakery",
+        "price": 8.24,
+        "originalPrice": 40.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 995
+      },
+      {
+        "id": "prod-store-8-2",
+        "storeId": "store-8",
+        "name": "Only",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Beverages",
+        "price": 27.37,
+        "originalPrice": 43.83,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 425
+      },
+      {
+        "id": "prod-store-8-3",
+        "storeId": "store-8",
+        "name": "Imagine",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Vegetables",
+        "price": 6.38,
+        "originalPrice": 41.36,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 492
+      },
+      {
+        "id": "prod-store-8-4",
+        "storeId": "store-8",
+        "name": "Happy",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Beverages",
+        "price": 26.78,
+        "originalPrice": 32.02,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 574
+      },
+      {
+        "id": "prod-store-8-5",
+        "storeId": "store-8",
+        "name": "Claim",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Beverages",
+        "price": 18.33,
+        "originalPrice": 33.27,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 788
+      },
+      {
+        "id": "prod-store-8-6",
+        "storeId": "store-8",
+        "name": "Once",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Frozen",
+        "price": 12.55,
+        "originalPrice": 47.39,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "New"
+        ],
+        "popularityCount": 238
+      },
+      {
+        "id": "prod-store-8-7",
+        "storeId": "store-8",
+        "name": "Democratic",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Vegetables",
+        "price": 15.05,
+        "originalPrice": 33.32,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 289
+      },
+      {
+        "id": "prod-store-8-8",
+        "storeId": "store-8",
+        "name": "Feeling",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Vegetables",
+        "price": 11.31,
+        "originalPrice": 42.24,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 531
+      },
+      {
+        "id": "prod-store-8-9",
+        "storeId": "store-8",
+        "name": "Past",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Dairy",
+        "price": 28.18,
+        "originalPrice": 48.26,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 172
+      },
+      {
+        "id": "prod-store-8-10",
+        "storeId": "store-8",
+        "name": "Hot",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Vegetables",
+        "price": 16.7,
+        "originalPrice": 43.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 334
+      },
+      {
+        "id": "prod-store-8-11",
+        "storeId": "store-8",
+        "name": "Talk",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Organic",
+        "price": 20.95,
+        "originalPrice": 38.61,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 774
+      },
+      {
+        "id": "prod-store-8-12",
+        "storeId": "store-8",
+        "name": "Admit",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Snacks",
+        "price": 23.14,
+        "originalPrice": 47.15,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 871
+      },
+      {
+        "id": "prod-store-8-13",
+        "storeId": "store-8",
+        "name": "Five",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Beverages",
+        "price": 28.05,
+        "originalPrice": 40.04,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 819
+      },
+      {
+        "id": "prod-store-8-14",
+        "storeId": "store-8",
+        "name": "Minute",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Frozen",
+        "price": 18.56,
+        "originalPrice": 32.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 732
+      },
+      {
+        "id": "prod-store-8-15",
+        "storeId": "store-8",
+        "name": "Put",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Beverages",
+        "price": 18.93,
+        "originalPrice": 48.1,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 351
+      },
+      {
+        "id": "prod-store-8-16",
+        "storeId": "store-8",
+        "name": "This",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Fresh Fruit",
+        "price": 18.96,
+        "originalPrice": 33.87,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 885
+      },
+      {
+        "id": "prod-store-8-17",
+        "storeId": "store-8",
+        "name": "Issue",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Frozen",
+        "price": 8.64,
+        "originalPrice": 47.88,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 145
+      },
+      {
+        "id": "prod-store-8-18",
+        "storeId": "store-8",
+        "name": "Road",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Bakery",
+        "price": 12.59,
+        "originalPrice": 31.57,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 181
+      },
+      {
+        "id": "prod-store-8-19",
+        "storeId": "store-8",
+        "name": "Material",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Snacks",
+        "price": 29.94,
+        "originalPrice": 40.66,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 757
+      },
+      {
+        "id": "prod-store-8-20",
+        "storeId": "store-8",
+        "name": "List",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Bakery",
+        "price": 17.76,
+        "originalPrice": 41.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 170
+      },
+      {
+        "id": "prod-store-8-21",
+        "storeId": "store-8",
+        "name": "Player",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Organic",
+        "price": 8.93,
+        "originalPrice": 45.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 599
+      },
+      {
+        "id": "prod-store-8-22",
+        "storeId": "store-8",
+        "name": "Happen",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Dairy",
+        "price": 22.48,
+        "originalPrice": 38.5,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 801
+      },
+      {
+        "id": "prod-store-8-23",
+        "storeId": "store-8",
+        "name": "Material",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Snacks",
+        "price": 8.73,
+        "originalPrice": 33.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 365
+      },
+      {
+        "id": "prod-store-8-24",
+        "storeId": "store-8",
+        "name": "Follow",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Frozen",
+        "price": 13.79,
+        "originalPrice": 31.57,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 306
+      },
+      {
+        "id": "prod-store-8-25",
+        "storeId": "store-8",
+        "name": "Raise",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Bakery",
+        "price": 9.98,
+        "originalPrice": 38.79,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 764
+      },
+      {
+        "id": "prod-store-8-26",
+        "storeId": "store-8",
+        "name": "Turn",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Vegetables",
+        "price": 14.75,
+        "originalPrice": 43.49,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 249
+      },
+      {
+        "id": "prod-store-8-27",
+        "storeId": "store-8",
+        "name": "Car",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Vegetables",
+        "price": 11.32,
+        "originalPrice": 36.38,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 532
+      },
+      {
+        "id": "prod-store-8-28",
+        "storeId": "store-8",
+        "name": "Recent",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Snacks",
+        "price": 10.32,
+        "originalPrice": 48.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 154
+      },
+      {
+        "id": "prod-store-8-29",
+        "storeId": "store-8",
+        "name": "Policy",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Fresh Fruit",
+        "price": 14.34,
+        "originalPrice": 37.2,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "New"
+        ],
+        "popularityCount": 351
+      },
+      {
+        "id": "prod-store-8-30",
+        "storeId": "store-8",
+        "name": "Season",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Vegetables",
+        "price": 16.21,
+        "originalPrice": 36.38,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 244
+      }
+    ]
+  },
+  {
+    "id": "store-9",
+    "name": "Wolf-Allen Mart",
+    "type": "franchise",
+    "logo": "https://images.seeklogo.com/logo-png/45/1/jiffy-online-supermarket-new-2022-logo-png_seeklogo-450076.png",
+    "address": "1757 Valerie Rue, West James, NH 09539",
+    "lat": -9.2736455,
+    "lng": -114.18843,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "97621",
+    "contactNumber": "(441)427-1460x56365",
+    "email": "pford@horne.com",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.7,
+    "reviewsCount": 91,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 7,
+    "deliveryTimeEstimate": "31\u201342 min",
+    "deliveryFee": 20,
+    "categories": [
+      "Fresh Fruit",
+      "Beverages",
+      "Dairy"
+    ],
+    "tags": [
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 10,
+    "createdAt": "1987-10-10T08:22:40",
+    "updatedAt": "1972-02-03T23:12:01",
+    "products": [
+      {
+        "id": "prod-store-9-1",
+        "storeId": "store-9",
+        "name": "Simply",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Organic",
+        "price": 12.77,
+        "originalPrice": 39.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 339
+      },
+      {
+        "id": "prod-store-9-2",
+        "storeId": "store-9",
+        "name": "Person",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Frozen",
+        "price": 25.33,
+        "originalPrice": 34.73,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 190
+      },
+      {
+        "id": "prod-store-9-3",
+        "storeId": "store-9",
+        "name": "Billion",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Snacks",
+        "price": 5.04,
+        "originalPrice": 37.97,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 211
+      },
+      {
+        "id": "prod-store-9-4",
+        "storeId": "store-9",
+        "name": "Institution",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Dairy",
+        "price": 6.98,
+        "originalPrice": 44.2,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 333
+      },
+      {
+        "id": "prod-store-9-5",
+        "storeId": "store-9",
+        "name": "Last",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Organic",
+        "price": 20.8,
+        "originalPrice": 36.26,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 895
+      },
+      {
+        "id": "prod-store-9-6",
+        "storeId": "store-9",
+        "name": "Standard",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Beverages",
+        "price": 27.25,
+        "originalPrice": 35.84,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 559
+      },
+      {
+        "id": "prod-store-9-7",
+        "storeId": "store-9",
+        "name": "Owner",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Bakery",
+        "price": 13.54,
+        "originalPrice": 47.67,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 895
+      },
+      {
+        "id": "prod-store-9-8",
+        "storeId": "store-9",
+        "name": "Everything",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Beverages",
+        "price": 29.38,
+        "originalPrice": 46.64,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 909
+      },
+      {
+        "id": "prod-store-9-9",
+        "storeId": "store-9",
+        "name": "Unit",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Organic",
+        "price": 15.78,
+        "originalPrice": 33.39,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 815
+      },
+      {
+        "id": "prod-store-9-10",
+        "storeId": "store-9",
+        "name": "Particularly",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Frozen",
+        "price": 29.1,
+        "originalPrice": 43.29,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 595
+      },
+      {
+        "id": "prod-store-9-11",
+        "storeId": "store-9",
+        "name": "Detail",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Vegetables",
+        "price": 24.46,
+        "originalPrice": 34.44,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 861
+      },
+      {
+        "id": "prod-store-9-12",
+        "storeId": "store-9",
+        "name": "Draw",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Vegetables",
+        "price": 8.8,
+        "originalPrice": 35.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 722
+      },
+      {
+        "id": "prod-store-9-13",
+        "storeId": "store-9",
+        "name": "Never",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Frozen",
+        "price": 27.94,
+        "originalPrice": 43.54,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 243
+      },
+      {
+        "id": "prod-store-9-14",
+        "storeId": "store-9",
+        "name": "Minute",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Organic",
+        "price": 29.03,
+        "originalPrice": 49.3,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "New"
+        ],
+        "popularityCount": 539
+      },
+      {
+        "id": "prod-store-9-15",
+        "storeId": "store-9",
+        "name": "Financial",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Snacks",
+        "price": 23.96,
+        "originalPrice": 33.79,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "New"
+        ],
+        "popularityCount": 501
+      },
+      {
+        "id": "prod-store-9-16",
+        "storeId": "store-9",
+        "name": "Affect",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Beverages",
+        "price": 17.47,
+        "originalPrice": 36.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 638
+      },
+      {
+        "id": "prod-store-9-17",
+        "storeId": "store-9",
+        "name": "Knowledge",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Bakery",
+        "price": 12.9,
+        "originalPrice": 46.54,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 109
+      },
+      {
+        "id": "prod-store-9-18",
+        "storeId": "store-9",
+        "name": "One",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Vegetables",
+        "price": 25.75,
+        "originalPrice": 46.3,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 988
+      },
+      {
+        "id": "prod-store-9-19",
+        "storeId": "store-9",
+        "name": "Ground",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Vegetables",
+        "price": 29.74,
+        "originalPrice": 40.73,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 230
+      },
+      {
+        "id": "prod-store-9-20",
+        "storeId": "store-9",
+        "name": "Dog",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Beverages",
+        "price": 15.59,
+        "originalPrice": 40.58,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Limited Stock"
+        ],
+        "popularityCount": 472
+      },
+      {
+        "id": "prod-store-9-21",
+        "storeId": "store-9",
+        "name": "Quality",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Fresh Fruit",
+        "price": 6.97,
+        "originalPrice": 34.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 673
+      },
+      {
+        "id": "prod-store-9-22",
+        "storeId": "store-9",
+        "name": "Page",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Vegetables",
+        "price": 8.14,
+        "originalPrice": 39.64,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 405
+      },
+      {
+        "id": "prod-store-9-23",
+        "storeId": "store-9",
+        "name": "Worry",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Fresh Fruit",
+        "price": 24.07,
+        "originalPrice": 32.64,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 172
+      },
+      {
+        "id": "prod-store-9-24",
+        "storeId": "store-9",
+        "name": "Scientist",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Organic",
+        "price": 17.75,
+        "originalPrice": 31.79,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 667
+      },
+      {
+        "id": "prod-store-9-25",
+        "storeId": "store-9",
+        "name": "Drive",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Snacks",
+        "price": 17.15,
+        "originalPrice": 36.82,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 548
+      },
+      {
+        "id": "prod-store-9-26",
+        "storeId": "store-9",
+        "name": "Officer",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Fresh Fruit",
+        "price": 5.86,
+        "originalPrice": 49.05,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 205
+      },
+      {
+        "id": "prod-store-9-27",
+        "storeId": "store-9",
+        "name": "Sport",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Fresh Fruit",
+        "price": 20.35,
+        "originalPrice": 34.82,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 295
+      },
+      {
+        "id": "prod-store-9-28",
+        "storeId": "store-9",
+        "name": "Deal",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Dairy",
+        "price": 22.86,
+        "originalPrice": 41.48,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 258
+      },
+      {
+        "id": "prod-store-9-29",
+        "storeId": "store-9",
+        "name": "Wait",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Beverages",
+        "price": 13.14,
+        "originalPrice": 47.72,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 764
+      },
+      {
+        "id": "prod-store-9-30",
+        "storeId": "store-9",
+        "name": "Land",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Dairy",
+        "price": 26.21,
+        "originalPrice": 34.42,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 674
+      }
+    ]
+  },
+  {
+    "id": "store-10",
+    "name": "Smith-Murphy Mart",
+    "type": "franchise",
+    "logo": "https://images.seeklogo.com/logo-png/51/1/super-encorto-logo-png_seeklogo-512316.png",
+    "address": "46567 Perez Camp Apt. 208, East Karenville, VT 18065",
+    "lat": 76.734823,
+    "lng": -20.385908,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "09602",
+    "contactNumber": "+1-582-729-7969x602",
+    "email": "arobinson@harris-gross.org",
+    "openingTime": "09:00",
+    "closingTime": "21:00",
+    "isOpenNow": true,
+    "isActive": true,
+    "rating": 4.8,
+    "reviewsCount": 62,
+    "verified": true,
+    "offersDelivery": true,
+    "deliveryTypes": [
+      "pickup",
+      "home_delivery"
+    ],
+    "deliveryRadius": 3,
+    "deliveryTimeEstimate": "40\u201349 min",
+    "deliveryFee": 20,
+    "categories": [
+      "Beverages",
+      "Bakery",
+      "Vegetables"
+    ],
+    "tags": [
+      "New Arrival"
+    ],
+    "activePromos": [],
+    "discountPercent": 20,
+    "createdAt": "2011-10-21T18:11:52",
+    "updatedAt": "1971-09-21T22:07:56",
+    "products": [
+      {
+        "id": "prod-store-10-1",
+        "storeId": "store-10",
+        "name": "Learn",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-1.png",
+        "category": "Organic",
+        "price": 25.12,
+        "originalPrice": 34.8,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 604
+      },
+      {
+        "id": "prod-store-10-2",
+        "storeId": "store-10",
+        "name": "Agent",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-2.png",
+        "category": "Vegetables",
+        "price": 12.58,
+        "originalPrice": 43.89,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "In Season"
+        ],
+        "popularityCount": 814
+      },
+      {
+        "id": "prod-store-10-3",
+        "storeId": "store-10",
+        "name": "Bring",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-3.png",
+        "category": "Organic",
+        "price": 19.55,
+        "originalPrice": 40.11,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 164
+      },
+      {
+        "id": "prod-store-10-4",
+        "storeId": "store-10",
+        "name": "Stand",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-4.png",
+        "category": "Frozen",
+        "price": 23.01,
+        "originalPrice": 48.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 134
+      },
+      {
+        "id": "prod-store-10-5",
+        "storeId": "store-10",
+        "name": "Owner",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-5.png",
+        "category": "Dairy",
+        "price": 7.14,
+        "originalPrice": 42.78,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season",
+          "Best Seller"
+        ],
+        "popularityCount": 635
+      },
+      {
+        "id": "prod-store-10-6",
+        "storeId": "store-10",
+        "name": "Number",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-6.png",
+        "category": "Snacks",
+        "price": 20.05,
+        "originalPrice": 35.52,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 894
+      },
+      {
+        "id": "prod-store-10-7",
+        "storeId": "store-10",
+        "name": "Matter",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-7.png",
+        "category": "Snacks",
+        "price": 8.38,
+        "originalPrice": 39.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 189
+      },
+      {
+        "id": "prod-store-10-8",
+        "storeId": "store-10",
+        "name": "Than",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-8.png",
+        "category": "Frozen",
+        "price": 18.52,
+        "originalPrice": 38.92,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Limited Stock"
+        ],
+        "popularityCount": 526
+      },
+      {
+        "id": "prod-store-10-9",
+        "storeId": "store-10",
+        "name": "Drop",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-9.png",
+        "category": "Snacks",
+        "price": 14.94,
+        "originalPrice": 35.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller",
+          "Limited Stock"
+        ],
+        "popularityCount": 190
+      },
+      {
+        "id": "prod-store-10-10",
+        "storeId": "store-10",
+        "name": "Under",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-10.png",
+        "category": "Frozen",
+        "price": 28.21,
+        "originalPrice": 49.25,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 821
+      },
+      {
+        "id": "prod-store-10-11",
+        "storeId": "store-10",
+        "name": "Two",
+        "description": "Bakery product - high quality and fresh.",
+        "image": "https://example.com/images/product-11.png",
+        "category": "Bakery",
+        "price": 7.61,
+        "originalPrice": 37.62,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 679
+      },
+      {
+        "id": "prod-store-10-12",
+        "storeId": "store-10",
+        "name": "Most",
+        "description": "Organic product - high quality and fresh.",
+        "image": "https://example.com/images/product-12.png",
+        "category": "Organic",
+        "price": 5.28,
+        "originalPrice": 46.19,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 973
+      },
+      {
+        "id": "prod-store-10-13",
+        "storeId": "store-10",
+        "name": "Door",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-13.png",
+        "category": "Frozen",
+        "price": 28.33,
+        "originalPrice": 46.94,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "In Season"
+        ],
+        "popularityCount": 574
+      },
+      {
+        "id": "prod-store-10-14",
+        "storeId": "store-10",
+        "name": "Capital",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-14.png",
+        "category": "Beverages",
+        "price": 18.69,
+        "originalPrice": 41.93,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 401
+      },
+      {
+        "id": "prod-store-10-15",
+        "storeId": "store-10",
+        "name": "Gun",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-15.png",
+        "category": "Beverages",
+        "price": 6.29,
+        "originalPrice": 39.4,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 593
+      },
+      {
+        "id": "prod-store-10-16",
+        "storeId": "store-10",
+        "name": "Although",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-16.png",
+        "category": "Vegetables",
+        "price": 13.4,
+        "originalPrice": 35.07,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 394
+      },
+      {
+        "id": "prod-store-10-17",
+        "storeId": "store-10",
+        "name": "Economic",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-17.png",
+        "category": "Fresh Fruit",
+        "price": 22.94,
+        "originalPrice": 32.06,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 832
+      },
+      {
+        "id": "prod-store-10-18",
+        "storeId": "store-10",
+        "name": "Degree",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-18.png",
+        "category": "Dairy",
+        "price": 13.06,
+        "originalPrice": 38.67,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 732
+      },
+      {
+        "id": "prod-store-10-19",
+        "storeId": "store-10",
+        "name": "Individual",
+        "description": "Dairy product - high quality and fresh.",
+        "image": "https://example.com/images/product-19.png",
+        "category": "Dairy",
+        "price": 7.97,
+        "originalPrice": 37.88,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "In Season"
+        ],
+        "popularityCount": 652
+      },
+      {
+        "id": "prod-store-10-20",
+        "storeId": "store-10",
+        "name": "Analysis",
+        "description": "Fresh Fruit product - high quality and fresh.",
+        "image": "https://example.com/images/product-20.png",
+        "category": "Fresh Fruit",
+        "price": 11.08,
+        "originalPrice": 49.09,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 323
+      },
+      {
+        "id": "prod-store-10-21",
+        "storeId": "store-10",
+        "name": "Recent",
+        "description": "Frozen product - high quality and fresh.",
+        "image": "https://example.com/images/product-21.png",
+        "category": "Frozen",
+        "price": 23.28,
+        "originalPrice": 45.85,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 978
+      },
+      {
+        "id": "prod-store-10-22",
+        "storeId": "store-10",
+        "name": "Upon",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-22.png",
+        "category": "Snacks",
+        "price": 15.88,
+        "originalPrice": 47.69,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 273
+      },
+      {
+        "id": "prod-store-10-23",
+        "storeId": "store-10",
+        "name": "Eight",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-23.png",
+        "category": "Beverages",
+        "price": 6.8,
+        "originalPrice": 33.52,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 414
+      },
+      {
+        "id": "prod-store-10-24",
+        "storeId": "store-10",
+        "name": "Girl",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-24.png",
+        "category": "Beverages",
+        "price": 17.59,
+        "originalPrice": 44.07,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 771
+      },
+      {
+        "id": "prod-store-10-25",
+        "storeId": "store-10",
+        "name": "Officer",
+        "description": "Snacks product - high quality and fresh.",
+        "image": "https://example.com/images/product-25.png",
+        "category": "Snacks",
+        "price": 14.21,
+        "originalPrice": 39.69,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock",
+          "In Season"
+        ],
+        "popularityCount": 977
+      },
+      {
+        "id": "prod-store-10-26",
+        "storeId": "store-10",
+        "name": "Floor",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-26.png",
+        "category": "Vegetables",
+        "price": 19.54,
+        "originalPrice": 45.65,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Best Seller"
+        ],
+        "popularityCount": 557
+      },
+      {
+        "id": "prod-store-10-27",
+        "storeId": "store-10",
+        "name": "Everybody",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-27.png",
+        "category": "Vegetables",
+        "price": 20.04,
+        "originalPrice": 47.59,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [],
+        "popularityCount": 523
+      },
+      {
+        "id": "prod-store-10-28",
+        "storeId": "store-10",
+        "name": "Summer",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-28.png",
+        "category": "Beverages",
+        "price": 25.73,
+        "originalPrice": 48.91,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New"
+        ],
+        "popularityCount": 151
+      },
+      {
+        "id": "prod-store-10-29",
+        "storeId": "store-10",
+        "name": "Same",
+        "description": "Beverages product - high quality and fresh.",
+        "image": "https://example.com/images/product-29.png",
+        "category": "Beverages",
+        "price": 25.84,
+        "originalPrice": 33.18,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "Limited Stock"
+        ],
+        "popularityCount": 255
+      },
+      {
+        "id": "prod-store-10-30",
+        "storeId": "store-10",
+        "name": "Grow",
+        "description": "Vegetables product - high quality and fresh.",
+        "image": "https://example.com/images/product-30.png",
+        "category": "Vegetables",
+        "price": 24.94,
+        "originalPrice": 33.44,
+        "unit": "each",
+        "availability": "In Stock",
+        "badges": [
+          "New",
+          "Best Seller"
+        ],
+        "popularityCount": 279
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "DARK_MODE=media expo start --android",
+    "ios": "DARK_MODE=media expo start --ios",
+    "web": "DARK_MODE=media expo start --web"
+  },
+  "dependencies": {
+    "@expo-google-fonts/questrial": "^0.4.0",
+    "@expo-google-fonts/quicksand": "^0.4.0",
+    "@expo/html-elements": "^0.4.2",
+    "@gluestack-style/react": "^1.0.57",
+    "@gluestack-ui/button": "^1.0.14",
+    "@gluestack-ui/icon": "^0.1.27",
+    "@gluestack-ui/image": "^0.1.17",
+    "@gluestack-ui/nativewind-utils": "^1.0.26",
+    "@gluestack-ui/overlay": "^0.1.22",
+    "@gluestack-ui/themed": "^1.1.73",
+    "@gluestack-ui/toast": "^1.0.9",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "expo": "53.0.20",
+    "expo-constants": "~17.1.7",
+    "expo-font": "~13.3.2",
+    "expo-linking": "~7.1.7",
+    "expo-router": "5.1.4",
+    "expo-status-bar": "~2.2.3",
+    "lucide-react-native": "^0.525.0",
+    "nativewind": "^4.1.23",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-css-interop": "^0.1.22",
+    "react-native-maps": "1.20.1",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "15.11.2",
+    "react-native-web": "^0.20.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.0.10",
+    "@types/react-native": "^0.72.8",
+    "jscodeshift": "^0.15.2",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}

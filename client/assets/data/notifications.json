@@ -1,0 +1,21 @@
+[
+  {
+    "userId": "user_001",
+    "notifications": [
+      {
+        "id": "notif_001",
+        "title": "Order Delivered",
+        "message": "Your order #order_001 has been delivered!",
+        "timestamp": "2025-07-17T17:35:00Z",
+        "read": true
+      },
+      {
+        "id": "notif_002",
+        "title": "20% Off on Dairy Products",
+        "message": "Only today at Reliance Smart near you!",
+        "timestamp": "2025-07-19T09:00:00Z",
+        "read": false
+      }
+    ]
+  }
+]

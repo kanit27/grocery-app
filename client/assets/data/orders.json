@@ -1,0 +1,36 @@
+[
+  {
+    "id": "order_001",
+    "userId": "user_001",
+    "storeId": "store_001",
+    "items": [
+      {
+        "productId": "prod_003",
+        "quantity": 2,
+        "price": 60
+      }
+    ],
+    "status": "delivered",
+    "paymentMethod": "UPI",
+    "total": 120,
+    "orderedAt": "2025-07-17T17:00:00Z",
+    "deliveredAt": "2025-07-17T17:30:00Z"
+  },
+  {
+    "id": "order_002",
+    "userId": "user_001",
+    "storeId": "store_004",
+    "items": [
+      {
+        "productId": "prod_002",
+        "quantity": 1,
+        "price": 90
+      }
+    ],
+    "status": "pending",
+    "paymentMethod": "COD",
+    "total": 90,
+    "orderedAt": "2025-07-18T19:00:00Z",
+    "deliveredAt": null
+  }
+]
