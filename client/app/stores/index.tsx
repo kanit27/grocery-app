@@ -4,17 +4,13 @@ import React, { useEffect, useState } from "react";
 import { View, FlatList, Text } from "react-native";
 import { useRouter } from "expo-router";
 import StoreCard from "../../components/StoreCard";
-import storesData from "../../assets/data/stores_with_products.json";
 
-type Store = typeof storesData[number];
 
 const StoreListScreen = () => {
   const router = useRouter();
-  const [stores, setStores] = useState<Store[]>([]);
 
-  useEffect(() => {
-    setStores(storesData);
-  }, []);
+
+
 
   const handleStorePress = (storeId: string) => {
     router.push(`/stores/${storeId}`);

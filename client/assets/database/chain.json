@@ -13,5 +13,25 @@
     "id": "chain_003",
     "name": "Big Bazaar",
     "logo": "assets/images/big-bazaar.png"
+  },
+  {
+    "id": "chain_004",
+    "name": "Jiffy",
+    "logo": "assets/images/jiffy.png"
+  },
+  {
+    "id": "chain_005",
+    "name": "Spencer's",
+    "logo": "assets/images/spencers.png"
+  },
+  {
+    "id": "chain_006",
+    "name": "Coles",
+    "logo": "assets/images/coles.png"
+  },
+  {
+    "id": "chain_007",
+    "name": "Walmart",
+    "logo": "assets/images/walmart.png"
   }
 ]

@@ -8,8 +8,8 @@
     "area": "Virar West",
     "city": "Mumbai",
     "pincode": "401303",
-    "latitude": 19.4571,
-    "longitude": 72.8012
+    "latitude": 19.4650,
+    "longitude": 72.1950
   },
   {
     "id": "store_002",
@@ -20,8 +20,8 @@
     "area": "Virar West",
     "city": "Mumbai",
     "pincode": "401303",
-    "latitude": 19.4592,
-    "longitude": 72.8033
+    "latitude": 19.4550,
+    "longitude": 72.2000
   },
   {
     "id": "store_003",
@@ -32,8 +32,8 @@
     "area": "Virar West",
     "city": "Mumbai",
     "pincode": "401303",
-    "latitude": 19.4585,
-    "longitude": 72.8009
+    "latitude": 	19.4700,
+    "longitude": 	72.1800
   },
   {
     "id": "store_004",
@@ -44,8 +44,8 @@
     "area": "Virar West",
     "city": "Mumbai",
     "pincode": "401303",
-    "latitude": 19.4567,
-    "longitude": 72.8021
+    "latitude": 	19.4800,
+    "longitude": 	72.1900
   },
   {
     "id": "store_005",
@@ -56,7 +56,67 @@
     "area": "Virar West",
     "city": "Mumbai",
     "pincode": "401303",
-    "latitude": 19.4601,
-    "longitude": 72.8044
+    "latitude": 19.4300,
+    "longitude": 72.1750
+  },
+  {
+    "id": "store_006",
+    "chain_id": "chain_004",
+    "name": "Jiffy Supermarket Virar",
+    "logo": "assets/images/jiffy.png",
+    "address": "Sai Baba Nagar, Virar East, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude":	19.4450,
+    "longitude": 72.2100
+  },
+  {
+    "id": "store_007",
+    "chain_id": "chain_004",
+    "name": "Jiffy Supermarket Virar",
+    "logo": "assets/images/jiffy.png",
+    "address": "Shivneri Road, Virar West, Mumbai",
+    "area": "Virar East",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.4900,
+    "longitude":	72.2050
+  },
+  {
+    "id": "store_008",
+    "chain_id": "chain_004",
+    "name": "Coles Supermarket Virar",
+    "logo": "assets/images/coles.png",
+    "address": "Shivneri Road, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.5100,
+    "longitude": 	72.1950
+  },
+  {
+    "id": "store_009",
+    "chain_id": "chain_005",
+    "name": "Spencer's Virar",
+    "logo": "assets/images/spencers.png",
+    "address": "Sai Baba Nagar, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.5000,
+    "longitude": 	72.2250
+  },
+  {
+    "id": "store_010",
+    "chain_id": "chain_005",
+    "name": "Spencer's Virar",
+    "logo": "assets/images/spencers.png",
+    "address": "Shivneri Road, Virar West, Mumbai",
+    "area": "Virar West",
+    "city": "Mumbai",
+    "pincode": "401303",
+    "latitude": 19.5200,
+    "longitude": 	72.1750
   }
 ]

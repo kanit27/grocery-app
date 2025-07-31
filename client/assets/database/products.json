@@ -1,62 +1,482 @@
 [
   {
-    "id": "prod_001",
-    "name": "Amul Milk 1L",
-    "brand": "Amul",
-    "category": "Dairy"
+    "id": "prod_021",
+    "name": "In-App Offer Offers Product 1",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_002",
-    "name": "Parle-G Biscuits 200g",
-    "brand": "Parle",
-    "category": "Snacks"
+    "id": "prod_022",
+    "name": "In-App Offer Offers Product 2",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_003",
-    "name": "Tata Salt 1kg",
-    "brand": "Tata",
-    "category": "Spices & Staples"
+    "id": "prod_023",
+    "name": "In-App Offer Offers Product 3",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_004",
-    "name": "Sunfeast Yippee Noodles 70g",
-    "brand": "Sunfeast",
-    "category": "Noodles"
+    "id": "prod_024",
+    "name": "In-App Offer Offers Product 4",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_005",
-    "name": "Britannia Milk Bread 400g",
-    "brand": "Britannia",
-    "category": "Bakery"
+    "id": "prod_025",
+    "name": "In-App Offer Offers Product 5",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_006",
-    "name": "Pepsi 500ml",
-    "brand": "Pepsi",
-    "category": "Beverages"
+    "id": "prod_026",
+    "name": "In-App Offer Offers Product 6",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_007",
-    "name": "Maggi Masala Noodles 70g",
-    "brand": "Maggi",
-    "category": "Noodles"
+    "id": "prod_027",
+    "name": "In-App Offer Offers Product 7",
+    "brand": "In-App Offer",
+    "category": "Offers"
   },
   {
-    "id": "prod_008",
-    "name": "Haldiram's Aloo Bhujia 200g",
+    "id": "prod_028",
+    "name": "In-App Offer Offers Product 8",
+    "brand": "In-App Offer",
+    "category": "Offers"
+  },
+  {
+    "id": "prod_029",
+    "name": "In-App Offer Offers Product 9",
+    "brand": "In-App Offer",
+    "category": "Offers"
+  },
+  {
+    "id": "prod_030",
+    "name": "Fortune Grocery Product 1",
+    "brand": "Fortune",
+    "category": "Grocery"
+  },
+  {
+    "id": "prod_031",
+    "name": "Patanjali Grocery Product 2",
+    "brand": "Fortune",
+    "category": "Grocery"
+  },
+  {
+    "id": "prod_032",
+    "name": "Fortune Grocery Product 3",
+    "brand": "Aashirvaad",
+    "category": "Grocery"
+  },
+  {
+    "id": "prod_033",
+    "name": "Fortune Grocery Product 4",
+    "brand": "Patanjali",
+    "category": "Grocery"
+  },
+  {
+    "id": "prod_034",
+    "name": "Fortune Grocery Product 5",
+    "brand": "Fortune",
+    "category": "Grocery"
+  },
+  {
+    "id": "prod_035",
+    "name": "Organic Valley Fruits Product 1",
+    "brand": "Fresh Farms",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_036",
+    "name": "Fresh Farms Fruits Product 2",
+    "brand": "Organic Valley",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_037",
+    "name": "Organic Valley Fruits Product 3",
+    "brand": "Organic Valley",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_038",
+    "name": "Organic Valley Fruits Product 4",
+    "brand": "Fresh Farms",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_039",
+    "name": "Organic Valley Fruits Product 5",
+    "brand": "Organic Valley",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_040",
+    "name": "Fresh Farms Fruits Product 6",
+    "brand": "Fresh Farms",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_041",
+    "name": "Fresh Farms Fruits Product 7",
+    "brand": "Fresh Farms",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_042",
+    "name": "Fresh Farms Fruits Product 8",
+    "brand": "Fresh Farms",
+    "category": "Fruits"
+  },
+  {
+    "id": "prod_043",
+    "name": "Local Harvest Vegetables Product 1",
+    "brand": "Local Harvest",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_044",
+    "name": "Local Harvest Vegetables Product 2",
+    "brand": "Green Basket",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_045",
+    "name": "Green Basket Vegetables Product 3",
+    "brand": "Local Harvest",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_046",
+    "name": "Local Harvest Vegetables Product 4",
+    "brand": "Local Harvest",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_047",
+    "name": "Local Harvest Vegetables Product 5",
+    "brand": "Local Harvest",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_048",
+    "name": "Green Basket Vegetables Product 6",
+    "brand": "Green Basket",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_049",
+    "name": "Green Basket Vegetables Product 7",
+    "brand": "Green Basket",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_050",
+    "name": "Green Basket Vegetables Product 8",
+    "brand": "Local Harvest",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_051",
+    "name": "Local Harvest Vegetables Product 9",
+    "brand": "Green Basket",
+    "category": "Vegetables"
+  },
+  {
+    "id": "prod_052",
+    "name": "Haldiram's Snacks Product 1",
     "brand": "Haldiram's",
     "category": "Snacks"
   },
   {
-    "id": "prod_009",
-    "name": "Nescafe Classic Coffee 100g",
+    "id": "prod_053",
+    "name": "Bingo Snacks Product 2",
+    "brand": "Bingo",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_054",
+    "name": "Haldiram's Snacks Product 3",
+    "brand": "Haldiram's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_055",
+    "name": "Lay's Snacks Product 4",
+    "brand": "Lay's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_056",
+    "name": "Haldiram's Snacks Product 5",
+    "brand": "Bingo",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_057",
+    "name": "Bingo Snacks Product 6",
+    "brand": "Lay's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_058",
+    "name": "Bingo Snacks Product 7",
+    "brand": "Haldiram's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_059",
+    "name": "Lay's Snacks Product 8",
+    "brand": "Bingo",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_060",
+    "name": "Haldiram's Snacks Product 9",
+    "brand": "Lay's",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_061",
+    "name": "Haldiram's Snacks Product 10",
+    "brand": "Bingo",
+    "category": "Snacks"
+  },
+  {
+    "id": "prod_062",
+    "name": "Pepsi Beverages Product 1",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_063",
+    "name": "Frooti Beverages Product 2",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_064",
+    "name": "Nescafe Beverages Product 3",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_065",
+    "name": "Nescafe Beverages Product 4",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_066",
+    "name": "Nescafe Beverages Product 5",
     "brand": "Nescafe",
     "category": "Beverages"
   },
   {
-    "id": "prod_010",
-    "name": "Dabur Honey 250g",
-    "brand": "Dabur",
-    "category": "Sweeteners"
+    "id": "prod_067",
+    "name": "Nescafe Beverages Product 6",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_068",
+    "name": "Nescafe Beverages Product 7",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_069",
+    "name": "Frooti Beverages Product 8",
+    "brand": "Frooti",
+    "category": "Beverages"
+  },
+  {
+    "id": "prod_070",
+    "name": "Mother Dairy Dairy Product 1",
+    "brand": "Amul",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_071",
+    "name": "Mother Dairy Dairy Product 2",
+    "brand": "Mother Dairy",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_072",
+    "name": "Amul Dairy Product 3",
+    "brand": "Mother Dairy",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_073",
+    "name": "Amul Dairy Product 4",
+    "brand": "Nestle",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_074",
+    "name": "Nestle Dairy Product 5",
+    "brand": "Amul",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_075",
+    "name": "Amul Dairy Product 6",
+    "brand": "Amul",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_076",
+    "name": "Mother Dairy Dairy Product 7",
+    "brand": "Amul",
+    "category": "Dairy"
+  },
+  {
+    "id": "prod_077",
+    "name": "Harvest Gold Bakery Product 1",
+    "brand": "Britannia",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_078",
+    "name": "Harvest Gold Bakery Product 2",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_079",
+    "name": "Harvest Gold Bakery Product 3",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_080",
+    "name": "Britannia Bakery Product 4",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_081",
+    "name": "Harvest Gold Bakery Product 5",
+    "brand": "Britannia",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_082",
+    "name": "Britannia Bakery Product 6",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_083",
+    "name": "Harvest Gold Bakery Product 7",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_084",
+    "name": "Harvest Gold Bakery Product 8",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_085",
+    "name": "Harvest Gold Bakery Product 9",
+    "brand": "Harvest Gold",
+    "category": "Bakery"
+  },
+  {
+    "id": "prod_086",
+    "name": "Everest Spices & Staples Product 1",
+    "brand": "Everest",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_087",
+    "name": "MDH Spices & Staples Product 2",
+    "brand": "MDH",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_088",
+    "name": "Tata Spices & Staples Product 3",
+    "brand": "Tata",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_089",
+    "name": "Tata Spices & Staples Product 4",
+    "brand": "Tata",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_090",
+    "name": "MDH Spices & Staples Product 5",
+    "brand": "Tata",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_091",
+    "name": "MDH Spices & Staples Product 6",
+    "brand": "Everest",
+    "category": "Spices & Staples"
+  },
+  {
+    "id": "prod_092",
+    "name": "Maggi Noodles Product 1",
+    "brand": "Yippee",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_093",
+    "name": "Knorr Noodles Product 2",
+    "brand": "Maggi",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_094",
+    "name": "Knorr Noodles Product 3",
+    "brand": "Knorr",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_095",
+    "name": "Maggi Noodles Product 4",
+    "brand": "Yippee",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_096",
+    "name": "Yippee Noodles Product 5",
+    "brand": "Knorr",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_097",
+    "name": "Knorr Noodles Product 6",
+    "brand": "Yippee",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_098",
+    "name": "Yippee Noodles Product 7",
+    "brand": "Yippee",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_099",
+    "name": "Knorr Noodles Product 8",
+    "brand": "Maggi",
+    "category": "Noodles"
+  },
+  {
+    "id": "prod_100",
+    "name": "Maggi Noodles Product 9",
+    "brand": "Knorr",
+    "category": "Noodles"
   }
 ]

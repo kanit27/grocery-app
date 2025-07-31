@@ -2,7 +2,7 @@ import gluestackPlugin from '@gluestack-ui/nativewind-utils/tailwind-plugin';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "media",
+  // darkMode: "media",
   content: [
     "App.{tsx,jsx,ts,js}",
     "index.{tsx,jsx,ts,js}",
@@ -175,16 +175,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: undefined,
-        body: undefined,
-        mono: undefined,
-        roboto: ['Roboto', 'sans-serif'],
-      },
-      fontWeight: {
-        extrablack: '950',
-      },
-      fontSize: {
-        '2xs': '10px',
+        cabin: ["Cabin-Regular"],
       },
       boxShadow: {
         'hard-1': '-2px 2px 8px 0px rgba(38, 38, 38, 0.20)',
