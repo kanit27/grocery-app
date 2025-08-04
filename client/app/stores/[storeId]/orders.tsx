@@ -28,7 +28,7 @@ export default function OrdersScreen() {
     const fetchOrders = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch(`http://10.54.32.81:5000/api/orders/${storeId}`, {
+      const res = await fetch(`https://corner-l14t.onrender.com/api/orders/${storeId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -37,7 +37,7 @@ export default function OrdersScreen() {
     const fetchCart = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+      const res = await fetch(`https://corner-l14t.onrender.com/api/cart/${storeId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -46,14 +46,14 @@ export default function OrdersScreen() {
     const fetchUser = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch("http://10.54.32.81:5000/api/user/profile", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/user/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
       setUser(data);
     };
     const fetchStore = async () => {
-      const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}`);
+      const res = await fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}`);
       const data = await res.json();
       setStore(data);
     };
@@ -86,7 +86,7 @@ export default function OrdersScreen() {
     setPlacing(true);
     const token = await AsyncStorage.getItem("token");
     if (!token) return;
-    const res = await fetch(`http://10.54.32.81:5000/api/orders/${storeId}`, {
+    const res = await fetch(`https://corner-l14t.onrender.com/api/orders/${storeId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -112,7 +112,7 @@ export default function OrdersScreen() {
   const handleConfirmOrder = async (orderId: string) => {
     const token = await AsyncStorage.getItem("token");
     if (!token) return;
-    const res = await fetch(`http://10.54.32.81:5000/api/orders/${storeId}/confirm/${orderId}`, {
+    const res = await fetch(`https://corner-l14t.onrender.com/api/orders/${storeId}/confirm/${orderId}`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -166,7 +166,7 @@ export default function OrdersScreen() {
                         uri: prod.product_id?.image
                           ? prod.product_id.image.startsWith("http")
                             ? prod.product_id.image
-                            : `http://10.54.32.81:5000${prod.product_id.image}`
+                            : `https://corner-l14t.onrender.com${prod.product_id.image}`
                           : "https://via.placeholder.com/60",
                       }}
                       className="w-10 h-10 rounded-lg mb-1 "

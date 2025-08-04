@@ -18,7 +18,7 @@ export default function ProductScreen() {
   const [adding, setAdding] = useState(false);
 
   useEffect(() => {
-    fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products/${productId}`)
+    fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}/products/${productId}`)
       .then(res => res.json())
       .then(setProduct)
       .finally(() => setLoading(false));
@@ -35,7 +35,7 @@ export default function ProductScreen() {
     // Fetch current cart for this store
     let cartItems: any[] = [];
     try {
-      const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+      const res = await fetch(`https://corner-l14t.onrender.com/api/cart/${storeId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -47,7 +47,7 @@ export default function ProductScreen() {
     );
     const quantity = existing ? existing.quantity + 1 : 1;
     // Add/update cart
-    const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+    const res = await fetch(`https://corner-l14t.onrender.com/api/cart/${storeId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ export default function ProductScreen() {
             uri: product.image
               ? product.image.startsWith("http")
                 ? product.image
-                : `http://10.54.32.81:5000${product.image}`
+                : `https://corner-l14t.onrender.com${product.image}`
               : "https://via.placeholder.com/120",
           }}
           className="w-40 h-40 rounded-xl mb-4"

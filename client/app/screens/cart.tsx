@@ -12,7 +12,7 @@ export default function Cart() {
     const fetchCarts = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch("http://10.54.32.81:5000/api/cart/user/all", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/cart/user/all", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();

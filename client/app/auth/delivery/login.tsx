@@ -13,7 +13,7 @@ export default function DeliveryLogin() {
   const handleLogin = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://10.145.174.81:5000/api/auth/delivery/login",{
+      const response = await fetch("https://corner-l14t.onrender.com/api/auth/delivery/login",{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

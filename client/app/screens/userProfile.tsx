@@ -22,7 +22,7 @@ export default function ProfileScreen() {
         const token = await AsyncStorage.getItem("token");
         if (!token) return setLoading(false);
 
-        const res = await fetch("http://10.54.32.81:5000/api/user/profile", {
+        const res = await fetch("https://corner-l14t.onrender.com/api/user/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

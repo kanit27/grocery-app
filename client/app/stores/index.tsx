@@ -29,7 +29,7 @@ const StoreScreen = () => {
   useEffect(() => {
     const fetchStore = async () => {
       try {
-        const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}`);
+        const res = await fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}`);
         const data = await res.json();
         setStore(data);
       } catch (err) {
@@ -38,7 +38,7 @@ const StoreScreen = () => {
     };
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products`);
+        const res = await fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}/products`);
         const data = await res.json();
         setProducts(data);
       } catch (err) {

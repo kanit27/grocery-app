@@ -20,7 +20,7 @@ export default function UserLogin() {
   const handleLogin = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://10.54.32.81:5000/api/auth/user/login", {
+      const response = await fetch("https://corner-l14t.onrender.com/api/auth/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

@@ -24,17 +24,17 @@ export default function StoreScreen() {
 
   useEffect(() => {
     const fetchStore = async () => {
-      const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}`);
+      const res = await fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}`);
       setStore(await res.json());
     };
     const fetchProducts = async () => {
-      const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products`);
+      const res = await fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}/products`);
       setProducts(await res.json());
     };
     const fetchCart = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+      const res = await fetch(`https://corner-l14t.onrender.com/api/cart/${storeId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -52,7 +52,7 @@ export default function StoreScreen() {
       (item) => item.product_id === productId || item.product_id?._id === productId
     );
     const quantity = existing ? existing.quantity + 1 : 1;
-    const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+    const res = await fetch(`https://corner-l14t.onrender.com/api/cart/${storeId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -106,7 +106,7 @@ export default function StoreScreen() {
           <Image
             source={{
               uri: store.storeImage
-                ? `http://10.54.32.81:5000${store.storeImage}`
+                ? `https://corner-l14t.onrender.com${store.storeImage}`
                 : "https://via.placeholder.com/120",
             }}
             className="w-28 h-20 rounded-2xl mb-3 border-[1px] border-gray-200"
@@ -145,7 +145,7 @@ export default function StoreScreen() {
                           uri: product.image
                             ? product.image.startsWith("http")
                               ? product.image
-                              : `http://10.54.32.81:5000${product.image}`
+                              : `https://corner-l14t.onrender.com${product.image}`
                             : "https://via.placeholder.com/60",
                         }}
                         className="w-20 h-20 rounded-lg mb-2"
@@ -198,7 +198,7 @@ export default function StoreScreen() {
                         uri: product.image
                           ? product.image.startsWith("http")
                             ? product.image
-                            : `http://10.54.32.81:5000${product.image}`
+                            : `https://corner-l14t.onrender.com${product.image}`
                           : "https://via.placeholder.com/60",
                       }}
                       className="w-16 h-16 rounded-lg mb-1"
@@ -214,7 +214,7 @@ export default function StoreScreen() {
                 // Place the order with current cart
                 const token = await AsyncStorage.getItem("token");
                 if (!token) return;
-                const res = await fetch(`http://10.54.32.81:5000/api/orders/${storeId}`, {
+                const res = await fetch(`https://corner-l14t.onrender.com/api/orders/${storeId}`, {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",

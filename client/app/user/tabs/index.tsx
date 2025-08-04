@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import ProtectedRoute from "../../../components/ProtectedRoute";
 import { useRouter } from "expo-router";
 import { getDistance } from "../../../utils/distance";
 import { getTravelTime } from "../../../utils/time";
@@ -28,7 +29,7 @@ export default function UserHomeScreen() {
     if (!token) return;
 
     try {
-      const res = await fetch("http://10.54.32.81:5000/api/user/profile", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/user/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -47,7 +48,7 @@ export default function UserHomeScreen() {
   const fetchStores = async () => {
     setStoresLoading(true);
     try {
-      const res = await fetch("http://10.54.32.81:5000/api/store/stores");
+      const res = await fetch("https://corner-l14t.onrender.com/api/store/stores");
       const data = await res.json();
       setStores(data);
     } catch (error) {
@@ -125,6 +126,7 @@ export default function UserHomeScreen() {
   }
 
   return (
+    <ProtectedRoute>
     <View className="flex-1 bg-white">
       {/* Top section: User address and profile icon */}
       <View className="flex-row items-center justify-between px-4 py-3 pt-10 bg-white border-b border-gray-100 z-10">
@@ -182,7 +184,7 @@ export default function UserHomeScreen() {
                   <Image
                     source={{
                       uri: store.storeImage
-                        ? `http://10.54.32.81:5000${store.storeImage}`
+                        ? `https://corner-l14t.onrender.com${store.storeImage}`
                         : "https://via.placeholder.com/80",
                     }}
                     className="w-14 h-14 rounded-xl mt-3 bg-gray-100"
@@ -226,7 +228,7 @@ export default function UserHomeScreen() {
                             <Image
                               source={{
                                 uri: store.storeImage
-                                  ? `http://10.54.32.81:5000${store.storeImage}`
+                                  ? `https://corner-l14t.onrender.com${store.storeImage}`
                                   : "https://via.placeholder.com/80",
                               }}
                               style={{
@@ -255,5 +257,6 @@ export default function UserHomeScreen() {
         )}
       </ScrollView>
     </View>
+    </ProtectedRoute>
   );
 }

@@ -12,7 +12,7 @@ export default function StoreRegister() {
   const handleRegister = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://10.54.32.81:5000/api/auth/store/register", {
+      const response = await fetch("https://corner-l14t.onrender.com/api/auth/store/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ brandName, email, password }),

@@ -24,7 +24,7 @@ export default function InventoryScreen() {
   useEffect(() => {
     if (!storeId) return;
     setLoading(true);
-    fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products`)
+    fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}/products`)
       .then(res => res.json())
       .then(setProducts)
       .finally(() => setLoading(false));

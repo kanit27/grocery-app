@@ -52,7 +52,7 @@ export default function AddProductScreen() {
     }
 
     try {
-      const res = await fetch("http://10.54.32.81:5000/api/store/products", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/store/products", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

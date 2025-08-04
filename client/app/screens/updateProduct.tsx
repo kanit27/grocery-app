@@ -19,7 +19,7 @@ export default function UpdateProductScreen() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products/${productId}`)
+    fetch(`https://corner-l14t.onrender.com/api/store/stores/${storeId}/products/${productId}`)
       .then(res => res.json())
       .then(product => {
         setName(product.name || "");
@@ -73,7 +73,7 @@ export default function UpdateProductScreen() {
     }
 
     try {
-      const res = await fetch(`http://10.54.32.81:5000/api/store/products/${productId}`, {
+      const res = await fetch(`https://corner-l14t.onrender.com/api/store/products/${productId}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ export default function UpdateProductScreen() {
       )}
       {(pickedImage || image) && (
         <Image
-          source={{ uri: pickedImage ? pickedImage.uri : (image.startsWith("http") ? image : `http://10.54.32.81:5000${image}`) }}
+          source={{ uri: pickedImage ? pickedImage.uri : (image.startsWith("http") ? image : `https://corner-l14t.onrender.com${image}`) }}
           style={{ width: 120, height: 120, alignSelf: "center", marginBottom: 12, borderRadius: 12 }}
         />
       )}

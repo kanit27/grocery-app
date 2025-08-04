@@ -21,14 +21,14 @@ export default function Stores() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://10.54.32.81:5000/api/store/stores")
+    fetch("https://corner-l14t.onrender.com/api/store/stores")
       .then((res) => res.json())
       .then(setStores);
 
     // Fetch user profile for location
     AsyncStorage.getItem("token").then((token) => {
       if (token) {
-        fetch("http://10.54.32.81:5000/api/user/profile", {
+        fetch("https://corner-l14t.onrender.com/api/user/profile", {
           headers: { Authorization: `Bearer ${token}` },
         })
           .then((res) => res.json())
@@ -110,7 +110,7 @@ export default function Stores() {
                 <Image
                   source={{
                     uri: store.storeImage
-                      ? `http://10.54.32.81:5000${store.storeImage}`
+                      ? `https://corner-l14t.onrender.com${store.storeImage}`
                       : "https://via.placeholder.com/80",
                   }}
                   style={{

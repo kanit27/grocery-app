@@ -42,7 +42,7 @@ export default function UpdateStoreProfileScreen() {
       setLoading(true);
       const token = await AsyncStorage.getItem("token");
       try {
-        const res = await fetch("http://10.54.32.81:5000/api/store/profile", {
+        const res = await fetch("https://corner-l14t.onrender.com/api/store/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
@@ -115,7 +115,7 @@ export default function UpdateStoreProfileScreen() {
     }
 
     try {
-      const res = await fetch("http://10.54.32.81:5000/api/store/profile", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/store/profile", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -160,7 +160,7 @@ export default function UpdateStoreProfileScreen() {
                 ? pickedImage.uri
                 : storeImage.startsWith("http")
                 ? storeImage
-                : `http://10.54.32.81:5000${storeImage}`,
+                : `https://corner-l14t.onrender.com${storeImage}`,
             }}
             style={{
               width: 150,

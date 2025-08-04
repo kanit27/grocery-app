@@ -10,7 +10,7 @@ export default function Orders() {
     const fetchOrders = async () => {
       const token = await AsyncStorage.getItem("token");
       if (!token) return;
-      const res = await fetch("http://10.54.32.81:5000/api/orders/user/all", {
+      const res = await fetch("https://corner-l14t.onrender.com/api/orders/user/all", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -60,7 +60,7 @@ export default function Orders() {
                         uri: item.product_id?.image
                           ? item.product_id.image.startsWith("http")
                             ? item.product_id.image
-                            : `http://10.54.32.81:5000${item.product_id.image}`
+                            : `https://corner-l14t.onrender.com${item.product_id.image}`
                           : "https://via.placeholder.com/60",
                       }}
                       className="w-10 h-10 rounded-lg mb-1 bg-gray-100"

@@ -13,7 +13,7 @@ export default function StoreLogin() {
   const handleLogin = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://10.54.32.81:5000/api/auth/store/login", {
+      const response = await fetch("https://corner-l14t.onrender.com/api/auth/store/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
