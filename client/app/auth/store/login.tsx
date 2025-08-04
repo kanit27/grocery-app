@@ -19,15 +19,19 @@ export default function StoreLogin() {
         body: JSON.stringify({ email, password }),
       });
 
-      const res = await response.json();
+      const contentType = response.headers.get("content-type");
+      const res = contentType?.includes("application/json")
+        ? await response.json()
+        : { message: "Server error. Please try again." };
+
       if (!response.ok) {
         throw new Error(res.message || "Login failed");
       }
 
       await AsyncStorage.setItem("token", res.token);
-      await AsyncStorage.setItem("store", JSON.stringify(res.store));
+      await AsyncStorage.setItem("user", JSON.stringify({ ...res.store, role: "store_partner" }));
 
-      router.replace("/store/tabs"); // 🔁 Redirect to home
+      router.replace("/store/tabs");
     } catch (err) {
       Alert.alert("Login Error", err.message);
     } finally {
@@ -37,7 +41,9 @@ export default function StoreLogin() {
 
   return (
     <View className="flex-1 justify-center items-center px-6 bg-white">
-      <Text className="text-2xl font-bold text-gray-900 mb-6">Login as Store Partner</Text>
+      <Text className="text-2xl font-bold text-gray-900 mb-6">
+        Login as Store Partner
+      </Text>
 
       <TextInput
         placeholder="Email"
@@ -51,7 +57,7 @@ export default function StoreLogin() {
         value={password}
         onChangeText={setPassword}
         secureTextEntry
-        className="w-full border border-gray-300 rounded-md px-4 py-2 mb-6"
+        className="w-full border border-gray-300 rounded-md px-4 py-2 mb-3"
       />
 
       <TouchableOpacity
@@ -64,9 +70,11 @@ export default function StoreLogin() {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => router.push("/auth/store/register")} className="mt-4">
-        <Text className="text-sm text-blue-600">Don't have an account? Register</Text>
-      </TouchableOpacity>
+      <View className="mt-4">
+        <Text className="text-sm text-gray-400">
+          Login using credentials provided after onboarding
+        </Text>
+      </View>
     </View>
   );
 }

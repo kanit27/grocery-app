@@ -1,122 +1,1382 @@
 [
   {
-    "id": "store_001",
-    "chain_id": "chain_001",
-    "name": "Dmart Virar West 1",
-    "logo": "assets/images/dmart.png",
-    "address": "Shop No. 5, Western Plaza, Virar West, Mumbai",
-    "area": "Virar West",
-    "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.4650,
-    "longitude": 72.1950
+    "_id": {
+      "$oid": "688cb797e5c0c8dc8aa23dcd"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai2.com",
+    "passwordHash": "$2b$10$/kdbaATIChNTRrUR.ZOJqezRzP9vWq3opG0yygB7/XgxqopkmEhkW",
+    "deliveryRadiusKm": 10,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-01T12:48:23.313Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-01T14:38:27.183Z"
+    },
+    "__v": 0,
+    "address": "Cubic Mall, Ground floor, CG Rd, Chembur Colony, Chembur, Mumbai, Maharashtra 400074",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400074",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.045616760959074, 
+      "lng": 72.90296220323494
+    }
   },
   {
-    "id": "store_002",
-    "chain_id": "chain_001",
-    "name": "Dmart Virar West 2",
-    "logo": "assets/images/dmart.png",
-    "address": "Shanti Tower Road, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e0732c738f20986223c78"
+    },
+    "brandName": "7 eleven",
+    "email": "7eleven@mumbai1.com",
+    "passwordHash": "$2b$10$327mZLtPj0Wfqs.wrM1YH.a0pzHRn6kxETGgUBwURBm1KCO1riKee",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T12:40:18.874Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T12:40:18.874Z"
+    },
+    "address": "Smart Phoenix Market City, RELIANCE RETAIL LTD Lower Ground Floor, Lal Bahadur Shastri Marg, Kurla West, Mumbai, Maharashtra 400070",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.4550,
-    "longitude": 72.2000
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400070",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.086631926696697, 
+      "lng": 72.8893918154961
+    }
   },
   {
-    "id": "store_003",
-    "chain_id": "chain_002",
-    "name": "Reliance Smart Virar",
-    "logo": "assets/images/reliance.png",
-    "address": "Orbit Mall, Opposite Railway Station, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e4de66fed69604af8d68a"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai1.com",
+    "passwordHash": "$2b$10$AVDz5o88FaW5991hFhOEs.TDmPFQvUrVGBKqcKibEymrKsEDKgbEO",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:41:58.770Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:41:58.770Z"
+    },
+    "address": "Khalai Village, Vidyavihar West, Ghatkopar West, Mumbai, Maharashtra 400086",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 	19.4700,
-    "longitude": 	72.1800
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400086",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "DMart Kurla",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.08116151571045, 
+      "lng": 72.89241240205506
+    }
   },
   {
-    "id": "store_004",
-    "chain_id": "chain_003",
-    "name": "Big Bazaar Virar",
-    "logo": "assets/images/big-bazaar.png",
-    "address": "Global City Road, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e4e106fed69604af8d68d"
+    },
+    "brandName": "Reliance Smart ",
+    "email": "reliance@mumbai1.com",
+    "passwordHash": "$2b$10$ht3xEQWHTF/04jx4reMZouznSc8znwr4JxOuy6.LX0iUMCPEe62o6",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:42:40.302Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:42:40.302Z"
+    },
+    "address": "New Era Mill Compound, Mogul Ln, Mahim United Industrial Estate, Matunga West, Mumbai, Maharashtra 400016",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 	19.4800,
-    "longitude": 	72.1900
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400016",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart Bazaar",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.031769065754006, 
+      "lng": 72.84671415722475
+    }
   },
   {
-    "id": "store_005",
-    "chain_id": "chain_003",
-    "name": "Big Mini Market",
-    "logo": "assets/images/big-bazaar.png",
-    "address": "Skyline Residency Lane, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e4e556fed69604af8d697"
+    },
+    "brandName": "Star Bazaar",
+    "email": "starbazaar@mumbai1.com",
+    "passwordHash": "$2b$10$4f7dcPjdlRr1iZOj6D8raOse1yzC5pYuSRRg7wdoMX.iwpiCRz6Kq",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:43:49.333Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:43:49.333Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.4300,
-    "longitude": 72.1750
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
   },
   {
-    "id": "store_006",
-    "chain_id": "chain_004",
-    "name": "Jiffy Supermarket Virar",
-    "logo": "assets/images/jiffy.png",
-    "address": "Sai Baba Nagar, Virar East, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e4f8d6fed69604af8d69a"
+    },
+    "brandName": "Home Foods Supermarket",
+    "email": "homefood@mumbai1.com",
+    "passwordHash": "$2b$10$oShFIbpi9UOkI2qKny4lIOdR8XdcrLyvSrhi17439edmU3ys/K9YS",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:49:01.173Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:49:01.173Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude":	19.4450,
-    "longitude": 72.2100
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
   },
   {
-    "id": "store_007",
-    "chain_id": "chain_004",
-    "name": "Jiffy Supermarket Virar",
-    "logo": "assets/images/jiffy.png",
-    "address": "Shivneri Road, Virar West, Mumbai",
-    "area": "Virar East",
+    "_id": {
+      "$oid": "688e4fcf6fed69604af8d69d"
+    },
+    "brandName": "Poorti Supermarket",
+    "email": "poorti@mumbai1.com",
+    "passwordHash": "$2b$10$bdshon6WoBSK4e6P/L35leWLnJbfDVLonHnOyIGiQuG80Oc0pLDAm",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:50:07.618Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:50:07.618Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.4900,
-    "longitude":	72.2050
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
   },
   {
-    "id": "store_008",
-    "chain_id": "chain_004",
-    "name": "Coles Supermarket Virar",
-    "logo": "assets/images/coles.png",
-    "address": "Shivneri Road, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e4ff36fed69604af8d6a0"
+    },
+    "brandName": "Nature’s Basket",
+    "email": "naturebasket@mumbai1.com",
+    "passwordHash": "$2b$10$Zn2qnFgDGTw0bT1AidnYse4yuKECBUMUEPc8ZDxbcsJ8kQA0G7Ebi",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:50:43.562Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:50:43.562Z"
+    },
+    "address": "Shop No 33- 35 Viceroy Court-E, Kandivali, Dattani Park, Thakur Village, Kandivali East, Mumbai, Maharashtra 400101",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.5100,
-    "longitude": 	72.1950
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400101",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.21249428732046, 
+      "lng": 72.87283888722847
+    }
   },
   {
-    "id": "store_009",
-    "chain_id": "chain_005",
-    "name": "Spencer's Virar",
-    "logo": "assets/images/spencers.png",
-    "address": "Sai Baba Nagar, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e50436fed69604af8d6a3"
+    },
+    "brandName": "Urban Platter",
+    "email": "urbanplatter@mumbai1.com",
+    "passwordHash": "$2b$10$vACpCNPAd2HUOjfm1K3.pOrb1.4a3u6EFzq3DNitv5tYzGrOgbadG",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:52:03.356Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:52:03.356Z"
+    },
+    "address": "Pratap CHS, Metro Station, Shop No11, Kabra Metro One, of, JP Rd, Versova, Andheri West, Mumbai, Maharashtra 400053",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.5000,
-    "longitude": 	72.2250
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400053",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/2113572328296.jpg",
+    "location": {
+      "lat": 19.130288609587083, 
+      "lng": 72.82225847168785
+    }
   },
   {
-    "id": "store_010",
-    "chain_id": "chain_005",
-    "name": "Spencer's Virar",
-    "logo": "assets/images/spencers.png",
-    "address": "Shivneri Road, Virar West, Mumbai",
-    "area": "Virar West",
+    "_id": {
+      "$oid": "688e50a56fed69604af8d6a6"
+    },
+    "brandName": "Rajat Food Mart",
+    "email": "rajatfoodmart@mumbai1.com",
+    "passwordHash": "$2b$10$ck3ytTvEjCQ9p2fjtjfHoOHDAUWZF6CCrDa9YtXA4mZEZKrb2VzRW",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:53:41.300Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:53:41.300Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
     "city": "Mumbai",
-    "pincode": "401303",
-    "latitude": 19.5200,
-    "longitude": 	72.1750
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e51396fed69604af8d6a9"
+    },
+    "brandName": "Cornucopia ️ Food Store",
+    "email": "cornucopia@mumbai1.com",
+    "passwordHash": "$2b$10$Lk34KX9mZThaa1MGovKIx.Ai5End5TiLk1SIBQJ6bqVOPeExgDrpy",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:56:09.371Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:56:09.371Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e51616fed69604af8d6ac"
+    },
+    "brandName": "Benzer Foods",
+    "email": "benzer@mumbai1.com",
+    "passwordHash": "$2b$10$v1Lehjr8cgqCgCSI2KK.QOjMdnEpK.G034blvXP3caC20cJckwxF2",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:56:49.073Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:56:49.073Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e51be6fed69604af8d6af"
+    },
+    "brandName": "Sarvodaya Super market",
+    "email": "sorvodaya@mumbai1.com",
+    "passwordHash": "$2b$10$sa4U9UcpHm8CqUMBvA8IYeNbA6trk.Djr5fcMv2HYGqONP2AGEHqe",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:58:22.090Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:58:22.090Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e52176fed69604af8d6b2"
+    },
+    "brandName": "Zehak Supermarket",
+    "email": "zehak@mumbai1.com",
+    "passwordHash": "$2b$10$KBaz/d.HTBtD5KMqWNk5fOuuYybEsBh5CLuT9pArN9090xXKo9GBm",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T17:59:51.723Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T17:59:51.723Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e525d6fed69604af8d6b5"
+    },
+    "brandName": "Star Quik",
+    "email": "starquik@mumbai1.com",
+    "passwordHash": "$2b$10$9BeNIV4HxWAyJ7j4BsXHN.uj1GXSLDmlgqzgMJKN0euy0ZriRRmTS",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:01:01.328Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:01:01.328Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e529c6fed69604af8d6b8"
+    },
+    "brandName": "Mumbai 28 Snacks",
+    "email": "mumbai28snacks@mumbai1.com",
+    "passwordHash": "$2b$10$B5xPtDAPa/0wIw/khczSPOwKJ3buqAgeyhOvq3uqAztRh03hvbtbO",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:02:04.743Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:02:04.743Z"
+    },
+    "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e58f86fed69604af8d6c0"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai2.com",
+    "passwordHash": "$2b$10$BTFZRdt.CXYlc2wFsM42KeDyMsOIGdROo4dtXEYtWpbVmJPszt2aq",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:29:12.518Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:29:12.518Z"
+    },
+    "address": "Plot no, 19, Nahar's Amrit Shakti Rd, Nahar Amrit Shakti, LOK Milan Colony, Chandivali, Andheri (E, Mumbai, Maharashtra 400072",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400072",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.110912837627904, 
+      "lng": 72.89761328984541
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e592b6fed69604af8d6c3"
+    },
+    "brandName": "Dmart ",
+    "email": "dmart@mumbai3.com",
+    "passwordHash": "$2b$10$zA0ZvJHY4pLMIX3NGWbFQur9IGfp3h6GxNJl8v36zMtwTvcIDaumy",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:30:03.715Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:30:03.715Z"
+    },
+    "address": "10-A, Orchard Ave, Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400076",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart Powai",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.116635877828838, 
+      "lng": 72.91051779706642
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e59606fed69604af8d6c8"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai4.com",
+    "passwordHash": "$2b$10$nKLo1zw5kIkTZ2182hMDF.tvKgyB8/lvl7pYgoxTZ.YBmaqaU5wQS",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:30:56.460Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:30:56.460Z"
+    },
+    "address": "The Vijay Nagar Society - Andheri (East Shop No. 6, The Vijay Nagar CHSL, Sahar Rd, Andheri East, Mumbai, Maharashtra 400069",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400069",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.11329703055543, 
+      "lng": 72.84799687392554
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5a396fed69604af8d6cb"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai5.com",
+    "passwordHash": "$2b$10$INNCnQHPK/Do9q0b52AeCufQ3WGuR8t6jV1YvQchK/TA2UO.O22o6",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:34:33.903Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:34:33.903Z"
+    },
+    "address": "4RP6+H7C, Yari Rd, Jeet Nagar, Versova, Andheri West, Mumbai, Maharashtra 400061",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400061",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.13643393478027, 
+      "lng": 72.81063103261062
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5a9d6fed69604af8d6ce"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai6.com",
+    "passwordHash": "$2b$10$bGsKgGTrNgrD.k9Z5gGQH.fD67ZkqC2tB234l/.SobDhhqfSL3y4C",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:36:13.703Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:36:13.703Z"
+    },
+    "address": "Express Zone Wing-A, Malad, Panch Bawadi, Malad East, Mumbai, Maharashtra 400097",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400097",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.17547610118631, 
+      "lng": 72.85861728769332
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5ab46fed69604af8d6d1"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai7.com",
+    "passwordHash": "$2b$10$NuqebOOf52XN48LRwwaE3u0PE3e9HDKPA1FKrQFGemwEp5U2nLerC",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:36:36.100Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:36:36.100Z"
+    },
+    "address": "Ground, 1st, 2nd Floor, Palm Court complex, New Link Rd, Malad, Mindspace, Malad West, Mumbai, Maharashtra 400064",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400064",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.18580744136005, 
+      "lng": 72.83547667300091
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5ac46fed69604af8d6d4"
+    },
+    "brandName": "Dmart",
+    "email": "dmart@mumbai8.com",
+    "passwordHash": "$2b$10$akDocyrKiiDT5A4V4KqH7.AibkMNLBfMQeJOEYA7WpyD4JGltEVjK",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:36:52.664Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:36:52.664Z"
+    },
+    "address": "Ground & 1st Floor, Narmada Mall, near Thakur Cinema, ठाकुर, Thakur Village, Kandivali East, Mumbai, Maharashtra 400101",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400101",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Dmart",
+    "storeImage": "/uploads/8718223953066.jpg",
+    "location": {
+      "lat": 19.20897340710894, 
+      "lng": 72.87375496384179
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5b306fed69604af8d6d7"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai2.com",
+    "passwordHash": "$2b$10$i4zgDjgqshZGa6Go5SfmVuFKyP.lhjTgCb31jZ/5upZ96qHHv3i5i",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:38:40.813Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:38:40.813Z"
+    },
+    "address": "No 6, Compound Tower, Swadeshi Mills Rd, opposite Jain Temple, Rahul Nagar, Everard Nagar, Chembur, Mumbai, Maharashtra 400022",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400022",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.051710199897155, 
+      "lng": 72.87911981641521
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5b466fed69604af8d6da"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai3.com",
+    "passwordHash": "$2b$10$erC4J6HHbN7lDss9JXwhpOwalNnYmCHmNEvtPMuUHFNbAPMsK3ava",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:39:02.281Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:39:02.281Z"
+    },
+    "address": "Ground Floor, Muncipal Building, Gurunanak Rd, near Bandra, Talao, Bandra West, Mumbai, Maharashtra 400050",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400050",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.056773583915223, 
+      "lng": 72.8394949977406
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5bbb6fed69604af8d6dd"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai4.com",
+    "passwordHash": "$2b$10$w8vd9OkMYHoDXRywgV3lLum9Uq0WqXmUu.I2K5Jkb9ln29fMMqLiy",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:40:59.396Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:40:59.396Z"
+    },
+    "address": "Acme Mall, near Khira Nagar, Santacruz, Mumbai, Rizvi Nagar, Khira Nagar, Santacruz (West), Mumbai, Maharashtra 400054",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400054",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.088712779907787, 
+      "lng": 72.83755636221233
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5bd76fed69604af8d6e0"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai5.com",
+    "passwordHash": "$2b$10$moDdkV1P9lAQGAMUVxht8.rZYm74pO/mxBq1Cn5EDV9G/HxEptjyu",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:41:27.003Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:41:27.003Z"
+    },
+    "address": "Parle Square Mall, Monghibai Rd, near Dinanath Mangeshkar Natyagruha, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400057",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400057",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.10053964261377, 
+      "lng": 72.84573856237759
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5c166fed69604af8d6e3"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai6.com",
+    "passwordHash": "$2b$10$9LEnIZNDreCz2TbwzOxScebeQ6CRC99fWrFCY0JaeC0yGG.omWI4G",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:42:30.614Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:42:30.614Z"
+    },
+    "address": "Reliance Smart, G28/29, Grnd Floor, Market City Mall Phoenix Market City, Lal Bahadur Shastri Marg, Kurla, Mumbai, Maharashtra 400070",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400070",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.087019869364052, 
+      "lng": 72.89003667793686
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5c2a6fed69604af8d6e6"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai7.com",
+    "passwordHash": "$2b$10$Oue2p8a4zFy.A86hhib3UOSiITadGGoWE7Vx2vSDTRcVqsHKMLxsK",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:42:50.469Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:42:50.469Z"
+    },
+    "address": "2nd Floor, M, R City Mall, S/21/22/26/28, Lal Bahadur Shastri Marg, near Crossword Bookstore, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400086",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.09929918090921, 
+      "lng": 72.91651239212354
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5c496fed69604af8d6e9"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai8.com",
+    "passwordHash": "$2b$10$xCVGlSelcuRkBhR/LeRiWu9/ZEE/Na2MUtbJ1cYPa2V7dwhT29TSC",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:43:21.484Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:43:21.484Z"
+    },
+    "address": "No 6/7, Ground Floor, Ramchandra Ln, Malad, Moti Udyog Nagar, Kanchpada, Malad West, Mumbai, Maharashtra 400064",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400064",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.18928707194713, 
+      "lng": 72.83851615033952
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5c646fed69604af8d6ec"
+    },
+    "brandName": "Reliance Smart",
+    "email": "reliance@mumbai9.com",
+    "passwordHash": "$2b$10$sznnBeMyMKvo9HnLYm.6xOMVE0z.VF0pLLsZ9Q.nXRt2A71uh0E1a",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:43:48.654Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:43:48.654Z"
+    },
+    "address": "Ground Flr, Evershine Millennium Paradise, Evershine Rd, near Federal Bank, Kandivali, Thakur Village, Kandivali East, Mumbai, Maharashtra 400101",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400101",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Reliance Smart",
+    "storeImage": "/uploads/4010775744628.jpg",
+    "location": {
+      "lat": 19.21002357397996, 
+      "lng": 72.87586053965191
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5d746fed69604af8d6ef"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai3.com",
+    "passwordHash": "$2b$10$js96E7LVlZAlc8qgxAl/c.qwLmejxvefjt.vMRikS0AG7ZJmgJqgO",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:48:20.434Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:48:20.434Z"
+    },
+    "address": "Shop No. 1 & 2, C Wing, Kalpataru Sparkle Complex Nanasaheb Dharmadhikari Road, MIG Colony, Gandhi Nagar, Bandra East, Mumbai, Maharashtra 400051",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400051",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.056174404348443,
+      "lng":  72.84801592935676
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5d8d6fed69604af8d6f2"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai4.com",
+    "passwordHash": "$2b$10$5FKP1Bqh5aSp3PukPtb8K.3qpIp5emmYaEL8oy9icfOFAfWrDFGMm",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:48:45.447Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:48:45.447Z"
+    },
+    "address": "Plot No.29, 56, Hill Rd, next to Bank of India, Bandra West, Mumbai, Maharashtra 400050",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400050",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.055705695957627, 
+      "lng": 72.83189584052668
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5dc36fed69604af8d6f5"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai5.com",
+    "passwordHash": "$2b$10$u/ojc.aCcP8ld9V7iMYLA.pM2.CSgpodPUy0wiXPr0Zoi2TMDUjZS",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:49:39.137Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:49:39.137Z"
+    },
+    "address": "Ground Floor, Spenta Boulevard, B wing, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400049",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.100934842622937,
+      "lng": 72.82779535415108
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5df56fed69604af8d6f8"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai6.com",
+    "passwordHash": "$2b$10$/c45Z43pN6WV0XcFqAKPz.2mmRmO2D74EcAcXufwTiel/zg3caTMu",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:50:29.313Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:50:29.313Z"
+    },
+    "address": "Hiranandani Gardens, Shop No 4, BG - India, Powai, Mumbai, Maharashtra 400076",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "4000076",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.119651509384063,
+      "lng": 72.90807221771126
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5e4c6fed69604af8d6fb"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai7.com",
+    "passwordHash": "$2b$10$ji6rroLknd26H75X6k53TedP1.JpbJQmLQr9KeSqKG3r.EnEvQDYu",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:51:56.640Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:51:56.640Z"
+    },
+    "address": "Second Floor, Oberoi Mall, Shop S - 23 A, off Western Express Highway, Yashodham, Goregaon, Mumbai, Maharashtra 400063",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400063",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.17355816594605, 
+      "lng": 72.8600108451177
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5e676fed69604af8d6fe"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai8.com",
+    "passwordHash": "$2b$10$aFsXs1RxVxeiv7wdBSOWIuZ/Xo/LZE9tHjdfo812ONJKX7MdiIuQW",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:52:23.109Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:52:23.109Z"
+    },
+    "address": "CHS Off, Samartha Aishwarya, Shop no. 1, Ground Floor, KL Walawalkar Marg, Mumbai, Maharashtra 400053",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400053",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.145324514036034, 
+      "lng": 72.82927776574236
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5e776fed69604af8d701"
+    },
+    "brandName": "Nature's Basket",
+    "email": "naturebasket@mumbai9.com",
+    "passwordHash": "$2b$10$k3q.5Y3wxP172XQXpxQ0ue1v0bBE80UBdIysfwK9Pc.Lu0AJTTS2a",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:52:39.721Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:52:39.721Z"
+    },
+    "address": "Inorbit Mall, New Link Rd, Malad, Malad West, Mumbai, Maharashtra 400064",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400064",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/1754056967642.jpg",
+    "location": {
+      "lat": 19.173266896237322, 
+      "lng": 72.83621446410754
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5fb36fed69604af8d704"
+    },
+    "brandName": "7 Eleven",
+    "email": "7eleven@mumbai2.com",
+    "passwordHash": "$2b$10$oQMSahQHUbU3p70ciTnNw.9q.AOkIJZvuml.LSHbIgD0Ta/UFWQTy",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:57:55.364Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:57:55.364Z"
+    },
+    "address": "Shop No.3, Sagar Tech Plaza-A Premises Co.Op.Soc.Ltd Saki Naka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400001",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 18.929614283654125,
+      "lng": 72.82754027671334
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5fc66fed69604af8d707"
+    },
+    "brandName": "7 Eleven",
+    "email": "7eleven@mumbai3.com",
+    "passwordHash": "$2b$10$Bu4QLcCdUN7AvDun/Um4qOAgN1tWQvAwtAdwRUG81jyCL8.zrah0e",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:58:14.908Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:58:14.908Z"
+    },
+    "address": "Shop no.3, Ground and First Floor, Atul Blue Fortuna, Military Rd, Sankara Nagar, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400059",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.117338981700623, 
+      "lng": 72.88407760598179
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5fd86fed69604af8d70a"
+    },
+    "brandName": "7 Eleven ",
+    "email": "7eleven@mumbai4.com",
+    "passwordHash": "$2b$10$cfJwOlvKB8xPS/y3TY26FeG.HdDGnE.rB1wsTymDH4qiGlYyGQcUa",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:58:32.773Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:58:32.773Z"
+    },
+    "address": "Shop No1 ,Ground Floor, PINNACLE BUSINESS PARK, Mahakali Caves Rd, Shanti Nagar, Andheri East, Mumbai, Maharashtra 400069",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400069",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.11957493745445, 
+      "lng": 72.86367340614653
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e5fef6fed69604af8d70d"
+    },
+    "brandName": "7 Eleven",
+    "email": "7eleven@mumbai5.com",
+    "passwordHash": "$2b$10$IhoF6DDOevIac1ases7ad.ieyF1WcwfVV1C2G3f3jHBY9vhnD4uNa",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:58:55.045Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:58:55.045Z"
+    },
+    "address": "Shop No1,Ground Flr, Chs Ltd, Joy Valencia, Jogeshwari - Vikhroli Link Rd, behind Majas Bus Depot, Shyam Nagar, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400060",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.13666775821208, 
+      "lng": 72.86382319637364
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e60026fed69604af8d710"
+    },
+    "brandName": "7 Eleven",
+    "email": "7eleven@mumbai6.com",
+    "passwordHash": "$2b$10$AdhawfyceoprEYytWB7OQONPn5FaKtDJ0k2ngezk9fDU.Izm0vmSG",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:59:14.202Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:59:14.202Z"
+    },
+    "address": "Kokilaben Ground Floor, Kokilaben Hospital, Rao Saheb Achutrao Patwardhan Marg, Mudran Press Colony, Andheri West, Mumbai, Maharashtra 400053",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400053",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.131848556475582, 
+      "lng": 72.82494584988824
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e60126fed69604af8d713"
+    },
+    "brandName": "7 Eleven",
+    "email": "7eleven@mumbai7.com",
+    "passwordHash": "$2b$10$Ai.9Co.oDJ8kE4fQfBcK1.QmmOdn.AgP5iDyLslnJBYbFZRHCZtMy",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T18:59:30.460Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T18:59:30.460Z"
+    },
+    "address": "Shop 2A, Hubtown Sunmist, Professor NS Phadke Rd, Vijay Nagar, Andheri East, Mumbai, Maharashtra 400069",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400069",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "7 eleven",
+    "storeImage": "/uploads/9925339346878.jpg",
+    "location": {
+      "lat": 19.114492125294245, 
+      "lng": 72.85058232849451
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e60e76fed69604af8d716"
+    },
+    "brandName": "Urban Platter",
+    "email": "urbanplatter@mumbai2.com",
+    "passwordHash": "$2b$10$rLcCTwWqHnJFbUcoNd/zZ.RVsXfFqOOA3NDep0UxY.fCp/Qpn0wDm",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T19:03:03.652Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T19:03:03.652Z"
+    },
+    "address": "Shop No. 2, SHIV ASTHAN HEIGHTS, 16th Rd, Pali Village, Bandra West, Mumbai, Maharashtra 400050",
+    "city": "Mumbai",
+    "contactPersonName": "Kanit Gohel ",
+    "contactPersonPhone": "0283838",
+    "phone": "9817272728",
+    "pincode": "400050",
+    "state": "Maharashtra ",
+    "storeHours": "9-10",
+    "storeName": "Nature Basket",
+    "storeImage": "/uploads/2113572328296.jpg",
+    "location": {
+      "lat": 19.06276446714236, 
+      "lng": 72.83065851214198
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e61346fed69604af8d719"
+    },
+    "brandName": "Urban Platter",
+    "email": "urbanplatter@mumbai3.com",
+    "passwordHash": "$2b$10$Gem06o5vyBhhp0gu5MpZBOb/uqpymWcVHb1iEoGsPv2EriwTdP8VO",
+    "deliveryRadiusKm": 5,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-02T19:04:20.745Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-02T19:04:20.745Z"
+    },
+    "address": "C7 Basement, New Udyog Mandir, 2, Mogul Ln, Bethany Co-Operative Housing Society, Mahim West, Mahim, Mumbai, Maharashtra 400016",
+  "city": "Mumbai",
+  "contactPersonName": "Kanit Gohel ",
+  "contactPersonPhone": "0283838",
+  "phone": "9817272728",
+  "pincode": "400016",
+  "state": "Maharashtra ",
+  "storeHours": "9-10",
+  "storeName": "Nature Basket",
+  "storeImage": "/uploads/2113572328296.jpg",
+  "location": {
+    "lat": 19.03691420754091, 
+    "lng": 72.84659014769865
+  }
   }
 ]

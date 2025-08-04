@@ -1,104 +1,84 @@
-import React, { useState } from 'react';
-import { View, Text, Image, ScrollView, Pressable } from 'react-native';
-
-const cartData = [
-  {
-    id: '1',
-    storeName: 'Walmart',
-    logo: require('../../assets/images/walmart.png'),
-    delivery: '1:35pm',
-    products: [require('../../assets/products/apple.png')],
-  },
-  {
-    id: '2',
-    storeName: '7-Eleven',
-    logo: require('../../assets/images/7-eleven.png'),
-    delivery: '1:40pm',
-    products: [
-      require('../../assets/products/broccoli.png'),
-      require('../../assets/products/carrot.png'),
-      require('../../assets/products/chili-pepper.png'),
-      require('../../assets/products/cucumber.png'),
-      require('../../assets/products/milk.png'),
-    ],
-    extra: 5,
-  },
-  {
-    id: '3',
-    storeName: 'The Home Depot',
-    logo: require('../../assets/images/jiffy.png'),
-    delivery: '1:35pm',
-    products: [require('../../assets/products/strawberry.png')],
-  },
-];
+import React, { useEffect, useState } from "react";
+import { View, Text, ScrollView, Pressable, Image, ActivityIndicator } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRouter } from "expo-router";
 
 export default function Cart() {
-  const [selectedTab, setSelectedTab] = useState<'Grocery' | 'Restaurants'>('Grocery');
+  const [carts, setCarts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+
+  useEffect(() => {
+    const fetchCarts = async () => {
+      const token = await AsyncStorage.getItem("token");
+      if (!token) return;
+      const res = await fetch("http://10.54.32.81:5000/api/cart/user/all", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json();
+      setCarts(data || []);
+      setLoading(false);
+    };
+    fetchCarts();
+  }, []);
+
+  if (loading) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <ActivityIndicator size="large" color="#2563eb" />
+      </View>
+    );
+  }
 
   return (
     <View className="flex-1 bg-white pt-6">
-      {/* Header */}
-      <View className="px-4 pb-2">
-        <Text className="text-xl font-bold">Your carts</Text>
+      {/* Sticky Header */}
+      <View className="px-4 py-6 bg-white z-10">
+        <Text className="text-xl font-bold">Your Carts</Text>
       </View>
-
-      {/* Tabs */}
-      <View className="flex-row border-b border-gray-200 mx-4">
-        {['Grocery', 'Restaurants'].map(tab => (
-          <Pressable
-            key={tab}
-            onPress={() => setSelectedTab(tab as 'Grocery' | 'Restaurants')}
-            className={`flex-1 pb-2 ${
-              selectedTab === tab ? 'border-b-2 border-black' : ''
-            }`}
-          >
-            <Text className={`text-center font-medium ${selectedTab === tab ? 'text-black' : 'text-gray-400'}`}>
-              {tab}
-            </Text>
-          </Pressable>
-        ))}
-      </View>
-
-      {/* Cart List */}
       <ScrollView className="px-4 mt-3 mb-20">
-        {cartData.map((store) => (
-          <View key={store.id} className="mb-6">
-            {/* Store Info */}
-            <View className="flex-row items-center mb-2">
-              <Image source={store.logo} className="w-8 h-8 mr-2" resizeMode="contain" />
-              <View>
-                <Text className="font-semibold">{store.storeName}</Text>
-                <Text className="text-sm text-gray-600">Personal Cart</Text>
-                <Text className="text-sm text-green-600">⚡ Delivery by {store.delivery}</Text>
-              </View>
+        {carts.length === 0 ? (
+          <Text className="text-center text-gray-500 mt-8">No products in cart.</Text>
+        ) : (
+          carts.map((cart) => (
+            <View key={cart._id} className="mb-6 border-[1px] border-gray-100 rounded-xl p-4">
+              <Text className="font-semibold mb-1">
+                {cart.store_id?.brandName || "Store"} - {cart.store_id?.storeName}
+              </Text>
+              <Text className="text-xs text-gray-500 mb-1">
+                {cart.items.length} items in cart
+              </Text>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} className="mt-2">
+                {cart.items.map((item) => (
+                  <View key={item.product_id?._id || item.product_id} className="mr-4 items-center w-16">
+                    <Image
+                      source={{
+                        uri: item.product_id?.image
+                          ? item.product_id.image.startsWith("http")
+                            ? item.product_id.image
+                            : `http://10.54.32.81:5000${item.product_id.image}`
+                          : "https://via.placeholder.com/60",
+                      }}
+                      className="w-10 h-10 rounded-lg mb-1 bg-gray-100"
+                      resizeMode="cover"
+                    />
+                    <Text className="text-xs text-gray-900 text-center" numberOfLines={1}>
+                      {item.product_id?.name}
+                    </Text>
+                    <Text className="text-xs text-gray-500">x{item.quantity}</Text>
+                  </View>
+                ))}
+              </ScrollView>
+              <Pressable
+                className="mt-3 bg-green-700 py-2 rounded-full items-center"
+                onPress={() => router.push(`/stores/${cart.store_id?._id}/orders`)}
+              >
+                <Text className="text-white font-semibold">Go to Store Orders</Text>
+              </Pressable>
             </View>
-
-            {/* Products */}
-            <View className="flex-row items-center space-x-2 mb-2">
-              {store.products.slice(0, 5).map((img, index) => (
-                <Image key={index} source={img} className="w-8 h-8 rounded" />
-              ))}
-              {store.extra && (
-                <View className="w-8 h-8 bg-gray-200 rounded items-center justify-center">
-                  <Text className="text-xs">+{store.extra}</Text>
-                </View>
-              )}
-            </View>
-
-            {/* Continue Shopping Button */}
-            <Pressable className="bg-green-700 py-2 rounded-full items-center">
-              <Text className="text-white font-semibold">Continue shopping</Text>
-            </Pressable>
-          </View>
-        ))}
+          ))
+        )}
       </ScrollView>
-
-      {/* Close Button */}
-      <View className="absolute bottom-4 w-full px-4">
-        <Pressable className="bg-gray-100 py-3 rounded-full items-center">
-          <Text className="text-black font-medium">Close</Text>
-        </Pressable>
-      </View>
     </View>
   );
 }

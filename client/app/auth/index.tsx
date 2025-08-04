@@ -5,14 +5,26 @@ import { AnimatedSloganBlock } from "@/components/AnimatedSloganBlock"; // path 
 
 export default function AuthIndex() {
   const router = useRouter();
-  const [role, setRole] = useState<"user" | "delivery">("user");
+  const [role, setRole] = useState<"user" | "delivery" | "store">("user");
 
-  const bgColor = role === "user" ? "bg-[#e0fbfc]" : "bg-[#fdf0d5]";
-  const btnColor = role === "user" ? "bg-[#003049]" : "bg-[#640d14]";
+  const bgColor =
+    role === "user"
+      ? "bg-[#e0fbfc]"
+      : role === "delivery"
+      ? "bg-[#fdf0d5]"
+      : "bg-[#f1faee]";
+  const btnColor =
+    role === "user"
+      ? "bg-[#003049]"
+      : role === "delivery"
+      ? "bg-[#640d14]"
+      : "bg-[#457b9d]";
   const slogan =
     role === "user"
       ? "Groceries delivered from your favorite stores "
-      : "Deliver with speed, earn with flexibility.";
+      : role === "delivery"
+      ? "Deliver with speed, earn with flexibility."
+      : "Grow your business with our platform.";
 
   return (
     <View className={`flex-1 ${bgColor} pt-16 justify-between items-center`}>
@@ -44,6 +56,20 @@ export default function AuthIndex() {
             }`}
           >
             Delivery
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => setRole("store")}
+          className={`px-5 py-2 rounded-full ${
+            role === "store" ? "bg-black" : ""
+          }`}
+        >
+          <Text
+            className={`font-medium text-lg ${
+              role === "store" ? "text-white" : "text-black"
+            }`}
+          >
+            Business
           </Text>
         </TouchableOpacity>
       </View>

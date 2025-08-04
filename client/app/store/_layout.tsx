@@ -11,6 +11,7 @@ export default function StoreLayout() {
         <Tabs.Screen
           name="tabs/index"
           options={{
+            headerShown: false,
             title: "Dashboard",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="grid-outline" size={size} color={color} />
@@ -20,6 +21,7 @@ export default function StoreLayout() {
         <Tabs.Screen
           name="tabs/orders"
           options={{
+            headerShown: false,
             title: "Orders",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="list-outline" size={size} color={color} />
@@ -29,6 +31,7 @@ export default function StoreLayout() {
         <Tabs.Screen
           name="tabs/inventory"
           options={{
+            headerShown: false,
             title: "Inventory",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="cube-outline" size={size} color={color} />
@@ -38,6 +41,7 @@ export default function StoreLayout() {
         <Tabs.Screen
           name="tabs/settings"
           options={{
+            headerShown: false,
             title: "Settings",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="settings-outline" size={size} color={color} />

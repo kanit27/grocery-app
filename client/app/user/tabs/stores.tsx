@@ -1,138 +1,142 @@
-import React from "react";
-import { View, Text, ScrollView, Image, Pressable } from "react-native";
-import { Feather } from "@expo/vector-icons";
-
-// Import category images
-import groceryImg from "../../../assets/images/grocery.png";
-import foodImg from "../../../assets/images/burger.png";
-import clothingImg from "../../../assets/images/brand.png";
-import electronicsImg from "../../../assets/images/device.png";
-import employeesImg from "../../../assets/images/employees.png";
-
-// Import shops data
-import shops from "../../../assets/database/stores.json";
-// Import all possible shop logos
-import dmartLogo from "../../../assets/images/dmart.png";
-import relianceLogo from "../../../assets/images/reliance.png";
-import sevenElevenLogo from "../../../assets/images/7-eleven.png";
-import bigBazaarLogo from "../../../assets/images/big-bazaar.png";
-import spencersLogo from "../../../assets/images/spencers.png";
-import walmartLogo from "../../../assets/images/walmart.png";
-import superEncortoLogo from "../../../assets/images/super-encorto.png";
-import jiffyLogo from "../../../assets/images/jiffy.png";
-import greenMartLogo from "../../../assets/images/green-mart.png";
-import naturesBasketLogo from "../../../assets/images/natures-basket.png";
-import farmerMartLogo from "../../../assets/images/farmer-mart.png";
-import colesLogo from "../../../assets/images/coles.png";
-import payLessLogo from "../../../assets/images/pay-less.png";
-import vmartLogo from "../../../assets/images/dmart.png";
-import moreSupermarketLogo from "../../../assets/images/jiffy.png";
-import starBazaarLogo from "../../../assets/images/big-bazaar.png";
-import nilgirisLogo from "../../../assets/images/walmart.png";
-import metroLogo from "../../../assets/images/dmart.png";
-import relianceFreshLogo from "../../../assets/images/reliance.png";
-
-// Map logo path string to imported image
-const logoMap: Record<string, any> = {
-  "assets/images/dmart.png": dmartLogo,
-  "assets/images/reliance.png": relianceLogo,
-  "assets/images/7-eleven.png": sevenElevenLogo,
-  "assets/images/big-bazaar.png": bigBazaarLogo,
-  "assets/images/spencers.png": spencersLogo,
-  "assets/images/walmart.png": walmartLogo,
-  "assets/images/super-encorto.png": superEncortoLogo,
-  "assets/images/jiffy.png": jiffyLogo,
-  "assets/images/green-mart.png": greenMartLogo,
-  "assets/images/natures-basket.png": naturesBasketLogo,
-  "assets/images/farmer-mart.png": farmerMartLogo,
-  "assets/images/coles.png": colesLogo,
-  "assets/images/pay-less.png": payLessLogo,
-  "assets/images/vmart.png": vmartLogo,
-  "assets/images/more-supermarket.png": moreSupermarketLogo,
-  "assets/images/star-bazaar.png": starBazaarLogo,
-  "assets/images/nilgiris.png": nilgirisLogo,
-  "assets/images/metro.png": metroLogo,
-  "assets/images/reliance-fresh.png": relianceFreshLogo,
-};
-
-// Define the categories array
-const categories = [
-  { label: "Grocery", image: groceryImg },
-  { label: "Restaurant", image: foodImg },
-  { label: "Household", image: clothingImg },
-  { label: "Electronics", image: electronicsImg },
-  { label: "Helpers", image: employeesImg },
-];
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  Pressable,
+  TouchableOpacity,
+} from "react-native";
+import { Feather, Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
+import { getDistance } from "../../../utils/distance";
+import { getTravelTime } from "../../../utils/time";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Stores() {
+  const [stores, setStores] = useState([]);
+  const [user, setUser] = useState<any>(null);
+  const router = useRouter();
+  const [storesLoading, setStoresLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://10.54.32.81:5000/api/store/stores")
+      .then((res) => res.json())
+      .then(setStores);
+
+    // Fetch user profile for location
+    AsyncStorage.getItem("token").then((token) => {
+      if (token) {
+        fetch("http://10.54.32.81:5000/api/user/profile", {
+          headers: { Authorization: `Bearer ${token}` },
+        })
+          .then((res) => res.json())
+          .then(setUser);
+      }
+    });
+  }, []);
+
+  // Step 1: Add _distance to all stores and filter those within 15 km
+  const storesWithDistance = stores.map((store: any) => {
+    const distance =
+      user?.location?.lat &&
+      user?.location?.lng &&
+      store?.location?.lat &&
+      store?.location?.lng
+        ? getDistance(
+            user.location.lat,
+            user.location.lng,
+            store.location.lat,
+            store.location.lng
+          )
+        : Infinity;
+
+    return { ...store, _distance: distance };
+  });
+
+  storesWithDistance.sort((a, b) => a._distance - b._distance);
+
+  // Step 3: Select only one nearest store per brand
+  const uniqueNearestStores: any[] = [];
+  const seenBrands = new Set();
+
+  storesWithDistance.forEach((store) => {
+    const brandKey = store.brandName?.trim().toLowerCase();
+    if (!seenBrands.has(brandKey)) {
+      uniqueNearestStores.push(store);
+      seenBrands.add(brandKey);
+    }
+  });
+
   return (
     <View className="flex-1 bg-white">
-      {/* Fixed Header */}
-      <View className="w-full px-8 pt-12 pb-2 bg-slate-100 flex flex-row justify-between items-center rounded-md z-10">
-        <Text className="text-lg font-bold text-gray-900">Bhavnagar, Gujarat</Text>
-        <Pressable className="active:opacity-40">
-          <Feather name="shopping-cart" size={20} color="black" />
-        </Pressable>
-      </View>
-
-      {/* Fixed Search Bar and Categories */}
-      <View className="w-full px-4 pt-2 pb-2 bg-slate-100 z-10">
-        {/* Search Bar */}
-        <View className="flex-row items-center gap-4 px-2 pb-2 mb-2">
-          <View className="flex-1">
-            <Pressable className="bg-white rounded-2xl px-4 py-3 flex-row items-center">
-              <Feather name="search" size={18} color="black" />
-              <Text className="text-base ml-2 text-gray-700">
-                Search stores
-              </Text>
-            </Pressable>
-          </View>
+      {/* Sticky Header */}
+      <View className="flex-row items-center justify-between px-4 py-3 pt-10 bg-white z-10">
+        <View className="flex-1">
+          <Text className="text-xs text-gray-400">Deliver to</Text>
+          <Text
+            className="text-base font-semibold text-gray-800"
+            numberOfLines={1}
+            ellipsizeMode="tail"
+          >
+            {user?.address || "No address set"}
+          </Text>
         </View>
-        {/* Categories */}
-        <View className="flex flex-row items-center justify-between rounded-lg py-2">
-          {categories.map((cat) => (
-            <View key={cat.label} className="items-center flex-1">
-              <Image
-                source={cat.image}
-                style={{ width: 36, height: 36, marginBottom: 4 }}
-                resizeMode="contain"
-              />
-              <Text className="text-sm font-bold text-gray-900 mb-2">
-                {cat.label}
-              </Text>
-            </View>
-          ))}
-        </View>
+        <TouchableOpacity
+          onPress={() => router.push("/screens/userProfile")}
+          className="ml-4 w-10 h-10 rounded-full bg-gray-100 items-center justify-center"
+        >
+          <Ionicons name="person-circle-outline" size={32} color="#2563eb" />
+        </TouchableOpacity>
       </View>
+      <View className="px-4 pt-2 pb-2 bg-white z-10">
+        <Text className="text-xl font-bold text-center">All Stores</Text>
+      </View>
+      <ScrollView className="flex-1 bg-white">
+        {uniqueNearestStores.length === 0 ? (
+          <Text className="text-center text-gray-500 mt-8">No stores found.</Text>
+        ) : (
+          uniqueNearestStores.map((store: any) => {
+            const distance = store._distance;
+            const time = getTravelTime(distance);
 
-      {/* All Stores List */}
-      <ScrollView className="px-4 mt-3 mb-6">
-        {shops.map((shop, idx) => (
-          <View key={shop.id} className="mb-6 bg-white rounded-xl p-4">
-            <View className="flex-row items-center mb-2">
-              <Image
-                source={logoMap[shop.logo]}
-                className="w-12 h-12 mr-4 rounded-lg"
-                resizeMode="contain"
-              />
-              <View className="flex-1">
-                  <Text className="font-semibold text-lg text-gray-900">
-                    {shop.name}
+            return (
+              <Pressable
+                key={store._id}
+                className="mx-4 my-2 p-4  rounded-xl flex-row items-center"
+                onPress={() => router.push(`/stores/${store._id}`)}
+              >
+                <Image
+                  source={{
+                    uri: store.storeImage
+                      ? `http://10.54.32.81:5000${store.storeImage}`
+                      : "https://via.placeholder.com/80",
+                  }}
+                  style={{
+                    width: 72,
+                    height: 60,
+                    borderRadius: 12,
+                    marginRight: 16,
+                  }}
+                  className="border-[1px] border-gray-200"
+                  resizeMode="contain"
+                />
+                <View>
+                  <Text className="text-lg font-bold text-gray-900">
+                    {store.brandName}
                   </Text>
-                  
-              <View className="flex-row items-center justify-start">
-                <Text className="text-xs text-green-500 font-semibold">
-                  Delivery by {store.delivery} 
-                </Text>
-                <Text className="text-xs text-gray-500 ml-2">
-                   || {store.distance} km away
-                </Text>
-              </View>
-                <Text className="text-xm tracking-tighter text-gray-600 font-bold">{store.category}</Text>
-              </View>
-            </View>
-          </View>
-        ))}
+                  <Text className="text-base text-gray-700">{store.address}</Text>
+                  {distance !== null && time !== null && (
+                    <Text className="text-base text-blue-600 mt-1">
+                      {distance.toFixed(2)} km • {time} min away
+                    </Text>
+                  )}
+                </View>
+              </Pressable>
+            );
+          })
+        )}
       </ScrollView>
     </View>
   );

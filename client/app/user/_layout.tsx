@@ -32,19 +32,9 @@ export default function UserLayout() {
           name="tabs/order"
           options={{
             headerShown: false,
-            title: "Order",
+            title: "Orders",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="cart-outline" size={size} color={color} />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="tabs/settings"
-          options={{
-            headerShown: false,
-            title: "Settings",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="settings-outline" size={size} color={color} />
             ),
           }}
         />

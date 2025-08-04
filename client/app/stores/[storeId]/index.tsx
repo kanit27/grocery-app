@@ -1,259 +1,237 @@
+import React, { useEffect, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { View, Text, ScrollView, Image, TouchableOpacity, TextInput, Dimensions, FlatList } from "react-native";
-import { useState, useMemo } from "react";
-import stores from "../../../assets/database/stores.json";
-import products from "../../../assets/database/products.json";
-import storeInventory from "../../../assets/database/store_inventory.json";
-import { Feather } from "@expo/vector-icons";
+import {
+  View,
+  Text,
+  ScrollView,
+  Pressable,
+  Image,
+  ActivityIndicator,
+  TouchableOpacity,
+  FlatList,
+  Dimensions,
+} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Logos
-const logoMap: Record<string, any> = {
-  "assets/images/dmart.png": require("../../../assets/images/dmart.png"),
-  "assets/images/reliance.png": require("../../../assets/images/reliance.png"),
-  "assets/images/big-bazaar.png": require("../../../assets/images/big-bazaar.png"),
-  "assets/images/7-eleven.png": require("../../../assets/images/7-eleven.png"),
-  "assets/images/spencers.png": require("../../../assets/images/spencers.png"),
-  "assets/images/walmart.png": require("../../../assets/images/walmart.png"),
-  "assets/images/super-encorto.png": require("../../../assets/images/super-encorto.png"),
-  "assets/images/jiffy.png": require("../../../assets/images/jiffy.png"),
-  "assets/images/coles.png": require("../../../assets/images/coles.png"),
-  "assets/images/pay-less.png": require("../../../assets/images/pay-less.png"),
-  "assets/images/shell.png": require("../../../assets/images/shell.png"),
-  "assets/images/natures-basket.png": require("../../../assets/images/natures-basket.png"),
-  "assets/images/green-mart.png": require("../../../assets/images/green-mart.png"),
-  "assets/images/hamleys.png": require("../../../assets/images/hamleys.png"),
-};
-
-// Placeholder product image
-const productPlaceholder = require("../../../assets/images/grocery.png");
-
-// Section categories (customize as needed)
-const SECTIONS = [
-  "Offers",
-  "Grocery",
-  "Fruits",
-  "Vegetables",
-  "Snacks",
-  "Beverages",
-  "Dairy",
-  "Bakery",
-  "Spices & Staples",
-  "Noodles",
-];
-
-const StoreScreen = () => {
+export default function StoreScreen() {
   const { storeId } = useLocalSearchParams();
   const router = useRouter();
-  const [search, setSearch] = useState("");
+  const [store, setStore] = useState<any>(null);
+  const [products, setProducts] = useState<any[]>([]);
+  const [cart, setCart] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  // Find store
-  const store = stores.find((s) => String(s.id) === String(storeId));
+  useEffect(() => {
+    const fetchStore = async () => {
+      const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}`);
+      setStore(await res.json());
+    };
+    const fetchProducts = async () => {
+      const res = await fetch(`http://10.54.32.81:5000/api/store/stores/${storeId}/products`);
+      setProducts(await res.json());
+    };
+    const fetchCart = async () => {
+      const token = await AsyncStorage.getItem("token");
+      if (!token) return;
+      const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json();
+      setCart(data.items || []);
+      await AsyncStorage.setItem(`cart_${storeId}`, JSON.stringify(data.items || []));
+    };
+    setLoading(true);
+    Promise.all([fetchStore(), fetchProducts(), fetchCart()]).finally(() => setLoading(false));
+  }, [storeId]);
+
+  const handleAddToCart = async (productId: string) => {
+    const token = await AsyncStorage.getItem("token");
+    if (!token) return;
+    const existing = cart.find(
+      (item) => item.product_id === productId || item.product_id?._id === productId
+    );
+    const quantity = existing ? existing.quantity + 1 : 1;
+    const res = await fetch(`http://10.54.32.81:5000/api/cart/${storeId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({ product_id: productId, quantity }),
+    });
+    const data = await res.json();
+    setCart(data.items || []);
+    await AsyncStorage.setItem(`cart_${storeId}`, JSON.stringify(data.items || []));
+  };
+
+  const isInCart = (productId: string) =>
+    cart.some((item) => item.product_id === productId || item.product_id?._id === productId);
+
+  if (loading) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <ActivityIndicator size="large" color="#2563eb" />
+      </View>
+    );
+  }
 
   if (!store) {
     return (
       <View className="flex-1 justify-center items-center bg-white">
         <Text className="text-xl font-bold text-red-600 mb-2">Store not found</Text>
-        <Text className="text-gray-500">Please try again</Text>
-        <TouchableOpacity
-          className="bg-blue-600 px-6 py-2 rounded-full mt-4"
-          onPress={() => router.back()}
-        >
-          <Text className="text-white font-semibold">Go Back</Text>
-        </TouchableOpacity>
       </View>
     );
   }
 
-  // Get inventory for this store
-  const inventoryForStore = storeInventory.filter(
-    (item) => item.store_id === store.id
-  );
+  // Arrange products into rows of 3
+  const productRows = [];
+  for (let i = 0; i < products.length; i += 3) {
+    productRows.push(products.slice(i, i + 3));
+  }
 
-  // Map inventory to products with details
-  const storeProducts = inventoryForStore
-    .map((inv) => {
-      const product = products.find((p) => p.id === inv.product_id);
-      return product
-        ? {
-            ...product,
-            price: inv.price,
-            stock_qty: inv.stock_qty,
-            unit: inv.unit || "1 pc", // fallback unit
-            image: productPlaceholder, // You can map real images if available
-          }
-        : null;
-    })
-    .filter(Boolean);
-
-  // Group products by section/category
-  const sectionedProducts = useMemo(() => {
-    const sections: Record<string, any[]> = {};
-    for (const section of SECTIONS) sections[section] = [];
-    for (const prod of storeProducts) {
-      const cat = prod.category || "Grocery";
-      if (sections[cat]) sections[cat].push(prod);
-      else sections["Grocery"].push(prod);
+  // Helper to get product details from cart item
+  const getProductDetails = (cartItem: any) => {
+    if (cartItem.product_id && typeof cartItem.product_id === "object") {
+      return cartItem.product_id;
     }
-    return sections;
-  }, [storeProducts]);
-
-  // Filter by search
-  const filteredSections = useMemo(() => {
-    if (!search.trim()) return sectionedProducts;
-    const lower = search.trim().toLowerCase();
-    const filtered: Record<string, any[]> = {};
-    for (const section in sectionedProducts) {
-      filtered[section] = sectionedProducts[section].filter(
-        (prod) =>
-          prod.name?.toLowerCase().includes(lower) ||
-          prod.category?.toLowerCase().includes(lower)
-      );
-    }
-    return filtered;
-  }, [search, sectionedProducts]);
-
-  // Responsive store info height
-  const storeInfoHeight = Math.round(Dimensions.get("window").height * 0.15);
+    return products.find((p) => p._id === cartItem.product_id) || {};
+  };
 
   return (
     <View className="flex-1 bg-white">
-      {/* Store Info Header */}
-      <View
-        className="w-full mt-4 items-center justify-center px-6"
-        style={{
-          height: storeInfoHeight,
-          backgroundColor: "white",
-          position: "relative",
-        }}
-      >
-        {/* Back Button */}
-        <TouchableOpacity
-          onPress={() => router.back()}
-          style={{
-            position: "absolute",
-            left: 18,
-            top: 25,
-            padding: 8,
-            zIndex: 20,
-          }}
-        >
-          <Feather name="arrow-left" size={24} color="#222" />
-        </TouchableOpacity>
 
-        <Image
-          source={logoMap[store.logo]}
-          style={{
-            width: 67,
-            height: 52,
-            borderRadius: 14,
-            borderWidth: 1,
-            borderColor: "#e5e7eb",
-            backgroundColor: "#fff",
-            marginBottom: 4,
-          }}
-          resizeMode="cover"
-        />
-        <Text className="text-xl font-bold text-gray-900 text-center">
-          {store.name}
-        </Text>
-        <View className="flex-row items-center justify-center mt-1">
-          <Feather name="clock" size={14} color="#64748b" />
-          <Text className="text-xs text-gray-500 ml-1 mr-2">
-            Delivery in 20-30 min
-          </Text>
-          <Feather name="map-pin" size={14} color="#64748b" />
-          <Text className="text-xs text-gray-500 ml-1">
-            {store.area || "Near you"}
-            {store.pincode ? `, ${store.pincode}` : ""}
-          </Text>
-        </View>
-      </View>
-
-      {/* Search Bar */}
-      <View className="px-6 pb-2 bg-white z-10">
-        <View className="flex-row items-center bg-gray-100 rounded-2xl px-4 py-1">
-          <Feather name="search" size={18} color="#64748b" />
-          <TextInput
-            className="flex-1 ml-2 text-base text-gray-700"
-            placeholder="Search for products..."
-            value={search}
-            onChangeText={setSearch}
-            placeholderTextColor="#94a3b8"
+        {/* Store Info */}
+        <View className="flex-row justify-between items-start px-16 pt-12 pb-4 bg-white">
+          <Image
+            source={{
+              uri: store.storeImage
+                ? `http://10.54.32.81:5000${store.storeImage}`
+                : "https://via.placeholder.com/120",
+            }}
+            className="w-28 h-20 rounded-2xl mb-3 border-[1px] border-gray-200"
+            resizeMode="cover"
           />
+          <View className="mb-4 items-end">
+            <Text className="text-2xl font-bold text-gray-900 mb-1">{store.brandName}</Text>
+            <Text className="text-base text-gray-700 mb-1">
+              {store.storeName}, {store.pincode}
+            </Text>
+            <Text className="text-base text-gray-500 mb-1">
+              Delivery in {store.deliveryRadiusKm} km
+            </Text>
+          </View>
         </View>
-      </View>
 
-      {/* Products Sections - Horizontal Scroll */}
-      <ScrollView
-        className="flex-1 px-0 pt-2 mb-6"
-        showsVerticalScrollIndicator={false}
-      >
-        {SECTIONS.map((section) => {
-          const items = filteredSections[section] || [];
-          if (!items.length) return null;
-          return (
-            <View key={section} className="mb-8">
-              <Text className="text-lg font-bold text-gray-800 mb-3 px-4">
-                {section}
-              </Text>
-              <FlatList
-                data={items}
-                keyExtractor={(item) => item.id}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={{ paddingHorizontal: 16 }}
-                renderItem={({ item: product }) => (
-                  <View
-                    className="bg-white rounded-2xl shadow-sm p-3 mr-4"
-                    style={{ width: 170, position: "relative" }}
+      <ScrollView className="flex-1 bg-white">
+        {/* Products Grid */}
+        <Text className="text-lg font-bold text-gray-800 px-6 mb-2">Products</Text>
+        {products.length === 0 ? (
+          <Text className="text-center text-gray-500 mt-8">No products found.</Text>
+        ) : (
+          <View className="px-2 pb-6">
+            {productRows.map((row, rowIdx) => (
+              <View key={rowIdx} className="flex-row mb-4">
+                {row.map((product: any) => (
+                  <Pressable
+                    key={product._id}
+                    className="flex-1 mx-2 bg-white rounded-xl items-center p-3 border-[1px] border-gray-100"
+                    onPress={() => router.push(`/stores/${storeId}/${product._id}`)}
+                    style={{ minWidth: 0 }}
                   >
-                    <View>
+                    <View className="relative w-full items-center">
                       <Image
-                        source={product.image}
-                        className="w-full h-24 rounded-xl mb-2"
-                        resizeMode="cover"
+                        source={{
+                          uri: product.image
+                            ? product.image.startsWith("http")
+                              ? product.image
+                              : `http://10.54.32.81:5000${product.image}`
+                            : "https://via.placeholder.com/60",
+                        }}
+                        className="w-20 h-20 rounded-lg mb-2"
+                        resizeMode="contain"
                       />
                       <TouchableOpacity
-                        className="absolute right-2 top-2 bg-blue-600 rounded-full p-1"
-                        onPress={() => {
-                          /* Add to cart logic here */
-                        }}
-                        style={{ zIndex: 10 }}
+                        className="absolute bottom-0 right-0 bg-green-600 rounded-full p-2"
+                        onPress={() => handleAddToCart(product._id)}
                       >
-                        <Feather name="plus" size={18} color="#fff" />
+                        <Text className="text-xs text-white">
+                          {isInCart(product._id) ? "Added" : "Add"}
+                        </Text>
                       </TouchableOpacity>
                     </View>
-                    <Text
-                      className="text-base font-semibold text-gray-900 mb-1"
-                      numberOfLines={2}
-                    >
-                      {product.name || "Product"}
+                    <Text className="text-sm font-bold text-gray-900 text-center" numberOfLines={2}>
+                      {product.name}
                     </Text>
-                    <View className="flex-row items-center justify-between mb-1">
-                      <Text className="text-xs text-gray-500">
-                        {product.unit || "1 pc"}
-                      </Text>
-                      <Text className="text-sm text-green-700 font-bold">
-                        ₹{product.price}
-                      </Text>
-                    </View>
-                  </View>
-                )}
-              />
-            </View>
-          );
-        })}
-        {/* If no products found */}
-        {Object.values(filteredSections).flat().length === 0 && (
-          <View className="items-center mt-16">
-            <Feather name="search" size={48} color="#cbd5e1" />
-            <Text className="text-lg text-gray-400 mt-4">
-              No products found
-            </Text>
+                    <Text className="text-xs text-gray-500">{product.unit || "1 pc"}</Text>
+                    <Text className="text-base text-green-700 font-bold">₹{product.price}</Text>
+                  </Pressable>
+                ))}
+                {/* Fill empty columns if needed for alignment */}
+                {row.length < 3 &&
+                  Array.from({ length: 3 - row.length }).map((_, i) => (
+                    <View key={`empty-${i}`} className="flex-1 mx-2" />
+                  ))}
+              </View>
+            ))}
           </View>
         )}
       </ScrollView>
+
+      {/* Horizontal Cart Scroller */}
+      {cart.length > 0 && (
+        <View className="absolute bottom-0 left-0 right-0 bg-white py-2 border-t border-gray-200">
+          <View className="flex-row items-center">
+            <FlatList
+              data={[...cart].reverse()}
+              horizontal
+              keyExtractor={(item) =>
+                item.product_id?._id || item.product_id || Math.random().toString()
+              }
+              showsHorizontalScrollIndicator={false}
+              renderItem={({ item }) => {
+                const product = getProductDetails(item);
+                return (
+                  <View className=" mb-6 mt-2 items-center w-28">
+                    <Image
+                      source={{
+                        uri: product.image
+                          ? product.image.startsWith("http")
+                            ? product.image
+                            : `http://10.54.32.81:5000${product.image}`
+                          : "https://via.placeholder.com/60",
+                      }}
+                      className="w-16 h-16 rounded-lg mb-1"
+                      resizeMode="contain"
+                    />
+                  </View>
+                );
+              }}
+            />
+            <TouchableOpacity
+              className="rounded-xl px-8 bg-slate-100 py-4 items-center"
+              onPress={async () => {
+                // Place the order with current cart
+                const token = await AsyncStorage.getItem("token");
+                if (!token) return;
+                const res = await fetch(`http://10.54.32.81:5000/api/orders/${storeId}`, {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`,
+                  },
+                  body: JSON.stringify({ items: cart }),
+                });
+                // Optionally handle errors here
+                router.push(`/stores/${storeId}/orders`);
+              }}
+            >
+              <Ionicons name="cart" size={24} color="#000000" />
+              <Text className="text-xs text-gray-500">Order</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )}
     </View>
   );
-};
-export default StoreScreen;
+}

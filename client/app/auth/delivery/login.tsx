@@ -25,9 +25,7 @@ export default function DeliveryLogin() {
       }
 
       await AsyncStorage.setItem("token", res.token);
-     if (res.delivery) {
-    await AsyncStorage.setItem("delivery", JSON.stringify({ ...res.delivery, role: "delivery_partner" }));
-  }
+     await AsyncStorage.setItem("user", JSON.stringify({ ...res.delivery, role: "delivery_partner" }));
 
       router.replace("/delivery/tabs"); // 🔁 Redirect to home
     } catch (err) {

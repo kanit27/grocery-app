@@ -1,133 +1,81 @@
-import React, { useState } from "react";
-import { View, Text, Image, ScrollView, Pressable } from "react-native";
-import { Feather } from "@expo/vector-icons";
-
-// Import category images
-import groceryImg from "../../../assets/images/grocery.png";
-import foodImg from "../../../assets/images/burger.png";
-import clothingImg from "../../../assets/images/brand.png";
-import electronicsImg from "../../../assets/images/device.png";
-import employeesImg from "../../../assets/images/employees.png";
-
-
-
-// Categories array
-const categories = [
-  { label: "Grocery", image: groceryImg },
-  { label: "Restaurant", image: foodImg },
-  { label: "Household", image: clothingImg },
-  { label: "Electronics", image: electronicsImg },
-  { label: "Helpers", image: employeesImg },
-];
-
-// const cartData = [
-//   {
-//     id: "1",
-//     storeName: "Walmart",
-//     logo: require("../../assets/images/walmart.png"),
-//     delivery: "1:35pm",
-//     products: [require("../../assets/products/apple.png")],
-//   },
-//   {
-//     id: "2",
-//     storeName: "7-Eleven",
-//     logo: require("../../assets/images/7-eleven.png"),
-//     delivery: "1:40pm",
-//     products: [
-//       require("../../assets/products/broccoli.png"),
-//       require("../../assets/products/carrot.png"),
-//       require("../../assets/products/chili-pepper.png"),
-//       require("../../assets/products/cucumber.png"),
-//       require("../../assets/products/milk.png"),
-//       require("../../assets/products/strawberry.png"),
-//       require("../../assets/products/apple.png"),
-//       require("../../assets/products/watermelon.png"),
-//     ],
-//     extra: 5,
-//   },
-//   {
-//     id: "3",
-//     storeName: "The Home Depot",
-//     logo: require("../../assets/images/jiffy.png"),
-//     delivery: "1:35pm",
-//     products: [require("../../assets/products/strawberry.png")],
-//   },
-//   {
-//     id: "4",
-//     storeName: "Big Bazaar",
-//     logo: require("../../assets/images/big-bazaar.png"),
-//     delivery: "1:40pm",
-//     products: [require("../../assets/products/apple.png")],
-//   },
-//   {
-//     id: "5",
-//     storeName: "Spencer's",
-//     logo: require("../../assets/images/spencers.png"),
-//     delivery: "1:35pm",
-//     products: [require("../../assets/products/chili-pepper.png")],
-//   }
-// ];
+import React, { useEffect, useState } from "react";
+import { View, Text, Image, ScrollView, ActivityIndicator } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Orders() {
+  const [orders, setOrders] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      const token = await AsyncStorage.getItem("token");
+      if (!token) return;
+      const res = await fetch("http://10.54.32.81:5000/api/orders/user/all", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json();
+      setOrders(data || []);
+      setLoading(false);
+    };
+    fetchOrders();
+  }, []);
+
+  if (loading) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <ActivityIndicator size="large" color="#2563eb" />
+      </View>
+    );
+  }
+
   return (
-    <View className="flex-1 bg-white">
-      {/* Fixed Header */}
-      <View className="w-full px-8 pt-12 pb-2 bg-slate-100 flex flex-row justify-between items-center rounded-md z-10">
-        <Text className="text-lg font-bold text-gray-900">
-          Bhavnagar, Gujarat
-        </Text>
-        <Pressable className="active:opacity-40">
-          <Feather name="shopping-cart" size={20} color="black" />
-        </Pressable>
+    <View className="flex-1 bg-white pt-6">
+      {/* Sticky Header */}
+      <View className="px-4 py-6 bg-white z-10">
+        <Text className="text-xl font-bold">Your Orders</Text>
       </View>
-
-      {/* Fixed Search Bar and Categories */}
-      <View className="w-full px-4 pt-2 pb-2 bg-slate-100 z-10">
-        {/* Search Bar */}
-        <View className="flex-row items-center gap-4 px-2 pb-2 mb-2">
-          <View className="flex-1">
-            <Pressable className="bg-white rounded-2xl px-4 py-3 flex-row items-center">
-              <Feather name="search" size={18} color="black" />
-              <Text className="text-base ml-2 text-gray-700">
-                Search orders
+      <ScrollView className="px-4 mt-3 mb-20">
+        {orders.length === 0 ? (
+          <Text className="text-center text-gray-500 mt-8">No orders found.</Text>
+        ) : (
+          orders.map((order) => (
+            <View key={order._id} className="mb-6 border-[1px] border-gray-100 rounded-xl p-4">
+              <Text className="font-semibold mb-1">
+                {order.store_id?.brandName || "Store"} - {order.store_id?.storeName}
               </Text>
-            </Pressable>
-          </View>
-        </View>
-        {/* Categories */}
-        <View className="flex flex-row items-center justify-between rounded-lg py-2">
-          {categories.map((cat) => (
-            <View key={cat.label} className="items-center flex-1">
-              <Image
-                source={cat.image}
-                style={{ width: 36, height: 36, marginBottom: 4 }}
-                resizeMode="contain"
-              />
-              <Text className="text-sm font-bold text-gray-900 mb-2">
-                {cat.label}
+              <Text className="text-xs text-gray-500 mb-1">
+                Order #{order._id.slice(-6).toUpperCase()} | {order.status}
               </Text>
+              <Text className="text-xs text-gray-500 mb-1">
+                Placed: {new Date(order.createdAt).toLocaleString()}
+              </Text>
+              <Text className="text-xs text-green-700 mb-1">
+                Delivery in: {order.estimatedDeliveryTime || 30} min
+              </Text>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} className="mt-2">
+                {order.items.map((item) => (
+                  <View key={item.product_id?._id || item.product_id} className="mr-4 items-center w-16">
+                    <Image
+                      source={{
+                        uri: item.product_id?.image
+                          ? item.product_id.image.startsWith("http")
+                            ? item.product_id.image
+                            : `http://10.54.32.81:5000${item.product_id.image}`
+                          : "https://via.placeholder.com/60",
+                      }}
+                      className="w-10 h-10 rounded-lg mb-1 bg-gray-100"
+                      resizeMode="cover"
+                    />
+                    <Text className="text-xs text-gray-900 text-center" numberOfLines={1}>
+                      {item.product_id?.name}
+                    </Text>
+                    <Text className="text-xs text-gray-500">x{item.quantity}</Text>
+                  </View>
+                ))}
+              </ScrollView>
             </View>
-          ))}
-        </View>
-      </View>
-
-      {/* Cart List */}
-      <ScrollView className="px-4 mt-1 mb-2">
-        {/* Example Order Item */}
-        <View className="bg-white border border-gray-200 rounded-lg p-4 mb-3">
-          <Text className="text-base font-semibold text-gray-900">Order #12345</Text>
-          <Text className="text-sm text-gray-600">2 items | ₹480 | Pending</Text>
-          <Text className="text-xs text-gray-400">To: Rakesh, Virar East</Text>
-        </View>
-
-        {/* Another Order Item */}
-        <View className="bg-white border border-gray-200 rounded-lg p-4 mb-3">
-          <Text className="text-base font-semibold text-gray-900">Order #12346</Text>
-          <Text className="text-sm text-gray-600">5 items | ₹1320 | Packed</Text>
-          <Text className="text-xs text-gray-400">To: Shruti, Virar West</Text>
-        </View>
-
-        {/* Add more orders as needed */}
+          ))
+        )}
       </ScrollView>
     </View>
   );

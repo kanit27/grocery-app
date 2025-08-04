@@ -1,0 +1,796 @@
+[{
+  "_id": {
+    "$oid": "688cb797e5c0c8dc8aa23dcd"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai2.com",
+  "passwordHash": "$2b$10$/kdbaATIChNTRrUR.ZOJqezRzP9vWq3opG0yygB7/XgxqopkmEhkW",
+  "deliveryRadiusKm": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-01T12:48:23.313Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-01T14:38:27.183Z"
+  },
+  "__v": 0,
+  "address": "Apeejay House, Ground Floor, 3, Dinshaw Vacha Rd, near K.C College, Churchgate, Mumbai, Maharashtra 400020",
+  "city": "Mumbai",
+  "contactPersonName": "Kanit Gohel ",
+  "contactPersonPhone": "0283838",
+  "phone": "9817272728",
+  "pincode": "400001",
+  "state": "Maharashtra ",
+  "storeHours": "9-10",
+  "storeName": "Nature Basket",
+  "storeImage": "/uploads/1754056967642.jpg",
+  "location": {
+    "lat": 18.929614283654125,
+    "lng": 72.82754027671334
+  }
+},
+{
+  "_id": {
+    "$oid": "688e0732c738f20986223c78"
+  },
+  "brandName": "7 eleven",
+  "email": "7eleven@mumbai1.com",
+  "passwordHash": "$2b$10$327mZLtPj0Wfqs.wrM1YH.a0pzHRn6kxETGgUBwURBm1KCO1riKee",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T12:40:18.874Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T12:40:18.874Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4de66fed69604af8d68a"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai1.com",
+  "passwordHash": "$2b$10$AVDz5o88FaW5991hFhOEs.TDmPFQvUrVGBKqcKibEymrKsEDKgbEO",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:41:58.770Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:41:58.770Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4e106fed69604af8d68d"
+  },
+  "brandName": "Reliance Smart ",
+  "email": "reliance@mumbai1.com",
+  "passwordHash": "$2b$10$ht3xEQWHTF/04jx4reMZouznSc8znwr4JxOuy6.LX0iUMCPEe62o6",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:42:40.302Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:42:40.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4e556fed69604af8d697"
+  },
+  "brandName": "Star Bazaar",
+  "email": "starbazaar@mumbai1.com",
+  "passwordHash": "$2b$10$4f7dcPjdlRr1iZOj6D8raOse1yzC5pYuSRRg7wdoMX.iwpiCRz6Kq",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:43:49.333Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:43:49.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4f8d6fed69604af8d69a"
+  },
+  "brandName": "Home Foods Supermarket",
+  "email": "homefood@mumbai1.com",
+  "passwordHash": "$2b$10$oShFIbpi9UOkI2qKny4lIOdR8XdcrLyvSrhi17439edmU3ys/K9YS",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:49:01.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:49:01.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4fcf6fed69604af8d69d"
+  },
+  "brandName": "Poorti Supermarket",
+  "email": "poorti@mumbai1.com",
+  "passwordHash": "$2b$10$bdshon6WoBSK4e6P/L35leWLnJbfDVLonHnOyIGiQuG80Oc0pLDAm",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:50:07.618Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:50:07.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e4ff36fed69604af8d6a0"
+  },
+  "brandName": "Nature’s Basket",
+  "email": "naturebasket@mumbai1.com",
+  "passwordHash": "$2b$10$Zn2qnFgDGTw0bT1AidnYse4yuKECBUMUEPc8ZDxbcsJ8kQA0G7Ebi",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:50:43.562Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:50:43.562Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e50436fed69604af8d6a3"
+  },
+  "brandName": "The Urban Platter Store",
+  "email": "urbanplatter@mumbai1.com",
+  "passwordHash": "$2b$10$vACpCNPAd2HUOjfm1K3.pOrb1.4a3u6EFzq3DNitv5tYzGrOgbadG",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:52:03.356Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:52:03.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e50a56fed69604af8d6a6"
+  },
+  "brandName": "Rajat Food Mart",
+  "email": "rajatfoodmart@mumbai1.com",
+  "passwordHash": "$2b$10$ck3ytTvEjCQ9p2fjtjfHoOHDAUWZF6CCrDa9YtXA4mZEZKrb2VzRW",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:53:41.300Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:53:41.300Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e51396fed69604af8d6a9"
+  },
+  "brandName": "Cornucopia ️ Food Store",
+  "email": "cornucopia@mumbai1.com",
+  "passwordHash": "$2b$10$Lk34KX9mZThaa1MGovKIx.Ai5End5TiLk1SIBQJ6bqVOPeExgDrpy",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:56:09.371Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:56:09.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e51616fed69604af8d6ac"
+  },
+  "brandName": "Benzer Foods",
+  "email": "benzer@mumbai1.com",
+  "passwordHash": "$2b$10$v1Lehjr8cgqCgCSI2KK.QOjMdnEpK.G034blvXP3caC20cJckwxF2",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:56:49.073Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:56:49.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e51be6fed69604af8d6af"
+  },
+  "brandName": "Sarvodaya Super market",
+  "email": "sorvodaya@mumbai1.com",
+  "passwordHash": "$2b$10$sa4U9UcpHm8CqUMBvA8IYeNbA6trk.Djr5fcMv2HYGqONP2AGEHqe",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:58:22.090Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:58:22.090Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e52176fed69604af8d6b2"
+  },
+  "brandName": "Zehak Supermarket",
+  "email": "zehak@mumbai1.com",
+  "passwordHash": "$2b$10$KBaz/d.HTBtD5KMqWNk5fOuuYybEsBh5CLuT9pArN9090xXKo9GBm",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T17:59:51.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T17:59:51.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e525d6fed69604af8d6b5"
+  },
+  "brandName": "Star Quik",
+  "email": "starquik@mumbai1.com",
+  "passwordHash": "$2b$10$9BeNIV4HxWAyJ7j4BsXHN.uj1GXSLDmlgqzgMJKN0euy0ZriRRmTS",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:01:01.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:01:01.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e529c6fed69604af8d6b8"
+  },
+  "brandName": "Mumbai 28 Snacks",
+  "email": "mumbai28snacks@mumbai1.com",
+  "passwordHash": "$2b$10$B5xPtDAPa/0wIw/khczSPOwKJ3buqAgeyhOvq3uqAztRh03hvbtbO",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:02:04.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:02:04.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e58f86fed69604af8d6c0"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai2.com",
+  "passwordHash": "$2b$10$BTFZRdt.CXYlc2wFsM42KeDyMsOIGdROo4dtXEYtWpbVmJPszt2aq",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:29:12.518Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:29:12.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e592b6fed69604af8d6c3"
+  },
+  "brandName": "Dmart ",
+  "email": "dmart@mumbai3.com",
+  "passwordHash": "$2b$10$zA0ZvJHY4pLMIX3NGWbFQur9IGfp3h6GxNJl8v36zMtwTvcIDaumy",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:30:03.715Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:30:03.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e59606fed69604af8d6c8"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai4.com",
+  "passwordHash": "$2b$10$nKLo1zw5kIkTZ2182hMDF.tvKgyB8/lvl7pYgoxTZ.YBmaqaU5wQS",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:30:56.460Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:30:56.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5a396fed69604af8d6cb"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai5.com",
+  "passwordHash": "$2b$10$INNCnQHPK/Do9q0b52AeCufQ3WGuR8t6jV1YvQchK/TA2UO.O22o6",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:34:33.903Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:34:33.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5a9d6fed69604af8d6ce"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai6.com",
+  "passwordHash": "$2b$10$bGsKgGTrNgrD.k9Z5gGQH.fD67ZkqC2tB234l/.SobDhhqfSL3y4C",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:36:13.703Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:36:13.703Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5ab46fed69604af8d6d1"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai7.com",
+  "passwordHash": "$2b$10$NuqebOOf52XN48LRwwaE3u0PE3e9HDKPA1FKrQFGemwEp5U2nLerC",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:36:36.100Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:36:36.100Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5ac46fed69604af8d6d4"
+  },
+  "brandName": "Dmart",
+  "email": "dmart@mumbai8.com",
+  "passwordHash": "$2b$10$akDocyrKiiDT5A4V4KqH7.AibkMNLBfMQeJOEYA7WpyD4JGltEVjK",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:36:52.664Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:36:52.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5b306fed69604af8d6d7"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai2.com",
+  "passwordHash": "$2b$10$i4zgDjgqshZGa6Go5SfmVuFKyP.lhjTgCb31jZ/5upZ96qHHv3i5i",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:38:40.813Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:38:40.813Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5b466fed69604af8d6da"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai3.com",
+  "passwordHash": "$2b$10$erC4J6HHbN7lDss9JXwhpOwalNnYmCHmNEvtPMuUHFNbAPMsK3ava",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:39:02.281Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:39:02.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5bbb6fed69604af8d6dd"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai4.com",
+  "passwordHash": "$2b$10$w8vd9OkMYHoDXRywgV3lLum9Uq0WqXmUu.I2K5Jkb9ln29fMMqLiy",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:40:59.396Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:40:59.396Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5bd76fed69604af8d6e0"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai5.com",
+  "passwordHash": "$2b$10$moDdkV1P9lAQGAMUVxht8.rZYm74pO/mxBq1Cn5EDV9G/HxEptjyu",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:41:27.003Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:41:27.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5c166fed69604af8d6e3"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai6.com",
+  "passwordHash": "$2b$10$9LEnIZNDreCz2TbwzOxScebeQ6CRC99fWrFCY0JaeC0yGG.omWI4G",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:42:30.614Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:42:30.614Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5c2a6fed69604af8d6e6"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai7.com",
+  "passwordHash": "$2b$10$Oue2p8a4zFy.A86hhib3UOSiITadGGoWE7Vx2vSDTRcVqsHKMLxsK",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:42:50.469Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:42:50.469Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5c496fed69604af8d6e9"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai8.com",
+  "passwordHash": "$2b$10$xCVGlSelcuRkBhR/LeRiWu9/ZEE/Na2MUtbJ1cYPa2V7dwhT29TSC",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:43:21.484Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:43:21.484Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5c646fed69604af8d6ec"
+  },
+  "brandName": "Reliance Smart",
+  "email": "reliance@mumbai9.com",
+  "passwordHash": "$2b$10$sznnBeMyMKvo9HnLYm.6xOMVE0z.VF0pLLsZ9Q.nXRt2A71uh0E1a",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:43:48.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:43:48.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5d746fed69604af8d6ef"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai3.com",
+  "passwordHash": "$2b$10$js96E7LVlZAlc8qgxAl/c.qwLmejxvefjt.vMRikS0AG7ZJmgJqgO",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:48:20.434Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:48:20.434Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5d8d6fed69604af8d6f2"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai4.com",
+  "passwordHash": "$2b$10$5FKP1Bqh5aSp3PukPtb8K.3qpIp5emmYaEL8oy9icfOFAfWrDFGMm",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:48:45.447Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:48:45.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5dc36fed69604af8d6f5"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai5.com",
+  "passwordHash": "$2b$10$u/ojc.aCcP8ld9V7iMYLA.pM2.CSgpodPUy0wiXPr0Zoi2TMDUjZS",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:49:39.137Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:49:39.137Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5df56fed69604af8d6f8"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai6.com",
+  "passwordHash": "$2b$10$/c45Z43pN6WV0XcFqAKPz.2mmRmO2D74EcAcXufwTiel/zg3caTMu",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:50:29.313Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:50:29.313Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5e4c6fed69604af8d6fb"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai7.com",
+  "passwordHash": "$2b$10$ji6rroLknd26H75X6k53TedP1.JpbJQmLQr9KeSqKG3r.EnEvQDYu",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:51:56.640Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:51:56.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5e676fed69604af8d6fe"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai8.com",
+  "passwordHash": "$2b$10$aFsXs1RxVxeiv7wdBSOWIuZ/Xo/LZE9tHjdfo812ONJKX7MdiIuQW",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:52:23.109Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:52:23.109Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5e776fed69604af8d701"
+  },
+  "brandName": "Nature's Basket",
+  "email": "naturebasket@mumbai9.com",
+  "passwordHash": "$2b$10$k3q.5Y3wxP172XQXpxQ0ue1v0bBE80UBdIysfwK9Pc.Lu0AJTTS2a",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:52:39.721Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:52:39.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5fb36fed69604af8d704"
+  },
+  "brandName": "7 Eleven",
+  "email": "7eleven@mumbai2.com",
+  "passwordHash": "$2b$10$oQMSahQHUbU3p70ciTnNw.9q.AOkIJZvuml.LSHbIgD0Ta/UFWQTy",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:57:55.364Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:57:55.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5fc66fed69604af8d707"
+  },
+  "brandName": "7 Eleven",
+  "email": "7eleven@mumbai3.com",
+  "passwordHash": "$2b$10$Bu4QLcCdUN7AvDun/Um4qOAgN1tWQvAwtAdwRUG81jyCL8.zrah0e",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:58:14.908Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:58:14.908Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5fd86fed69604af8d70a"
+  },
+  "brandName": "7 Eleven ",
+  "email": "7eleven@mumbai4.com",
+  "passwordHash": "$2b$10$cfJwOlvKB8xPS/y3TY26FeG.HdDGnE.rB1wsTymDH4qiGlYyGQcUa",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:58:32.773Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:58:32.773Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e5fef6fed69604af8d70d"
+  },
+  "brandName": "7 Eleven",
+  "email": "7eleven@mumbai5.com",
+  "passwordHash": "$2b$10$IhoF6DDOevIac1ases7ad.ieyF1WcwfVV1C2G3f3jHBY9vhnD4uNa",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:58:55.045Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:58:55.045Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e60026fed69604af8d710"
+  },
+  "brandName": "7 Eleven",
+  "email": "7eleven@mumbai6.com",
+  "passwordHash": "$2b$10$AdhawfyceoprEYytWB7OQONPn5FaKtDJ0k2ngezk9fDU.Izm0vmSG",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:59:14.202Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:59:14.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e60126fed69604af8d713"
+  },
+  "brandName": "7 Eleven",
+  "email": "7eleven@mumbai7.com",
+  "passwordHash": "$2b$10$Ai.9Co.oDJ8kE4fQfBcK1.QmmOdn.AgP5iDyLslnJBYbFZRHCZtMy",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T18:59:30.460Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T18:59:30.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e60e76fed69604af8d716"
+  },
+  "brandName": "Urban Platter",
+  "email": "urbanplatter@mumbai2.com",
+  "passwordHash": "$2b$10$rLcCTwWqHnJFbUcoNd/zZ.RVsXfFqOOA3NDep0UxY.fCp/Qpn0wDm",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T19:03:03.652Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T19:03:03.652Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688e61346fed69604af8d719"
+  },
+  "brandName": "Urban Platter",
+  "email": "urbanplatter@mumbai3.com",
+  "passwordHash": "$2b$10$Gem06o5vyBhhp0gu5MpZBOb/uqpymWcVHb1iEoGsPv2EriwTdP8VO",
+  "deliveryRadiusKm": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-08-02T19:04:20.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T19:04:20.745Z"
+  },
+  "__v": 0
+}]

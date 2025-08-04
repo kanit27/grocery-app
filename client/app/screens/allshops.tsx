@@ -17,6 +17,7 @@ const logoMap: Record<string, any> = {
   "assets/images/jiffy.png": jiffyLogo,
   "assets/images/coles.png": colesLogo,
   "assets/images/spencers.png": spencersLogo,
+  
 };
 
 export default function AllShopsScreen() {

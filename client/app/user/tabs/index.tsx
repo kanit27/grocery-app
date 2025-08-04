@@ -6,44 +6,23 @@ import {
   ScrollView,
   Pressable,
   Image,
+  TouchableOpacity,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Feather } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { getDistance } from "../../../utils/distance";
-import { getTravelTime } from "../../../utils/time"; // <-- Add this import
-
-import groceryImg from "../../../assets/images/grocery.png";
-import foodImg from "../../../assets/images/burger.png";
-import clothingImg from "../../../assets/images/brand.png";
-import electronicsImg from "../../../assets/images/device.png";
-import employeesImg from "../../../assets/images/employees.png";
-import dmartLogo from "../../../assets/images/dmart.png";
-import relianceLogo from "../../../assets/images/reliance.png";
-import bigBazaarLogo from "../../../assets/images/big-bazaar.png";
-import jiffyLogo from "../../../assets/images/jiffy.png";
-import colesLogo from "../../../assets/images/coles.png";
-import spencersLogo from "../../../assets/images/spencers.png";
-
-// Import shops and chains data
-import shops from "../../../assets/database/stores.json";
-import chains from "../../../assets/database/chain.json";
-
-// Map logo path string to imported image
-const logoMap: Record<string, any> = {
-  "assets/images/dmart.png": dmartLogo,
-  "assets/images/reliance.png": relianceLogo,
-  "assets/images/big-bazaar.png": bigBazaarLogo,
-  "assets/images/jiffy.png": jiffyLogo,
-  "assets/images/coles.png": colesLogo,
-  "assets/images/spencers.png": spencersLogo,
-};
+import { getTravelTime } from "../../../utils/time";
+import { Ionicons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 export default function UserHomeScreen() {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [stores, setStores] = useState<any[]>([]);
+  const [storesLoading, setStoresLoading] = useState(true);
 
+  // Fetch user profile
   const fetchUserData = async () => {
     const token = await AsyncStorage.getItem("token");
     if (!token) return;
@@ -64,11 +43,80 @@ export default function UserHomeScreen() {
     }
   };
 
+  // Fetch stores from backend
+  const fetchStores = async () => {
+    setStoresLoading(true);
+    try {
+      const res = await fetch("http://10.54.32.81:5000/api/store/stores");
+      const data = await res.json();
+      setStores(data);
+    } catch (error) {
+      console.error("Error fetching stores:", error);
+      setStores([]);
+    } finally {
+      setStoresLoading(false);
+    }
+  };
+
   useEffect(() => {
     fetchUserData();
+    fetchStores();
   }, []);
 
-  if (loading || !user) {
+  // Step 1: Add _distance to all stores and filter those within 15 km
+  const storesWithDistance = stores
+    .map((store: any) => {
+      const distance =
+        user?.location?.lat &&
+        user?.location?.lng &&
+        store?.location?.lat &&
+        store?.location?.lng
+          ? getDistance(
+              user.location.lat,
+              user.location.lng,
+              store.location.lat,
+              store.location.lng
+            )
+          : Infinity;
+
+      return { ...store, _distance: distance };
+    })
+    .filter((store) => store._distance <= 15);
+
+  // Step 2: Sort by distance
+  storesWithDistance.sort((a, b) => a._distance - b._distance);
+
+  // Step 3: Select only one nearest store per brand
+  const uniqueNearestStores: any[] = [];
+  const seenBrands = new Set();
+
+  storesWithDistance.forEach((store) => {
+    const brandKey = store.brandName?.trim().toLowerCase();
+    if (!seenBrands.has(brandKey)) {
+      uniqueNearestStores.push(store);
+      seenBrands.add(brandKey);
+    }
+  });
+
+  // --- Shop Grid Logic ---
+  // Show up to 7 stores, if more, 8th cell is "See All" icon
+  const gridStores = uniqueNearestStores.slice(0, 8);
+  const showSeeAll =
+    uniqueNearestStores.length > 8 || (uniqueNearestStores.length > 7 && gridStores.length === 8);
+
+  // Prepare grid cells (max 8: 7 stores + 1 see all if needed)
+  let gridCells = gridStores.slice(0, showSeeAll ? 7 : 8);
+  if (showSeeAll) {
+    gridCells.push({ isSeeAll: true });
+  }
+
+  // Arrange into 2 rows of 4 columns
+  const gridRows = [];
+  for (let i = 0; i < gridCells.length; i += 4) {
+    gridRows.push(gridCells.slice(i, i + 4));
+  }
+
+  if (loading || !user || storesLoading) {
     return (
       <View className="flex-1 justify-center items-center bg-white">
         <ActivityIndicator size="large" color="#000" />
@@ -76,163 +124,135 @@ export default function UserHomeScreen() {
     );
   }
 
-  // Get user's lat/lng (assume user.location.lat/lng)
-  const userLat = user.location?.lat;
-  const userLng = user.location?.lng;
-
-  // Attach chain info to each shop and calculate distance
-  const shopsWithChain = shops
-    .map((shop: any) => {
-      const chain = chains.find((c: any) => c.id === shop.chain_id);
-      return {
-        ...shop,
-        chainName: chain?.name || "Supermarket",
-        chainLogo: chain?.logo,
-        distance:
-          shop.latitude && shop.longitude && userLat && userLng
-            ? getDistance(userLat, userLng, shop.latitude, shop.longitude)
-            : Infinity,
-      };
-    });
-
-  // Filter: Only closest shop for each chain
-  const closestShopsByChain: any[] = [];
-  const seenChains = new Set();
-  shopsWithChain
-    .sort((a, b) => a.distance - b.distance)
-    .forEach((shop) => {
-      if (!seenChains.has(shop.chainName)) {
-        closestShopsByChain.push(shop);
-        seenChains.add(shop.chainName);
-      }
-    });
-
-  // 4x2 grid logic (use sorted, unique shops)
-  const numColumns = 4;
-  const numRows = 2;
-  const totalCells = numColumns * numRows;
-
-  let shopsToShow: any[] = [];
-  if (closestShopsByChain.length > 7) {
-    shopsToShow = closestShopsByChain.slice(0, 7);
-    shopsToShow.push({ showAll: true });
-  } else {
-    shopsToShow = closestShopsByChain.slice(0, 8);
-    while (shopsToShow.length < 8) {
-      shopsToShow.push(null);
-    }
-  }
-
-  // Build rows for the grid
-  const shopRows = [];
-  for (let i = 0; i < totalCells; i += numColumns) {
-    shopRows.push(shopsToShow.slice(i, i + numColumns));
-  }
-
   return (
     <View className="flex-1 bg-white">
-      {/* Header with real user address */}
-      <View className="w-full px-8 pt-12 pb-2 bg-slate-100 flex-row justify-between items-center rounded-lg z-10">
-        <Text className="text-xl font-bold text-gray-900" numberOfLines={1} ellipsizeMode="tail">
-          {user.address || "Your Address"}
-        </Text>
-        <Pressable>
-          <View className="flex-row items-center gap-8">
-            <Feather onPress={() => router.push("/screens/cart")} name="shopping-cart" size={22} color="black" />
-            <Feather onPress={() => router.push("/screens/profile")} name="user" size={22} color="black" />
-          </View>
-        </Pressable>
-      </View>
-
-      {/* Search Bar and Categories */}
-      <View className="w-full px-4 pt-4 pb-4 bg-slate-100 z-10">
-        {/* Search Bar */}
-        <View className="flex-row items-center gap-4 px-2 pb-2">
-          <Pressable className="bg-white rounded-2xl px-4 py-3 flex-row items-center flex-1">
-            <Feather name="search" size={18} color="black" />
-            <Text className="text-base ml-2 text-gray-700">
-              Search products and stores
-            </Text>
-          </Pressable>
+      {/* Top section: User address and profile icon */}
+      <View className="flex-row items-center justify-between px-4 py-3 pt-10 bg-white border-b border-gray-100 z-10">
+        <View className="flex-1">
+          <Text className="text-xs text-gray-400">Deliver to</Text>
+          <Text
+            className="text-base font-semibold text-gray-800"
+            numberOfLines={1}
+            ellipsizeMode="tail"
+          >
+            {user?.address || "No address set"}
+          </Text>
+        </View>
+        <View className="flex-row items-center space-x- ml-2">
+          <TouchableOpacity
+            onPress={() => router.push("/screens/userProfile")}
+            className="w-10 h-10 rounded-full mr-4 items-center justify-center"
+          >
+            <Ionicons name="person-circle-outline" size={32} color="#00000" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => router.push("/screens/cart")}
+            className="w-10 h-10 rounded-full items-center justify-center mr-2"
+          >
+            <Ionicons name="cart-outline" size={28} color="#00000" />
+          </TouchableOpacity>
         </View>
       </View>
 
-      {/* 4x2 Shop Grid */}
-      <ScrollView contentContainerStyle={{ paddingTop: 16 }} showsVerticalScrollIndicator={false}>
-        {shopRows.map((row, rowIdx) => (
-          <View
-            key={rowIdx}
-            className="flex-row items-center justify-center mb-4"
-          >
-            {row.map((shop, colIdx) => {
-              // Show All button logic
-              if (shop && shop.showAll) {
-                return (
-                  <Pressable
-                    key="show-all-shops"
-                    className="items-center mx-1"
-                    style={{ width: 80 }}
-                    onPress={() => router.push("/screens/allshops")}
-                  >
-                    <View
-                      className="w-[57px] h-[48px] rounded-xl bg-slate-50 items-center justify-center mb-1.5 border border-slate-200"
-                      style={{ borderWidth: 1.5 }}
-                    >
-                      <Feather name="grid" size={24} color="#6b7280" />
-                    </View>
-                    <Text
-                      className="text-xs font-bold text-gray-800 text-center"
-                      numberOfLines={2}
-                      ellipsizeMode="tail"
-                      style={{ width: 72, overflow: "hidden" }}
-                    >
-                      All Shops
-                    </Text>
-                  </Pressable>
-                );
-              }
-              // Normal shop cell
-              if (!shop || !shop.chainName) {
-                return <View key={colIdx} className="mx-1" style={{ width: 80 }} />;
-              }
-              return (
+
+      {/* Scrollable stores list */}
+      <ScrollView className="flex-1 bg-white">
+      {/* Shop grid view */}
+      <View className="px-4 pt-6">
+        {gridRows.map((row, rowIdx) => (
+          <View key={rowIdx} className="flex-row justify-between mb-4">
+            {row.map((store, colIdx) =>
+              store.isSeeAll ? (
+                <TouchableOpacity
+                  key={`seeall-${colIdx}`}
+                  className="flex-1 mx-1 items-center justify-center bg-gray-100 rounded-2xl h-28"
+                  onPress={() => router.push("/user/tabs/stores")}
+                  style={{ minWidth: 0 }}
+                >
+                  <MaterialIcons name="apps" size={36} color="#2563eb" />
+                  <Text className="text-xs text-gray-700 mt-2 font-semibold">See All</Text>
+                </TouchableOpacity>
+              ) : (
                 <Pressable
-                  key={shop.id}
-                  className="items-center mx-1"
-                  style={{ width: 90 }}
-                  onPress={() => router.push(`/stores/${shop.id}`)}
+                  key={store._id || store.id || colIdx}
+                  className="flex-1 mx-1 items-center bg-white rounded-2xl h-28 shadow"
+                  onPress={() => router.push(`/stores/${store._id || store.id}`)}
+                  style={{ minWidth: 0 }}
                 >
                   <Image
-                    source={logoMap[shop.chainLogo]}
-                    className="w-[57px] h-[48px] mb-1.5 rounded-xl border border-gray-200"
-                    style={{ borderWidth: 1 }}
+                    source={{
+                      uri: store.storeImage
+                        ? `http://10.54.32.81:5000${store.storeImage}`
+                        : "https://via.placeholder.com/80",
+                    }}
+                    className="w-14 h-14 rounded-xl mt-3 bg-gray-100"
                     resizeMode="cover"
                   />
                   <Text
-                    className="text-sm font-bold text-gray-900 text-center"
-                    numberOfLines={1}
-                    ellipsizeMode="tail"
-                    style={{ width: 80, overflow: "hidden" }}
+                    className="text-xs font-semibold text-gray-800 mt-2 text-center px-1"
+                    numberOfLines={2}
                   >
-                    {shop.chainName}
+                    {store.brandName}
                   </Text>
-                  {/* Show distance and time if available */}
-                  {shop.distance !== undefined && shop.distance !== Infinity && (
-                    <View className="flex-row items-center justify-center mt-1">
-                      <Text className="text-xs text-gray-500">
-                        {shop.distance.toFixed(1)} km
-                      </Text>
-                      <Text className="text-xs text-gray-400 mx-1">•</Text>
-                      <Text className="text-xs text-gray-500">
-                        {getTravelTime(shop.distance)} min
-                      </Text>
-                    </View>
-                  )}
                 </Pressable>
-              );
-            })}
+              )
+            )}
+            {/* Fill empty columns if needed for alignment */}
+            {row.length < 4 &&
+              Array.from({ length: 4 - row.length }).map((_, i) => (
+                <View key={`empty-${i}`} className="flex-1 mx-1" />
+              ))}
           </View>
         ))}
+      </View>
+        <Text className="text-xl font-bold text-start mt-4 mb-2 mx-8">
+          Nearby Stores
+        </Text>
+        {uniqueNearestStores.length === 0 ? (
+          <Text className="text-center text-gray-500 mt-8">
+            No stores found.
+          </Text>
+        ) : (
+          uniqueNearestStores.map((store: any) => {
+            const distance = store._distance;
+            const time = getTravelTime(distance);
+
+            return (
+              <Pressable
+                            key={store._id}
+                            className="mx-4 my-2 p-4  rounded-xl flex-row items-center"
+                            onPress={() => router.push(`/stores/${store._id}`)}
+                          >
+                            <Image
+                              source={{
+                                uri: store.storeImage
+                                  ? `http://10.54.32.81:5000${store.storeImage}`
+                                  : "https://via.placeholder.com/80",
+                              }}
+                              style={{
+                                width: 72,
+                                height: 60,
+                                borderRadius: 12,
+                                marginRight: 16,
+                              }}
+                              className="border-[1px] border-gray-200"
+                              resizeMode="contain"
+                            />
+                            <View>
+                              <Text className="text-lg font-bold text-gray-900">
+                                {store.brandName}
+                              </Text>
+                              <Text className="text-base text-gray-700">{store.city}, {store.pincode}</Text>
+                              {distance !== null && time !== null && (
+                                <Text className="text-base text-gray-400 mt-1">
+                                  {distance.toFixed(2)} km • {time} min away
+                                </Text>
+                              )}
+                            </View>
+                          </Pressable>
+            );
+          })
+        )}
       </ScrollView>
     </View>
   );
