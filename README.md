@@ -4,6 +4,10 @@ A full-stack grocery shopping application with a React Native (Expo) client and 
 
 ---
 
+## Scan the QR code in Expo App
+https://expo.dev/preview/update?message=removed+the+unnecessary+files&updateRuntimeVersion=1.0.0&createdAt=2025-08-04T23%3A38%3A20.731Z&slug=exp&projectId=7782f0fa-9a69-4e88-a46f-b0bb45a371e9&group=074fd6fa-9179-4e83-8e9a-e66731afadf4
+
+
 ## Getting Started
 
 1. **Install dependencies** in both `client` and `server` folders.
