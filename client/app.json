@@ -37,9 +37,13 @@
       "expo-font"
     ],
     "extra": {
-      "router": {}
+      "router": {},
+      "eas": {
+        "projectId": "7782f0fa-9a69-4e88-a46f-b0bb45a371e9"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7782f0fa-9a69-4e88-a46f-b0bb45a371e9"
     }
-
-    
   }
 }
