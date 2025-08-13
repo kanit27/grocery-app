@@ -1,12 +1,31 @@
 # Grocery-Store
 
-A full-stack grocery shopping application with a React Native (Expo) client and a Node.js/Express/MongoDB backend.
+This is a **full-stack grocery shopping application** with a **React Native (Expo)** client and a **Node.js/Express/MongoDB** backend.
+
+### 📱 How to Try the App
+1. Visit this link to get the QR code:  
+   **[Open QR Code on Expo](https://expo.dev/preview/update?message=removed+the+unnecessary+files&updateRuntimeVersion=1.0.0&createdAt=2025-08-04T23%3A38%3A20.731Z&slug=exp&projectId=7782f0fa-9a69-4e88-a46f-b0bb45a371e9&group=074fd6fa-9179-4e83-8e9a-e66731afadf4)**
+2. Install the **Expo Go** app on your phone (available on [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent) and [App Store](https://apps.apple.com/app/expo-go/id982107779)).
+3. Open the **Expo Go** app and scan the QR code.
+4. The Grocery-Store app will load on your phone.
 
 ---
 
-## Scan the QR code in Expo App
-https://expo.dev/preview/update?message=removed+the+unnecessary+files&updateRuntimeVersion=1.0.0&createdAt=2025-08-04T23%3A38%3A20.731Z&slug=exp&projectId=7782f0fa-9a69-4e88-a46f-b0bb45a371e9&group=074fd6fa-9179-4e83-8e9a-e66731afadf4
+### 🔑 Test Login Credentials
 
+#### 🛒 User
+- **Email**: `kanit@gmail.com`  
+- **Password**: `Kanit123`
+
+#### 🏬 Shopkeeper / Business
+- **Email**: `dmart@mumbai1.com`  
+- **Password**: `store123`
+
+#### 🚚 Delivery Partner
+- **Email**: `bhavesh@kumar.com`  
+- **Password**: `delivery123`
+
+---
 
 ## Getting Started
 
